@@ -151,6 +151,14 @@
   letter-spacing: 0.15rem;
   border: 0;
 }
+.lc-block.accordion-item {
+  background-color: #000;
+  border-color: rgba(255,255,255,.25);
+}
+
+.lc-block.accordion-item .accordion-body {
+  color: #fff;
+}
 
 .footer {
   padding: 5rem 0;
