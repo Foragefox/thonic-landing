@@ -19,15 +19,15 @@ body {
 }
 
 .bg-green {
-  color: #D7FF45;
+  background-color: #D7FF45;
 }
 
 .bg-navy {
-  color: #0C2746;
+  background-color: #0C2746;
 }
 
 .bg-cyan {
-  color: #79C3DF;
+  background-color: #79C3DF;
 }
 
 #mainNav {
