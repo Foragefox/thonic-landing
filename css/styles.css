@@ -1,3 +1,7 @@
+/*
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+*/
 body {
   margin-top: 88px;
 }
@@ -11,6 +15,18 @@ body {
 }
 
 .text-cyan {
+  color: #79C3DF;
+}
+
+.bg-green {
+  color: #D7FF45;
+}
+
+.bg-navy {
+  color: #0C2746;
+}
+
+.bg-cyan {
   color: #79C3DF;
 }
 
