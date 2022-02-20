@@ -32,10 +32,9 @@
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #000;
+  border: none;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -44,13 +43,16 @@
   font-family: 'Montserrat', sans-serif;
   color: #000;
   font-weight: 700;
-  padding: 0.9rem 0;
-  font-size: 2rem;
+  padding: 0.7rem 0;
+  font-size: 1.5rem;
   letter-spacing: 0.5rem;
 }
 #mainNav .navbar-brand .logo {
-  height: 2rem;
+  height: 1.5rem;
   margin-top: -0.5rem;
+}
+#mainNav .navbar-brand .logo.fixed {
+  display: none;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
@@ -65,13 +67,20 @@
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: 1px solid #79C3DF;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
+    font-size: 2rem;
     padding: 0.5rem 0;
     color: #FFF;
+  }
+  #mainNav .navbar-brand .logo {
+    height: 2rem;
+  }
+  #mainNav .navbar-brand .logo.fixed {
+    display: inline-block;
   }
   #mainNav .navbar-brand .logo.shrink {
     display: none;
@@ -130,49 +139,43 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 600px;
-  padding: 6rem 0;
+  height: 400px;
+  padding-top: 5rem;
   background: #0C2746;
   color: #FFF;
 }
 
 .masthead .headline {
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
+  font-size: 1.75rem;
   font-weight: bold;
   margin: 0;
-  line-height: 115px;
-}
-/*
-.masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  line-height: 4rem;
 }
 
 @media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-@media (min-width: 992px) {
   .masthead {
-    height: 100vh;
-    padding: 0;
+    height: 600px;
+    padding-top: 5rem;
   }
-  .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+  
+  .masthead .headline {
+    font-size: 4.5rem;
+    line-height: 7rem;
   }
 }
-*/
+@media (min-width: 1200px) {
+  .masthead {
+    height: 700px;
+    padding-top: 5rem;
+  }
+  
+  .masthead .headline {
+    font-size: 6.5rem;
+    line-height: 7rem;
+  }
+}
+
 .profile-photo {
   filter: grayscale(100%);
 }
