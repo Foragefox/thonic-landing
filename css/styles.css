@@ -125,8 +125,12 @@ body {
   color: #FFF;
 }
 
-.display-1 {
+.masthead .headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
   font-weight: bold;
+  margin: 0;
+  line-height: 115px;
 }
 /*
 .masthead h1, .masthead .h1 {
