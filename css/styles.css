@@ -207,6 +207,9 @@
 
 .profile-photo {
   filter: grayscale(100%);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .profile-photo:hover {
