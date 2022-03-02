@@ -2,6 +2,15 @@
   font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif;
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 
 .text-green { color: #D7FF45; }
 .text-navy { color: #0C2746; }
@@ -11,7 +20,7 @@
 .bg-cyan { background-color: #79C3DF; }
 
 html { scroll-padding-top: 80px; }
-body { position: relative; }
+body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 #mainNav {
   min-height: 3.5rem;
