@@ -138,6 +138,12 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
   .masthead .headline { font-size: 6.5rem; line-height: 7rem; }
 }
 
+.platform-info-icon {
+  font-size: 35px;
+  line-height: 45px;
+  min-width: 35px;
+}
+
 .our-token {
   background-color: rgba(121, 195,223, 0.3);
 }
