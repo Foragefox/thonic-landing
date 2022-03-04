@@ -12,6 +12,10 @@ h6 {
   font-weight: 700;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
 .text-green { color: #D7FF45; }
 .text-navy { color: #0C2746; }
 .text-cyan { color: #79C3DF; }
@@ -21,6 +25,10 @@ h6 {
 
 html { scroll-padding-top: 80px; }
 body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
+
+.section-band {
+  padding: 5rem 0;
+}
 
 #mainNav {
   min-height: 3.5rem;
@@ -161,7 +169,7 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url('https://via.placeholder.com/1920x1280');
+  background-image: url('https://via.placeholder.com/1920x1280');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
