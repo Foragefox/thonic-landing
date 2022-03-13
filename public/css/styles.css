@@ -91,7 +91,7 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
   #mainNav .navbar-nav .nav-item .nav-link:focus::before { top: 33px; }
 }
 
-.btn {
+.signup-section .btn {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   padding: 1rem 2rem;
