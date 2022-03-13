@@ -66,44 +66,41 @@
           <h2>Platform</h2>
           <p class="lead mb-5">Thonic’s platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. The platform will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.</p>
           <div class="row">
-            <div class="col-12 col-sm-6 d-flex mb-5">
-              <div class="me-3 platform-info-icon text-cyan">
-                <i class="far fa-hourglass"></i>
+            <?php
+            $platformFeatures = [
+              [
+                'iconClass' => 'far fa-hourglass',
+                'heading' => 'Reporting Library',
+                'text' => 'Gain access to standardized financial reporting on select cryptocurrencies. Our expert analysts research coins and assign investment ratings to help you decide which one to invest in'
+              ],
+              [
+                'iconClass' => 'far fa-file-alt',
+                'heading' => 'Portfolio Management',
+                'text' => 'Access a financial performance dashboard that compares the performance of your holdings over time to that of the crypto industry'
+              ],
+              [
+                'iconClass' => 'far fa-heart',
+                'heading' => 'Brokerage Tools',
+                'text' => 'Make buying and selling alt coins and cryptocurrency easier as they reduce the number of transactional steps'
+              ],
+              [
+                'iconClass' => 'far fa-comment-dots',
+                'heading' => 'Notifications and Alerts',
+                'text' => 'Receive notifications when reporting is updated for cryptos on your watchlist'
+              ]
+            ];
+            foreach ($platformFeatures as $platformFeature) {
+            ?>
+              <div class="col-12 col-sm-6 d-flex mb-3 mb-md-5">
+                <div class="me-3 platform-info-icon text-cyan">
+                  <i class="<?= $platformFeature['iconClass'] ?>"></i>
+                </div>
+                <div class="info">
+                  <h6><?= $platformFeature['heading'] ?></h6>
+                  <p><?= $platformFeature['text'] ?></p>
+                </div>
               </div>
-              <div class="info">
-                <h6>Reporting Library</h6>
-                <p>Gain access to standardized financial reporting on select cryptocurrencies. Our expert analysts research coins and assign investment ratings to help you decide which one to invest in</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 d-flex mb-5">
-              <div class="me-3 platform-info-icon text-cyan">
-                <i class="far fa-file-alt"></i>
-              </div>
-              <div class="info">
-                <h6>Portfolio Management</h6>
-                <p>Access a financial performance dashboard that compares the performance of your holdings over time to that of the crypto industry</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 d-flex mb-5">
-              <div class="me-3 platform-info-icon text-cyan">
-                <i class="far fa-heart"></i>
-              </div>
-              <div class="info">
-                <h6>Brokerage Tools </h6>
-                <p>Make buying and selling alt coins and cryptocurrency easier as they reduce the number of transactional steps</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 d-flex mb-5">
-              <div class="me-3 platform-info-icon text-cyan">
-                <i class="far fa-comment-dots"></i>
-              </div>
-              <div class="info">
-                <h6>Notifications and Alerts</h6>
-                <p>Receive notifications when reporting is updated for cryptos on your watchlist</p>
-              </div>
-            </div>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -192,25 +189,25 @@
           [
             'photo' => 'https://via.placeholder.com/100x100',
             'name' => 'Antonella Buono',
-            'title' => 'CCO',
+            'title' => 'Content',
             'linkedin' => '#',
           ],
           [
             'photo' => 'https://via.placeholder.com/100x100',
             'name' => 'David Jenkins',
-            'title' => 'CMO',
+            'title' => 'Marketing',
             'linkedin' => '#',
           ],
           [
             'photo' => 'https://via.placeholder.com/100x100',
             'name' => 'Demetri Mihalakakos',
-            'title' => 'CEO / CFO',
+            'title' => 'Operations',
             'linkedin' => '',
           ],
           [
             'photo' => 'https://via.placeholder.com/100x100',
             'name' => 'Deyan Iolov',
-            'title' => 'CTO / COO',
+            'title' => 'Technology',
             'linkedin' => '',
           ]
         ];

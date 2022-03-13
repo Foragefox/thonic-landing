@@ -26,8 +26,9 @@ h2 {
 html { scroll-padding-top: 80px; }
 body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 
-.section-band {
-  padding: 5rem 0;
+.section-band { padding: 3rem 0; }
+@media (min-width: 992px) {
+  .section-band { padding: 5rem 0; }
 }
 
 #mainNav {
