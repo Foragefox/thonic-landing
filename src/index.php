@@ -71,15 +71,7 @@
       <div class="row justify-content-center">
         <div class="col-10">
           <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
-            malesuada placerat sit amet quis enim. Lorem ipsum dolor sit amet, consectetur
-            malesuada placerat sit amet quis enim. Lorem ipsum dolor sit amet, consectetur
-            malesuada placerat sit amet quis enim. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
-            malesuada placerat sit amet quis enim.
+            Thonic is the first ever cryptocurrency that helps you invest in the digital market. Buying cryptocurrency is challenging as it’s a convoluted process with many steps, and that’s without mentioning the risk factor. Determining which coin is a good investment and which will end in a rug pull is time consuming and requires in-depth research. That’s where Thonic comes in: it is a full-service financial platform that provides you with financial reporting on alt coins and helps you buy and sell digital currencies as well as manage your coin portfolio. Let our group of expert analysts put in the time and do the research so you don’t have to!
           </p>
         </div>
       </div>
@@ -90,22 +82,22 @@
   <section class="platform section-band" id="platform">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <img src="https://via.placeholder.com/465x529" class="img-fluid mx-auto" alt="" />
+        <div class="col-12 col-lg-5 col-xl-6">
+          <div class="mb-4">
+            <img src="https://via.placeholder.com/465x529" class="img-fluid mx-auto" alt="" />
+          </div>
         </div>
-        <div class="col-6">
-          <h2>Our Platform.</h2>
-          <p class="lead mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text.</p>
-
+        <div class="col-12 col-lg-7 col-xl-6">
+          <h2>Platform</h2>
+          <p class="lead mb-5">Thonic’s platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. The platform will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.</p>
           <div class="row">
             <div class="col-12 col-sm-6 d-flex mb-5">
               <div class="me-3 platform-info-icon text-cyan">
                 <i class="far fa-hourglass"></i>
               </div>
               <div class="info">
-                <h6>Considered design</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting dummy text industry.</p>
+                <h6>Reporting Library</h6>
+                <p>Gain access to standardized financial reporting on select cryptocurrencies. Our expert analysts research coins and assign investment ratings to help you decide which one to invest in</p>
               </div>
             </div>
             <div class="col-12 col-sm-6 d-flex mb-5">
@@ -113,8 +105,8 @@
                 <i class="far fa-file-alt"></i>
               </div>
               <div class="info">
-                <h6>Understand situation</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting dummy text industry.</p>
+                <h6>Portfolio Management</h6>
+                <p>Access a financial performance dashboard that compares the performance of your holdings over time to that of the crypto industry</p>
               </div>
             </div>
           </div>
@@ -124,8 +116,8 @@
                 <i class="far fa-heart"></i>
               </div>
               <div class="info">
-                <h6>Impeccable service</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting dummy text industry.</p>
+                <h6>Brokerage Tools </h6>
+                <p>Make buying and selling alt coins and cryptocurrency easier as they reduce the number of transactional steps</p>
               </div>
             </div>
             <div class="col-12 col-sm-6 d-flex mb-5">
@@ -133,8 +125,8 @@
                 <i class="far fa-comment-dots"></i>
               </div>
               <div class="info">
-                <h6>Creative collaboration</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting dummy text industry.</p>
+                <h6>Notifications and Alerts</h6>
+                <p>Receive notifications when reporting is updated for cryptos on your watchlist</p>
               </div>
             </div>
           </div>
@@ -148,30 +140,13 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col-12">
-          <h2>Our Token.</h2>
-          <p>Thonic utilizes two key strategies to ensure holding this token is profitable: BuyBack & Burn and earning
-            passive income. All profit generated from the platform and its services will go directly to a BuyBack & Burn
-            of Thonic tokens until a threshold of ~95% is reached. BuyBack & Burn is beneficial because it encourages
-            price stability and increases the value of the token by creating a reduction in supply. In terms of passive
-            income, 5% of every Thonic token transaction gets redistributed to token holders in Binanced Pegged USD
-            ($BUSD) so that simply holding the token generates a profit. Thonic is designed to be held longer term to
-            benefit from both passive income and capital appreciation. Thonic is designed to be self-sustaining with a
-            percentage of every transaction being used to fund the operations and growth of the project. </p>
-          <p>Built on the Binance Smart Chain because it has faster block speeds (up to 10x) and lower transaction
-            costs, Thonic has a total initial supply of 200,000,000,000 coins, with a circulating supply of
-            100,000,000,000 after the initial burn. Further coins will be burnt with the platforms profits.</p>
-          <ul>
-            <li>5% of every transaction is redistributed to all holders in $BUSD.</li>
-            <li>2% of every transaction is transferred into the liquidity pool on Pankcakeswap to create a stable price
-              floor.</li>
-            <li>3% of every transaction is sent to the marketing wallet to fund marketing, utility development, and
-              community management.</li>
-          </ul>
+          <h2>Token</h2>
+          <p>Thonic is a utility token that utilizes two key strategies to ensure holding the token is valuable. The first strategy is <em>BuyBack & Burn</em>, which encourages price stability and increases the value of the token by reducing the supply. All profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned. The second strategy is earning passive income which redistributes 5% of each transaction to token holders in $BUSD.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <h3>Features.</h3>
+          <h3>Features</h3>
         </div>
       </div>
       <div class="row pb-5 pt-3">
@@ -204,7 +179,7 @@
         ];
         foreach ($features as $feature) {
         ?>
-          <div class="col-6 col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="card card-borderless text-center">
               <img src="<?= $feature['img'] ?>" title="<?= $feature['imgTitle'] ?>" loading="lazy" class="mx-auto" style="max-height: 100px;" />
               <div class="card-body">
@@ -218,7 +193,7 @@
 
       <div class="row">
         <div class="col-lg-8">
-          <h3>Token Distribution.</h3>
+          <h3>Token Distribution</h3>
         </div>
       </div>
 
@@ -454,13 +429,13 @@
                   <div class="accordion-body">
                     <?php foreach ($phase['milestones'] as $milestone) { ?>
                       <div class="row">
-                        <div class="col-6 d-flex">
+                        <div class="col-10 col-lg-8 d-flex">
                           <span class="milestone-icon"><i class="text-navy <?= $milestone['icon'] ?>"></i></span>
                           <div class="milestone-title">
                             <?= $milestone['title'] ?>
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-2 col-lg-4">
                           <span class="milestone-status">
                             <?php if ($milestone['complete']) { ?>
                               <i class="text-success far fa-check-circle"></i>
