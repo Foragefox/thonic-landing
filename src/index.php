@@ -240,16 +240,15 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <h2 class="text-white mb-5">Join the private sale</h2>
-          <form class="form-signup">
+          <form class="form-signup" name="signup" method="POST" action="/success" data-netlify="true">
             <div class="row">
               <div class="col">
-                <input class="form-control" type="email" placeholder="Enter email address..." aria-label="Enter email address..." />
+                <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
               <div class="col-auto">
                 <button class="btn btn-lg btn-primary" type="submit">ADD ME</button>
               </div>
             </div>
-
           </form>
         </div>
       </div>
