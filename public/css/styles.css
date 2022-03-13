@@ -92,13 +92,9 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 }
 
 .btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
 }
 
 

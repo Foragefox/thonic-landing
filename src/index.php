@@ -46,7 +46,7 @@
           <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
           <li class="nav-item"><a class="nav-link" href="#token">Token</a></li>
           <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
         </ul>
       </div>
     </div>
@@ -206,7 +206,7 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col-md-8">
-          <h2>Team.</h2>
+          <h2>Team</h2>
           <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
             malesuada placerat sit amet quis enim.</p>
         </div>
@@ -262,29 +262,19 @@
   <!-- Signup-->
   <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5">
+      <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <h2 class="text-white mb-5">Join the private sale</h2>
-          <form class="form-signup" id="contactForm">
-            <!-- Email address input-->
-            <div class="row input-group-newsletter">
+          <form class="form-signup">
+            <div class="row">
               <div class="col">
-                <input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." />
+                <input class="form-control" type="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
               <div class="col-auto">
-                <button class="btn btn-primary" type="submit">Add Me!</button>
+                <button class="btn btn-lg btn-primary" type="submit">ADD ME</button>
               </div>
             </div>
-            <!-- Submit success message-->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3 mt-2 text-white">
-                <div class="fw-bolder">Form submission successful!</div>
-              </div>
-            </div>
-            <!-- Submit error message-->
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
-            </div>
+
           </form>
         </div>
       </div>
