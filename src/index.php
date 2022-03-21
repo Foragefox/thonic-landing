@@ -64,7 +64,7 @@
         </div>
         <div class="col-12 col-lg-7 col-xl-6">
           <h2>Platform</h2>
-          <p class="lead mb-5">Thonic’s platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. The platform will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.</p>
+          <p class="subtitle mb-5">Thonic’s platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. The platform will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.</p>
           <div class="row">
             <?php
             $platformFeatures = [
@@ -108,7 +108,7 @@
   </section>
 
   <!-- Token -->
-  <section class="our-token bg-cyan section-band" id="token">
+  <section class="our-token bg-cyan-brighter section-band" id="token">
     <div class="container">
       <div class="row mb-4">
         <div class="col-12">
@@ -179,7 +179,7 @@
       <div class="row mb-4">
         <div class="col-md-8">
           <h2>Team</h2>
-          <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
+          <p class="subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
             malesuada placerat sit amet quis enim.</p>
         </div>
       </div>
@@ -218,7 +218,7 @@
             <div class="card card-borderless text-center">
               <img src="<?= $member['photo'] ?>" title="" alt="" loading="lazy" class="mx-auto profile-photo">
               <div class="card-body">
-                <h4 class="card-title"><?= $member['name'] ?></h4>
+                <div class="h5 card-title"><?= $member['name'] ?></div>
                 <p class="small"><?= $member['title'] ?></p>
                 <div class="nav justify-content-center">
                   <a href="<?= $member['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a>
@@ -423,7 +423,7 @@
       <div class="row justify-content-center mb-5">
         <div class="col-md-8">
           <h2 class="text-cyan">Frequently Asked Questions</h2>
-          <div class="lead text-light">
+          <div class="subtitle text-light">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur
             excepteur sint occaecat.
           </div>

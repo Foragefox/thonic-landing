@@ -1,30 +1,64 @@
 /*
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
 
-h2 {
-  margin-bottom: 1rem;
-}
+/* UI KIT OVERRIDES */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 { font-family: 'Montserrat', sans-serif; }
 
-.text-green { color: #D7FF45; }
-.text-navy { color: #0C2746; }
-.text-cyan { color: #79C3DF; }
-.bg-green { background-color: #D7FF45; }
-.bg-navy { background-color: #0C2746; }
+h1, .h1 { font-weight: 500; font-size: 6.0625rem; letter-spacing: -1.5px; }
+h2, .h2 { font-weight: 500; font-size: 3.8125rem; letter-spacing: -0.5px; }
+h3, .h3 { font-weight: 400; font-size: 3rem; }
+h4, .h4 { font-weight: 400; font-size: 2.125rem; letter-spacing: 0.25px; }
+h5, .h5 { font-weight: 400; font-size: 1.5rem; }
+h6, .h6 { font-weight: 500; font-size: 1.25rem; letter-spacing: 0.15px; }
+
+.subtitle { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: 0.15px;}
+.subtitle-2 { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 0.875rem; letter-spacing: 0.15px; text-transform: uppercase;}
+
+body { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.5px; }
+.body-2 { font-size: 0.875rem; letter-spacing: 0.25px; }
+
+.caption { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.4px; }
+label { font-family: 'Inter', sans-serif; font-size: 0.625rem; font-weight: 700; letter-spacing: 1.5px;}
+
+/* PRIMARY - 60% usage */
+.bg-gray { background-color: #e9e9de; }
+.bg-gray-brighter {background-color: #fffff3; }
+.bg-gray-darker {background-color: #d1d1c7; }
+.bg-black { background-color: #161c23; }
+.bg-black-brighter { background-color: #242e3b; }
+.bg-black-brighter-20 { background-color: #2d363f; }
+.text-gray { color: #e9e9de; }
+.text-black {color: #161c23; }
+
+/* SECONDARY 30% usage */
 .bg-cyan { background-color: #79C3DF; }
+.bg-cyan-brighter { background-color: #8ce0ff; }
+.bg-cyan-darker { background-color: #46a0db; }
+.bg-navy { background-color: #0C2746; }
+.bg-navy-brighter { background-color: #10355e; }
+.bg-navy-brighter-20 { background-color: #15447a; }
+.text-cyan { color: #79C3DF; }
+.text-navy { color: #0C2746; }
+
+/* ACCENT 10% usage */
+.bg-green { background-color: #D7FF45; }
+.text-green { color: #D7FF45; }
+
+.btn { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.875rem; letter-spacing: 1.25px; text-transform: uppercase; border-radius: 0; }
+
+
+/* UI KIT OVERRIDES END */
 
 html { scroll-padding-top: 80px; }
-body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
+body { position: relative; }
+h2, .h2 { margin-bottom: 1rem; }
 
 .section-band { padding: 3rem 0; }
 @media (min-width: 992px) {
@@ -45,9 +79,9 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
   font-weight: 700;
   padding: 0.7rem 0;
   font-size: 1.5rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
-#mainNav .navbar-brand .logo { height: 1.5rem; margin-top: -0.5rem; }
+#mainNav .navbar-brand .logo { height: 1.25rem; margin-top: -0.5rem; }
 #mainNav .navbar-brand .logo.fixed { display: inline-block; }
 #mainNav .navbar-brand .logo.black { display: none; }
 #mainNav .navbar-nav .nav-item .nav-link { color: #fff; position: relative; padding: 0.75rem 1.5rem; }
@@ -83,8 +117,8 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 @media (min-width: 992px) {
   #mainNav { padding-top: 0; padding-bottom: 0; }
-  #mainNav .navbar-brand { font-size: 2rem; padding: 0.5rem 0; color: #FFF; }
-  #mainNav .navbar-brand .logo { height: 2rem; }
+  #mainNav .navbar-brand { font-size: 2rem; letter-spacing: 0.4rem; padding: 0.5rem 0; color: #FFF; }
+  #mainNav .navbar-brand .logo { height: 1.875rem; margin-top: -0.7rem; }
   #mainNav .navbar-nav .nav-item .nav-link { transition: none; padding: 1.75rem 1.5rem; color: rgba(255, 255, 255, 0.5); }
   #mainNav .navbar-nav .nav-item .nav-link.active::before,
   #mainNav .navbar-nav .nav-item .nav-link:hover::before,
@@ -93,9 +127,8 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
 }
 
 .signup-section .btn {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 1.25rem 2rem;
 }
 
 
@@ -147,10 +180,6 @@ body { position: relative; font-family: 'Lato', sans-serif; font-weight: 400; }
   font-size: 35px;
   line-height: 45px;
   min-width: 35px;
-}
-
-.our-token {
-  background-color: rgba(121, 195,223, 0.3);
 }
 
 .profile-photo {
