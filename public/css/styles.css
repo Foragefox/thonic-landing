@@ -24,6 +24,9 @@ h6, .h6 { font-weight: 500; font-size: 1.25rem; letter-spacing: 0.15px; }
 body { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 400; letter-spacing: 0.5px; }
 .body-2 { font-size: 0.875rem; letter-spacing: 0.25px; }
 
+a { color: #15447a; }
+a:hover { color: #0c2746; }
+
 .caption { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.4px; }
 label { font-family: 'Inter', sans-serif; font-size: 0.625rem; font-weight: 700; letter-spacing: 1.5px;}
 
@@ -52,7 +55,7 @@ label { font-family: 'Inter', sans-serif; font-size: 0.625rem; font-weight: 700;
 .text-green { color: #D7FF45; }
 
 .btn { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.875rem; letter-spacing: 1.25px; text-transform: uppercase; border-radius: 0; }
-
+.btn.btn-xl { font-size: 1rem; padding: 1.25rem 2rem; }
 
 /* UI KIT OVERRIDES END */
 
@@ -119,18 +122,12 @@ h2, .h2 { margin-bottom: 1rem; }
   #mainNav { padding-top: 0; padding-bottom: 0; }
   #mainNav .navbar-brand { font-size: 2rem; letter-spacing: 0.4rem; padding: 0.5rem 0; color: #FFF; }
   #mainNav .navbar-brand .logo { height: 1.875rem; margin-top: -0.7rem; }
-  #mainNav .navbar-nav .nav-item .nav-link { transition: none; padding: 1.75rem 1.5rem; color: rgba(255, 255, 255, 0.5); }
+  #mainNav .navbar-nav .nav-item .nav-link { transition: none; padding: 1.75rem 1.5rem; color: #e9e9de; }
   #mainNav .navbar-nav .nav-item .nav-link.active::before,
   #mainNav .navbar-nav .nav-item .nav-link:hover::before,
   #mainNav .navbar-nav .nav-item .nav-link:active::before,
   #mainNav .navbar-nav .nav-item .nav-link:focus::before { top: 33px; }
 }
-
-.signup-section .btn {
-  font-size: 1rem;
-  padding: 1.25rem 2rem;
-}
-
 
 .card-borderless {
   border: none;
@@ -211,6 +208,13 @@ h2, .h2 { margin-bottom: 1rem; }
 }
 
 /** Roadmap **/
+#roadmap .sticky {
+  position: relative;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 120px;
+}
+
 .accordion-item { border: none; border-bottom: 2px solid #79C3DF; }
 .accordion-button { padding-left: 3rem; font: 700 18px 'Montserrat'; }
 .accordion-button::after {
@@ -242,9 +246,9 @@ h2, .h2 { margin-bottom: 1rem; }
 .milestone-status::after { bottom: -11px; }
 
 /** FAQ **/
-.lc-block.accordion-item { background-color: #0C2746; border-color: #79C3DF; }
-
-.lc-block.accordion-item .accordion-body { color: #fff; }
+#faq .accordion-item { background-color: #0C2746; border-color: #79C3DF; }
+#faq .accordion-item a:hover { color: #e9e9de; }
+#faq .accordion-item .accordion-body { color: #fff; }
 
 /** Footer **/
 .footer { padding: 5rem 0; }

@@ -33,13 +33,11 @@
       </div>
       <div class="row py-4">
         <div class="col">
-          <p>Body copy - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Body copy - Lorem ipsum dolor sit amet, <a href="#">Link</a> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           <p class="body-2">Body 2 copy - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-          <p class="caption">
-            This is a caption
-          </p>
+          <p class="caption">This is a caption</p>
           <p>
             <label>This is a label</label>
           </p>
@@ -126,6 +124,14 @@
           <button type="button" class="btn btn-outline-info">Info</button>
           <button type="button" class="btn btn-outline-light">Light</button>
           <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+      </div>
+      <div class="row py-2">
+        <div class="col">
+          <button type="button" class="btn btn-sm btn-primary">btn-sm</button>
+          <button type="button" class="btn btn-primary">regular</button>
+          <button type="button" class="btn btn-lg btn-primary">btn-lg</button>
+          <button type="button" class="btn btn-xl btn-primary">btn-xl</button>
         </div>
       </div>
     </div>

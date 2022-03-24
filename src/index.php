@@ -43,11 +43,16 @@
   <!-- About -->
   <section class="about bg-cyan text-navy section-band" id="about">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mb-4">
         <div class="col-10">
           <p class="lead">
             Thonic is the first ever cryptocurrency that helps you invest in the digital market. Buying cryptocurrency is challenging as it’s a convoluted process with many steps, and that’s without mentioning the risk factor. Determining which coin is a good investment and which will end in a rug pull is time consuming and requires in-depth research. That’s where Thonic comes in: it is a full-service financial platform that provides you with financial reporting on alt coins and helps you buy and sell digital currencies as well as manage your coin portfolio. Let our group of expert analysts put in the time and do the research so you don’t have to!
           </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-8 col-lg-6 col-xl-4 d-grid">
+          <a class="btn btn-xl btn-primary" href="#">READ THE WHITEPAPER</a>
         </div>
       </div>
     </div>
@@ -110,10 +115,13 @@
   <!-- Token -->
   <section class="our-token bg-cyan-brighter section-band" id="token">
     <div class="container">
+      <h2>Token</h2>
       <div class="row mb-4">
-        <div class="col-12">
-          <h2>Token</h2>
-          <p>Thonic is a utility token that utilizes two key strategies to ensure holding the token is valuable. The first strategy is <em>BuyBack & Burn</em>, which encourages price stability and increases the value of the token by reducing the supply. All profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned. The second strategy is earning passive income which redistributes 5% of each transaction to token holders in $BUSD.</p>
+        <div class="col-12 col-md-8 mb-4">
+          Thonic is a utility token that utilizes two key strategies to ensure holding the token is valuable. The first strategy is <em>BuyBack & Burn</em>, which encourages price stability and increases the value of the token by reducing the supply. All profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned. The second strategy is earning passive income which redistributes 5% of each transaction to token holders in $BUSD.
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <a class="btn btn-xl btn-primary" href="#">GET THE WHITEPAPER</a>
         </div>
       </div>
       <div class="row">
@@ -162,7 +170,6 @@
           </div>
         <?php } ?>
       </div>
-
       <div class="row">
         <div class="col-lg-8">
           <h3>Token Distribution</h3>
@@ -243,7 +250,7 @@
                 <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
               <div class="col-auto">
-                <button class="btn btn-lg btn-primary" type="submit">ADD ME</button>
+                <button class="btn btn-xl btn-primary" type="submit">ADD ME</button>
               </div>
             </div>
           </form>
@@ -257,13 +264,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <h2>Roadmap</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
+          <div class="sticky">
+            <h2>Roadmap</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+          </div>
         </div>
         <div class="col-md-7">
           <?php
@@ -381,12 +390,12 @@
               <div class="accordion-item">
 
                 <h2 class="accordion-header" id="phase-heading-<?= $index ?>">
-                  <button class="accordion-button <?= $index == 0 ? '' : 'collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#phase-collapse-<?= $index ?>" aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="phase-collapse-<?= $index ?>">
+                  <button class="accordion-button <?= $index == $index ? '' : 'collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#phase-collapse-<?= $index ?>" aria-expanded="<?= $index == $index ? 'true' : 'false' ?>" aria-controls="phase-collapse-<?= $index ?>">
                     <?= $phase['name'] ?>
                   </button>
                 </h2>
 
-                <div id="phase-collapse-<?= $index ?>" class="accordion-collapse collapse <?= $index == 0 ? 'show' : '' ?>" aria-labelledby="phase-heading-<?= $index ?>">
+                <div id="phase-collapse-<?= $index ?>" class="accordion-collapse collapse <?= $index == $index ? 'show' : '' ?>" aria-labelledby="phase-heading-<?= $index ?>">
                   <div class="accordion-body">
                     <?php foreach ($phase['milestones'] as $milestone) { ?>
                       <div class="row">
@@ -462,7 +471,7 @@
 
             foreach ($faqs as $index => $faq) {
             ?>
-              <div class="lc-block accordion-item mb-5">
+              <div class="accordion-item mb-5">
                 <a class="text-decoration-none text-cyan h4" href="#" data-bs-toggle="collapse" data-bs-target="#faq-collapse-<?= $index ?>" aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="faq-collapse-<?= $index ?>">
                   <?= $faq['question'] ?>
                 </a>
