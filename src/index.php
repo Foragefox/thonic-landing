@@ -22,6 +22,8 @@
           <li class="nav-item"><a class="nav-link" href="#token">Token</a></li>
           <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
       </div>
     </div>
