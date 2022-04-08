@@ -122,7 +122,7 @@
         <div class="col-12 col-md-8 mb-4">
           Thonic is a utility token that utilizes two key strategies to ensure holding the token is valuable. The first strategy is <em>BuyBack & Burn</em>, which encourages price stability and increases the value of the token by reducing the supply. All profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned. The second strategy is earning passive income which redistributes 5% of each transaction to token holders in $BUSD.
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-4 text-center">
           <a class="btn btn-xl btn-primary" href="#">GET THE WHITEPAPER</a>
         </div>
       </div>
@@ -163,9 +163,9 @@
         ?>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card card-borderless text-center">
-              <img src="<?= $feature['img'] ?>" title="<?= $feature['imgTitle'] ?>" loading="lazy" class="mx-auto" style="max-height: 100px;" />
+              <img src="<?= $feature['img'] ?>" title="<?= $feature['imgTitle'] ?>" loading="lazy" class="mx-auto" style="max-height: 60px;" />
               <div class="card-body">
-                <h4 class="card-title"><?= $feature['title'] ?></h4>
+                <h5 class="card-title"><?= $feature['title'] ?></h5>
                 <p><?= $feature['body'] ?></p>
               </div>
             </div>
