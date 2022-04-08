@@ -192,50 +192,60 @@
             malesuada placerat sit amet quis enim.</p>
         </div>
       </div>
-      <div class="row">
-        <?php
-        $team = [
-          [
-            'photo' => 'https://via.placeholder.com/100x100',
-            'name' => 'Antonella Buono',
-            'title' => 'Content',
-            'linkedin' => '#',
-          ],
-          [
-            'photo' => 'https://via.placeholder.com/100x100',
-            'name' => 'David Jenkins',
-            'title' => 'Marketing',
-            'linkedin' => '#',
-          ],
-          [
-            'photo' => 'https://via.placeholder.com/100x100',
-            'name' => 'Demetri Mihalakakos',
-            'title' => 'Operations',
-            'linkedin' => '',
-          ],
-          [
-            'photo' => 'https://via.placeholder.com/100x100',
-            'name' => 'Deyan Iolov',
-            'title' => 'Technology',
-            'linkedin' => '',
-          ]
-        ];
-
-        foreach ($team as $member) {
-        ?>
-          <div class="col-md-6 col-lg-3 my-2">
-            <div class="card card-borderless text-center">
-              <img src="<?= $member['photo'] ?>" title="" alt="" loading="lazy" class="mx-auto profile-photo">
-              <div class="card-body">
-                <div class="h5 card-title"><?= $member['name'] ?></div>
-                <p class="small"><?= $member['title'] ?></p>
-                <div class="nav justify-content-center">
-                  <a href="<?= $member['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a>
+      <?php
+      $team = [
+        [
+          'photo' => 'https://via.placeholder.com/100x100',
+          'name' => 'Antonella<br>Buono',
+          'title' => 'Content',
+          'linkedin' => '#',
+        ],
+        [
+          'photo' => 'https://via.placeholder.com/100x100',
+          'name' => 'David<br>Jenkins',
+          'title' => 'Marketing',
+          'linkedin' => '#',
+        ],
+        [
+          'photo' => 'https://via.placeholder.com/100x100',
+          'name' => 'Demetri<br>Mihalakakos',
+          'title' => 'Operations',
+          'linkedin' => '#',
+        ],
+        [
+          'photo' => 'https://via.placeholder.com/100x100',
+          'name' => 'Deyan<br>Iolov',
+          'title' => 'Technology',
+          'linkedin' => '#',
+        ],
+        [
+          'photo' => 'https://via.placeholder.com/100x100',
+          'name' => 'Olaf<br>Kreitz',
+          'title' => 'Strategy',
+          'linkedin' => '#',
+        ]
+      ];
+      ?>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-center">
+            <?php foreach ($team as $member) { ?>
+              <div class="col-sm-6 col-lg-4 my-2">
+                <div class="card card-borderless text-center">
+                  <img src="<?= $member['photo'] ?>" title="" alt="" loading="lazy" class="mx-auto profile-photo">
+                  <div class="card-body">
+                    <div class="h5 card-title"><?= $member['name'] ?></div>
+                    <p class="small"><?= $member['title'] ?></p>
+                    <div class="nav justify-content-center">
+                      <a href="<?= $member['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            <?php } ?>
           </div>
-        <?php } ?>
+
+        </div>
       </div>
     </div>
   </section>
