@@ -267,3 +267,4 @@ h2, .h2 { margin-bottom: 1rem; }
 
 /** Footer **/
 .footer { padding: 5rem 0; }
+.footer .social-links a { display: inline-block; margin-right: 10px; color: #79C3DF; font-size: 28px;  }
