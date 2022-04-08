@@ -48,7 +48,10 @@
       <div class="row justify-content-center mb-4">
         <div class="col-10">
           <p class="lead">
-            Thonic is the first ever cryptocurrency that helps you invest in the digital market. Buying cryptocurrency is challenging as it’s a convoluted process with many steps, and that’s without mentioning the risk factor. Determining which coin is a good investment and which will end in a rug pull is time consuming and requires in-depth research. That’s where Thonic comes in: it is a full-service financial platform that provides you with financial reporting on alt coins and helps you buy and sell digital currencies as well as manage your coin portfolio. Let our group of expert analysts put in the time and do the research so you don’t have to!
+            Buying cryptocurrency is challenging - it's a risky process with many steps. Determining which coin is a good investment and which will end in a rug pull is time consuming and requires in-depth research.
+          </p>
+          <p class="lead">
+            Enter Thonic: the first full-service investment platform that provides you with financial reporting on alt coins and helps you buy and sell digital currencies with confidence.
           </p>
         </div>
       </div>
@@ -71,14 +74,16 @@
         </div>
         <div class="col-12 col-lg-7 col-xl-6">
           <h2>Platform</h2>
-          <p class="subtitle mb-5">Thonic’s platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. The platform will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.</p>
+          <p class="subtitle mb-5">
+            Thonic's platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. It will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.
+          </p>
           <div class="row">
             <?php
             $platformFeatures = [
               [
                 'iconClass' => 'far fa-hourglass',
-                'heading' => 'Reporting Library',
-                'text' => 'Gain access to standardized financial reporting on select cryptocurrencies. Our expert analysts research coins and assign investment ratings to help you decide which one to invest in'
+                'heading' => 'Report Library',
+                'text' => 'Access standardized financial reporting on select cryptocurrencies. Our expert analysts will research coins and assign investment ratings to help you decide which one to invest in.'
               ],
               [
                 'iconClass' => 'far fa-file-alt',
@@ -120,7 +125,12 @@
       <h2>Token</h2>
       <div class="row mb-4">
         <div class="col-12 col-md-8 mb-4">
-          Thonic is a utility token that utilizes two key strategies to ensure holding the token is valuable. The first strategy is <em>BuyBack & Burn</em>, which encourages price stability and increases the value of the token by reducing the supply. All profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned. The second strategy is earning passive income which redistributes 5% of each transaction to token holders in $BUSD.
+          <p>
+            Thonic is a utility token that employs two key strategies to ensure holding the token is valuable. The first strategy is BuyBack & Burn, which encourages price stability and increases the value of the token by reducing supply. The initial token supply of 200,000,000,000 coins will be reduced to a circulating supply of 100,000,000,000 after the initial burn. Following this, all profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned.
+          </p>
+          <p>
+            The second strategy is earning passive income as 5% of each transaction is redistributed to token holders in $BUSD. Built on the Binance Smart Chain for its faster block speeds and lower transaction costs, Thonic is designed to be held longer term to benefit from both passive income and capital appreciation.
+          </p>
         </div>
         <div class="col-12 col-md-4 text-center">
           <a class="btn btn-xl btn-primary" href="#">GET THE WHITEPAPER</a>
@@ -138,25 +148,25 @@
             'img' => '/img/busd.svg',
             'imgTitle' => '',
             'title' => 'BUSD Reflections',
-            'body' => 'Earn automatic Binance pegged USD ($BUSD), rewards by holding your Thonic token, 5% of every buy, transfer and sell transaction is redistributed automatically to $THONIC eligible holders'
+            'body' => 'Earn automatic Binance Pegged USD ($BUSD) rewards by simply holding Thonic tokens. 5% of every buy, transfer and sell transaction is redistributed automatically to $THONIC eligible holders.'
           ],
           [
             'img' => '/img/bunny.svg',
             'imgTitle' => '',
             'title' => 'Liquidity Pool',
-            'body' => 'Our Smart contract deposits 2% from every buy/transfer/sell transaction is sent into a liquidity pool which has been locked and certified'
+            'body' => 'Our Smart contract deposits 2% from every buy, transfer and sell transaction into a locked and certified liquidity pool'
           ],
           [
             'img' => '/img/flame.svg',
             'imgTitle' => '',
-            'title' => 'BuyBack & Burn',
-            'body' => '100% of profits from our platform and utilities are used to buy and burn the Thonic token'
+            'title' => 'BuyBack &amp; Burn',
+            'body' => '100% of profits from our platform and utilities will be used to BuyBack & Burn the Thonic token until a threshold of 95% is reached'
           ],
           [
             'img' => '/img/whale.svg',
             'imgTitle' => '',
             'title' => 'Anti-Whale',
-            'body' => 'Our Anti-Whale Mechanism is a series of polcies during our luanch phases that prevent holders from purcahes large amounts of tokens at low prices'
+            'body' => 'Our Anti-Whale Mechanism is a series of policies that prevent holders from purchasing large amounts of tokens at low prices during our launch phase.'
           ]
         ];
         foreach ($features as $feature) {
@@ -188,8 +198,9 @@
       <div class="row mb-4">
         <div class="col-md-8">
           <h2>Team</h2>
-          <p class="subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
-            malesuada placerat sit amet quis enim.</p>
+          <p class="subtitle">
+            The Thonic team is made up of a diverse group of qualified professionals and entrepreneurs who have extensive experience in computer science, securities investment, marketing and running successful businesses. Check them out below!
+          </p>
         </div>
       </div>
       <?php
@@ -262,7 +273,7 @@
                 <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
               <div class="col-auto">
-                <button class="btn btn-xl btn-primary" type="submit">ADD ME</button>
+                <button class="btn btn-xl btn-primary" type="submit">ADD ME!</button>
               </div>
             </div>
           </form>
@@ -278,12 +289,15 @@
         <div class="col-md-5">
           <div class="sticky">
             <h2>Roadmap</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</p>
+            <p>
+              The goal is to complete one phase per Fiscal Quarter and have the platform beta launched before the end of 2022. That being said, if all the milestones in a phase are ready before the end of the Fiscal Quarter, we will move onto the next phase immediately.
+            </p>
+            <p>
+              Now that we have introduced the concept and team behind Thonic, let's talk timelines! Thonic's token and platform will be launched over six phases, with one phase being completed each Fiscal Quarter. If all the milestones in a phase are met before the end of the Quarter, however, we will immediately move on to the next phase so the platform can be beta launched by the end of 2022.
+            </p>
+            <p>
+              Scroll through the Roadmap to see the task breakdowns by phase and our progress to date.
+            </p>
           </div>
         </div>
         <div class="col-md-7">
@@ -444,10 +458,6 @@
       <div class="row justify-content-center mb-5">
         <div class="col-md-8">
           <h2 class="text-cyan">Frequently Asked Questions</h2>
-          <div class="subtitle text-light">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur
-            excepteur sint occaecat.
-          </div>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -456,28 +466,42 @@
             <?php
             $faqs = [
               [
-                'question' => 'Accordion Item #1',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'Where can I register for the presale?',
+                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here<a>'
               ],
               [
-                'question' => 'Accordion Item #2',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'What is slippage for?',
+                'answer' => 'Slippage sets the tolerance for the maximum percentage of price movement you can live with. IT IS NOT A TAX.'
               ],
               [
-                'question' => 'Accordion Item #3',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'Why am I not receiving rewards?',
+                'answer' => 'Rewards are directly related to Trading Volume and your bag size. Higher trading volume and bigger bags get higher and quicker rewards.'
               ],
               [
-                'question' => 'Accordion Item #4',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'How can I check the amount of coins burned?',
+                'answer' => 'On BSC Scan, the first address is the BURN ADDRESS.'
               ],
               [
-                'question' => 'Accordion Item #5',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'Why 10% tax and when is it applied?',
+                'answer' => 'It is applied to EVERY TRANSACTION, this includes: Buys, Sells and Transfers.
+                <ul>
+                <li>5% of every buy/transfer/sell is redistributed to all holders in $BUSD</li>
+                <li>2% of every transaction is transferred into the Liquidity Pool on Pancakeswap to create a stable price floor.</li>
+                <li>3% of every transaction is sent to the marketing wallet to fund marketing, utility development and community management.</li>
+                </ul>
+                '
               ],
               [
-                'question' => 'Accordion Item #6',
-                'answer' => 'Placeholder content for this accordion, which is intended to demonstrate the class. This is the first items accordion body.'
+                'question' => 'What is AMA and when do they happen?',
+                'answer' => 'Ask Me Anything, (AMA) is an open space where investors can talk to the team and ask questions. They will be held monthly starting after the presale.'
+              ],
+              [
+                'question' => 'Where can I buy $THONIC?',
+                'answer' => 'If you are new to crypto currency we recommend you follow our How to Buy guides on our site'
+              ],
+              [
+                'question' => 'Where can I get additional help?',
+                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/+ojQiMqZaO_s5ZTM5" target="_blank">https://t.me/+ojQiMqZaO_s5ZTM5</a>'
               ]
             ];
 
