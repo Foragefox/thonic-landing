@@ -159,32 +159,45 @@ h2, .h2 { margin-bottom: 1rem; }
   display: flex;
   width: 100%;
   height: 300px;
-  padding-top: 5rem;
+  padding-top: 6rem;
   background: #0C2746;
   color: #FFF;
+  background-image: url(/img/background-1.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom -14px;
 }
 
 .masthead .headline {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
-  line-height: 2.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 576px) {
+  .masthead { height: 400px; padding-top: 7.5rem; background-position: center bottom -18px; }
+  .masthead .headline { font-size: 2rem; }
 }
 
 @media (min-width: 768px) {
-  .masthead { height: 600px; padding-top: 5rem; }
-  .masthead .headline { font-size: 4.5rem; line-height: 5rem; }
+  .masthead { height: 500px; padding-top: 9rem; background-position: center bottom -24px; }
+  .masthead .headline { font-size: 2.3rem; line-height: 3rem; }
 }
 
 @media (min-width: 992px) {
-  .masthead { height: 600px; padding-top: 5rem; }
-  .masthead .headline { font-size: 5rem; line-height: 5.5rem; }
+  .masthead { height: 600px; padding-top: 8rem; background-position: center bottom -29px; }
+  .masthead .headline { font-size: 3rem; line-height: 4rem; }
 }
 
 @media (min-width: 1200px) {
-  .masthead { height: 700px; padding-top: 5rem; }
-  .masthead .headline { font-size: 2.5rem; line-height: 4rem; }
+  .masthead { 
+    height: 650px; 
+    padding-top: 8rem; 
+    background-position: center bottom -31px;
+    background-repeat: repeat-x;
+    background-size: 1300px;
+  }
 }
 
 .platform-info-icon {
