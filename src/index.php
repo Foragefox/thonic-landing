@@ -30,13 +30,12 @@
   </nav>
 
   <!-- Masthead-->
-  <header class="masthead align-items-center">
+  <header class="masthead">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="headline text-white">SECURE</div>
-          <div class="headline text-cyan">TRANSPARENT</div>
-          <div class="headline text-white">KNOWLEDGEABLE</div>
+          <div class="headline text-white">Invest in alt-coins with confidence.</div>
+          <div class="headline text-white">And get paid.</div>
         </div>
       </div>
     </div>
@@ -73,7 +72,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-7 col-xl-6">
-          <h2>Platform</h2>
+          <h2>Platform.</h2>
           <p class="subtitle mb-5">
             Thonic's platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. It will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.
           </p>
@@ -122,7 +121,7 @@
   <!-- Token -->
   <section class="our-token bg-cyan-brighter section-band" id="token">
     <div class="container">
-      <h2>Token</h2>
+      <h2>Token.</h2>
       <div class="row mb-4">
         <div class="col-12 col-md-8 mb-4">
           <p>
@@ -187,7 +186,6 @@
           <h3>Token Distribution</h3>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -197,7 +195,7 @@
     <div class="container">
       <div class="row mb-4">
         <div class="col-md-8">
-          <h2>Team</h2>
+          <h2>Team.</h2>
           <p class="subtitle">
             The Thonic team is made up of a diverse group of qualified professionals and entrepreneurs who have extensive experience in computer science, securities investment, marketing and running successful businesses. Check them out below!
           </p>
@@ -206,31 +204,31 @@
       <?php
       $team = [
         [
-          'photo' => 'https://via.placeholder.com/100x100',
+          'photo' => '/img/antonella.jpeg',
           'name' => 'Antonella<br>Buono',
           'title' => 'Content',
           'linkedin' => '#',
         ],
         [
-          'photo' => 'https://via.placeholder.com/100x100',
+          'photo' => '/img/david.jpeg',
           'name' => 'David<br>Jenkins',
           'title' => 'Marketing',
           'linkedin' => '#',
         ],
         [
-          'photo' => 'https://via.placeholder.com/100x100',
+          'photo' => '/img/demetri.jpeg',
           'name' => 'Demetri<br>Mihalakakos',
           'title' => 'Operations',
           'linkedin' => '#',
         ],
         [
-          'photo' => 'https://via.placeholder.com/100x100',
+          'photo' => '/img/deyan.jpeg',
           'name' => 'Deyan<br>Iolov',
           'title' => 'Technology',
           'linkedin' => '#',
         ],
         [
-          'photo' => 'https://via.placeholder.com/100x100',
+          'photo' => '/img/olaf.jpeg',
           'name' => 'Olaf<br>Kreitz',
           'title' => 'Strategy',
           'linkedin' => '#',
@@ -288,7 +286,7 @@
       <div class="row">
         <div class="col-md-5">
           <div class="sticky">
-            <h2>Roadmap</h2>
+            <h2>Roadmap.</h2>
             <p>
               The goal is to complete one phase per Fiscal Quarter and have the platform beta launched before the end of 2022. That being said, if all the milestones in a phase are ready before the end of the Fiscal Quarter, we will move onto the next phase immediately.
             </p>
@@ -508,7 +506,7 @@
             foreach ($faqs as $index => $faq) {
             ?>
               <div class="accordion-item mb-5">
-                <a class="text-decoration-none text-cyan h4" href="#" data-bs-toggle="collapse" data-bs-target="#faq-collapse-<?= $index ?>" aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="faq-collapse-<?= $index ?>">
+                <a class="text-decoration-none text-cyan h5 <?= $index == 0 ? '' : 'collapsed' ?>" href="#" data-bs-toggle="collapse" data-bs-target="#faq-collapse-<?= $index ?>" aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="faq-collapse-<?= $index ?>">
                   <?= $faq['question'] ?>
                 </a>
                 <div id="faq-collapse-<?= $index ?>" class="accordion-collapse collapse <?= $index == 0 ? 'show' : '' ?>" aria-labelledby="faq-heading-<?= $index ?>" data-bs-parent="#accordion-FAQ">
