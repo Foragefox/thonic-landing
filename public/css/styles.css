@@ -193,6 +193,16 @@ h2, .h2 { margin-bottom: 1rem; }
   min-width: 35px;
 }
 
+.legend-bullet {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+}
+
 .profile-photo {
   border-radius: 50%;
   width: 100px;

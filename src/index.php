@@ -186,6 +186,15 @@
           <h3>Token Distribution</h3>
         </div>
       </div>
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <img class="img-fluid" src="/img/distribution.svg" alt="Token distribution pie chart">
+        <div>
+          <div><span class="legend-bullet bg-black-brighter-20"></span> Burned</div>
+          <div><span class="legend-bullet bg-cyan-darker"></span> Private &amp; Presale</div>
+          <div><span class="legend-bullet bg-gray-darker"></span> Liquidity Pool</div>
+          <div><span class="legend-bullet bg-green"></span> Team</div>
+        </div>
+      </div>
     </div>
   </section>
 
