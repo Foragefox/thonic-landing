@@ -82,7 +82,7 @@
               [
                 'iconClass' => 'far fa-hourglass',
                 'heading' => 'Report Library',
-                'text' => 'Access standardized financial reporting on select cryptocurrencies. Our expert analysts will research coins and assign investment ratings to help you decide which one to invest in.'
+                'text' => 'Access standardized financial reporting on select cryptocurrencies. Our expert analysts will research coins and assign investment ratings to help you decide which one to invest in'
               ],
               [
                 'iconClass' => 'far fa-file-alt',
@@ -125,7 +125,7 @@
       <div class="row mb-4">
         <div class="col-12 col-md-8 mb-4">
           <p>
-            Thonic is a utility token that employs two key strategies to ensure holding the token is valuable. The first strategy is BuyBack & Burn, which encourages price stability and increases the value of the token by reducing supply. The initial token supply of 200,000,000,000 coins will be reduced to a circulating supply of 100,000,000,000 after the initial burn. Following this, all profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned.
+            Thonic is a utility token that employs two key strategies to ensure holding the token is profitable. The first strategy is BuyBack & Burn, which encourages price stability and increases the value of the token by reducing supply. The initial token supply of 200,000,000,000 coins will be reduced to a circulating supply of 100,000,000,000 after the initial burn. Following this, all profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned.
           </p>
           <p>
             The second strategy is earning passive income as 5% of each transaction is redistributed to token holders in $BUSD. Built on the Binance Smart Chain for its faster block speeds and lower transaction costs, Thonic is designed to be held longer term to benefit from both passive income and capital appreciation.
@@ -147,7 +147,7 @@
             'img' => '/img/busd.svg',
             'imgTitle' => '',
             'title' => 'BUSD Reflections',
-            'body' => 'Earn automatic Binance Pegged USD ($BUSD) rewards by simply holding Thonic tokens. 5% of every buy, transfer and sell transaction is redistributed automatically to $THONIC eligible holders.'
+            'body' => 'Earn automatic Binance Pegged USD ($BUSD) rewards by simply holding Thonic tokens: 5% of every buy, transfer and sell transaction is redistributed automatically to $THONIC eligible holders'
           ],
           [
             'img' => '/img/bunny.svg',
@@ -165,7 +165,7 @@
             'img' => '/img/whale.svg',
             'imgTitle' => '',
             'title' => 'Anti-Whale',
-            'body' => 'Our Anti-Whale Mechanism is a series of policies that prevent holders from purchasing large amounts of tokens at low prices during our launch phase.'
+            'body' => 'Our Anti-Whale Mechanism is a series of policies that prevent holders from purchasing large amounts of tokens at low prices during our launch phase'
           ]
         ];
         foreach ($features as $feature) {
@@ -269,17 +269,17 @@
   </section>
 
   <!-- Signup-->
-  <section class="signup-section" id="signup">
+  <section class="signup-section bg-gray" id="signup">
     <div class="container px-4 px-lg-5">
       <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-          <h2 class="text-white mb-5">Join the private sale</h2>
+        <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
+          <h2 class="text-navy mb-5">Join the private sale</h2>
           <form class="form-signup" name="signup" method="POST" action="/success" data-netlify="true">
             <div class="row">
-              <div class="col">
+              <div class="col-12 col-md pb-3 pb-md-0">
                 <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
-              <div class="col-auto">
+              <div class="col-12 col-md-auto">
                 <button class="btn btn-xl btn-primary" type="submit">ADD ME!</button>
               </div>
             </div>
@@ -296,9 +296,6 @@
         <div class="col-md-5">
           <div class="sticky">
             <h2>Roadmap.</h2>
-            <p>
-              The goal is to complete one phase per Fiscal Quarter and have the platform beta launched before the end of 2022. That being said, if all the milestones in a phase are ready before the end of the Fiscal Quarter, we will move onto the next phase immediately.
-            </p>
             <p>
               Now that we have introduced the concept and team behind Thonic, let's talk timelines! Thonic's token and platform will be launched over six phases, with one phase being completed each Fiscal Quarter. If all the milestones in a phase are met before the end of the Quarter, however, we will immediately move on to the next phase so the platform can be beta launched by the end of 2022.
             </p>
@@ -474,7 +471,7 @@
             $faqs = [
               [
                 'question' => 'Where can I register for the presale?',
-                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here<a>'
+                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here<a>.'
               ],
               [
                 'question' => 'What is slippage for?',
@@ -493,8 +490,8 @@
                 'answer' => 'It is applied to EVERY TRANSACTION, this includes: Buys, Sells and Transfers.
                 <ul>
                 <li>5% of every buy/transfer/sell is redistributed to all holders in $BUSD</li>
-                <li>2% of every transaction is transferred into the Liquidity Pool on Pancakeswap to create a stable price floor.</li>
-                <li>3% of every transaction is sent to the marketing wallet to fund marketing, utility development and community management.</li>
+                <li>2% of every transaction is transferred into the Liquidity Pool on Pancakeswap to create a stable price floor</li>
+                <li>3% of every transaction is sent to the marketing wallet to fund marketing, utility development and community management</li>
                 </ul>
                 '
               ],
@@ -504,7 +501,7 @@
               ],
               [
                 'question' => 'Where can I buy $THONIC?',
-                'answer' => 'If you are new to crypto currency we recommend you follow our How to Buy guides on our site'
+                'answer' => 'If you are new to cryptocurrency, we recommend you follow the "How to Buy" guides on our site.'
               ],
               [
                 'question' => 'Where can I get additional help?',

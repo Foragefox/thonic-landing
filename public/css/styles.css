@@ -12,11 +12,15 @@ h5, .h5,
 h6, .h6 { font-family: 'Montserrat', sans-serif; }
 
 h1, .h1 { font-weight: 500; font-size: 6.0625rem; letter-spacing: -1.5px; }
-h2, .h2 { font-weight: 500; font-size: 3.8125rem; letter-spacing: -0.5px; }
+h2, .h2 { font-weight: 500; font-size: 2.8125rem; letter-spacing: -0.5px; }
 h3, .h3 { font-weight: 400; font-size: 3rem; }
 h4, .h4 { font-weight: 400; font-size: 2.125rem; letter-spacing: 0.25px; }
 h5, .h5 { font-weight: 400; font-size: 1.5rem; }
 h6, .h6 { font-weight: 500; font-size: 1.25rem; letter-spacing: 0.15px; }
+
+@media (min-width: 768px) {
+  h2, .h2 { font-size: 3.8125rem; }
+}
 
 .subtitle { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: 0.15px;}
 .subtitle-2 { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 0.875rem; letter-spacing: 0.15px; text-transform: uppercase;}
@@ -224,12 +228,39 @@ h2, .h2 { margin-bottom: 1rem; }
 
 .signup-section {
   padding: 10rem 0;
-  background-image: url('https://via.placeholder.com/1920x1280');
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/img/background-2.svg), url(/img/background-3.svg);
+  background-position: left top -26px, right bottom -47px;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background-size: 70%, 100%;
 }
+
+@media(min-width: 576px) {
+  .signup-section {
+    background-position: left top -26px, right bottom -85px;
+    background-size: 60%, 85%;
+  }
+}
+@media (min-width: 768px) {
+  .signup-section {
+    background-position: left top -26px, right bottom -85px;
+    background-size: 50%, 70%;
+  }
+}
+@media (min-width: 992px) {
+  .signup-section {
+    background-position: left top -31px, right bottom -96px;
+    background-size: 45%, 65%;
+  }
+}
+@media (min-width: 1200px) {
+  .signup-section {
+    background-position: left top -31px, right bottom -102px;
+    background-size: 40%, 60%;
+  }
+}
+
 .signup-section .form-signup input {
   padding: 1.25rem 2rem;
   height: auto;
