@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="headline text-white">Invest in alt-coins with confidence.</div>
+          <div class="headline text-white">Invest in alt coins with confidence.</div>
           <div class="headline text-white">And get paid.</div>
         </div>
       </div>
@@ -47,16 +47,16 @@
       <div class="row justify-content-center mb-4">
         <div class="col-10">
           <p class="lead">
-            Buying cryptocurrency is challenging - it's a risky process with many steps. Determining which coin is a good investment and which will end in a rug pull is time consuming and requires in-depth research.
+            Buying cryptocurrency is risky. Did you do enough research and catch the red flags? Or will you be on the wrong end of a rug pull?
           </p>
           <p class="lead">
-            Enter Thonic: the first full-service investment platform that provides you with financial reporting on alt coins and helps you buy and sell digital currencies with confidence.
+            Let Thonic do for you what financial analysts do for investment firms: vet alt coins and help you make knowledgeable investment decisions.
           </p>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-10 col-sm-8 col-lg-6 col-xl-4 d-grid">
-          <a class="btn btn-xl btn-primary" href="#">READ THE WHITEPAPER</a>
+          <a class="btn btn-xl btn-primary" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf">READ THE WHITEPAPER</a>
         </div>
       </div>
     </div>
@@ -132,7 +132,7 @@
           </p>
         </div>
         <div class="col-12 col-md-4 text-center">
-          <a class="btn btn-xl btn-primary" href="#">GET THE WHITEPAPER</a>
+          <a class="btn btn-xl btn-primary" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf">GET THE WHITEPAPER</a>
         </div>
       </div>
       <div class="row">
@@ -274,7 +274,7 @@
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
           <h2 class="text-navy mb-5">Join the private sale</h2>
-          <form class="form-signup" name="signup" method="POST" action="/success" data-netlify="true">
+          <form class="form-signup" name="signup" method="POST" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
             <div class="row">
               <div class="col-12 col-md pb-3 pb-md-0">
                 <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
