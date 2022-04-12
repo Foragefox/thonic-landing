@@ -214,33 +214,33 @@
       $team = [
         [
           'photo' => '/img/antonella.jpeg',
-          'name' => 'Antonella<br>Buono',
+          'name' => 'Antonella B',
           'title' => 'Content',
-          'linkedin' => '#',
+          'linkedin' => 'https://www.linkedin.com/in/antonella-b-0892318a/',
         ],
         [
           'photo' => '/img/david.jpeg',
-          'name' => 'David<br>Jenkins',
+          'name' => 'David J',
           'title' => 'Marketing',
-          'linkedin' => '#',
+          'linkedin' => 'https://www.linkedin.com/in/dnjenkins/',
         ],
         [
           'photo' => '/img/demetri.jpeg',
-          'name' => 'Demetri<br>Mihalakakos',
+          'name' => 'Demetri M',
           'title' => 'Operations',
-          'linkedin' => '#',
+          'linkedin' => 'https://www.linkedin.com/in/demetri-mihalakakos-6b15a020/',
         ],
         [
           'photo' => '/img/deyan.jpeg',
-          'name' => 'Deyan<br>Iolov',
+          'name' => 'Deyan I',
           'title' => 'Technology',
-          'linkedin' => '#',
+          'linkedin' => 'https://www.linkedin.com/in/deyaniolov/',
         ],
         [
           'photo' => '/img/olaf.jpeg',
-          'name' => 'Olaf<br>Kreitz',
+          'name' => 'Olaf K',
           'title' => 'Strategy',
-          'linkedin' => '#',
+          'linkedin' => 'https://www.linkedin.com/in/okreitz/',
         ]
       ];
       ?>
@@ -327,12 +327,12 @@
                 ],
                 [
                   'icon' => 'fa fa-briefcase',
-                  'title' => 'KYC & Audit',
+                  'title' => 'KYC, dox &amp; audit',
                   'complete' => false
                 ],
                 [
-                  'icon' => 'fa fa-briefcase',
-                  'title' => 'Dox team',
+                  'icon' => 'fa fa-university',
+                  'title' => 'Raising capital',
                   'complete' => false
                 ]
               ]
@@ -340,11 +340,7 @@
             [
               'name' => 'Phase 2',
               'milestones' => [
-                [
-                  'icon' => 'fa fa-university',
-                  'title' => 'Raising capital',
-                  'complete' => false
-                ],
+
                 [
                   'icon' => 'fa fa-university',
                   'title' => 'Private Sale',
@@ -387,12 +383,12 @@
                 ],
                 [
                   'icon' => 'fa fa-briefcase',
-                  'title' => 'Coin market cap Application',
+                  'title' => 'Coin market cap application',
                   'complete' => false
                 ],
                 [
                   'icon' => 'fa fa-briefcase',
-                  'title' => 'Coin gecko Application',
+                  'title' => 'Coin gecko application',
                   'complete' => false
                 ],
                 [
@@ -408,6 +404,96 @@
                 [
                   'icon' => 'fa fa-chart-line',
                   'title' => 'Add 2 ambassadors to team',
+                  'complete' => false
+                ],
+              ]
+            ],
+            [
+              'name' => 'Phase 4',
+              'milestones' => [
+                [
+                  'icon' => 'fa fa-bullhorn',
+                  'title' => 'Poocoin ads',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-bullhorn',
+                  'title' => 'Coin market cap ads',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-bullhorn',
+                  'title' => 'Marketing outreach',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-bullhorn',
+                  'title' => 'How to buy videos',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-chart-line',
+                  'title' => '2000 holders',
+                  'complete' => false
+                ],
+              ]
+            ],
+            [
+              'name' => 'Phase 5',
+              'milestones' => [
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Alpha launch of platform',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Earnings calculator',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Direct token purchase',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Swap exchange',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-chart-line',
+                  'title' => 'Add 5 analysts on the team',
+                  'complete' => false
+                ],
+              ]
+            ],
+            [
+              'name' => 'Phase 6',
+              'milestones' => [
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Beta launch of platform',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Report notification and subscriptions',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-laptop-code',
+                  'title' => 'Portfolio management',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-chart-line',
+                  'title' => 'Add 10 analysts on the team',
+                  'complete' => false
+                ],
+                [
+                  'icon' => 'fa fa-chart-line',
+                  'title' => '250 platform subscribers',
                   'complete' => false
                 ],
               ]
