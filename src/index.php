@@ -255,7 +255,7 @@
                     <div class="h5 card-title"><?= $member['name'] ?></div>
                     <p class="small"><?= $member['title'] ?></p>
                     <div class="nav justify-content-center">
-                      <a href="<?= $member['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="<?= $member['linkedin'] ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                   </div>
                 </div>
@@ -557,7 +557,7 @@
             $faqs = [
               [
                 'question' => 'Where can I register for the presale?',
-                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here<a>.'
+                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here</a>.'
               ],
               [
                 'question' => 'What is slippage for?',
@@ -597,7 +597,7 @@
 
             foreach ($faqs as $index => $faq) {
             ?>
-              <div class="accordion-item mb-5">
+              <div class="accordion-item mb-4">
                 <a class="text-decoration-none text-cyan h5 <?= $index == 0 ? '' : 'collapsed' ?>" href="#" data-bs-toggle="collapse" data-bs-target="#faq-collapse-<?= $index ?>" aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="faq-collapse-<?= $index ?>">
                   <?= $faq['question'] ?>
                 </a>
