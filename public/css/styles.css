@@ -309,7 +309,7 @@ h2, .h2 { margin-bottom: 1rem; }
 .milestone-status::after { bottom: -11px; }
 
 /** FAQ **/
-#faq .accordion-item { background-color: #0C2746; border-color: #79C3DF; }
+#faq .accordion-item { background-color: #0C2746; border-color: #79C3DF; padding-bottom: 1.5rem;}
 #faq .accordion-item a:hover,
 #faq .accordion-item a:not(.collapsed) { color: #e9e9de; }
 #faq .accordion-item .accordion-body { color: #fff; }
