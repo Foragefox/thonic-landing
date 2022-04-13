@@ -1,10 +1,6 @@
 [build]
-    publish = "public"
-    command = "echo No build command"
-    node_bundler = "esbuild"
-
-[dev]
-    publish = "public"
+    publish = "dist"
+    command = "./build.sh"
     node_bundler = "esbuild"
 
 [[redirects]]
