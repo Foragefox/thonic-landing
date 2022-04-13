@@ -1,0 +1,19 @@
+{
+  "name": "thonic-landing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foragefox/thonic-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Foragefox/thonic-landing/issues"
+  },
+  "homepage": "https://github.com/Foragefox/thonic-landing#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
