@@ -34,6 +34,12 @@ module.exports.handler = async function (event, context) {
     return respond(400, errorMessage);
   }
 
+  const honeyPot = body.get("confirm");
+  if (honeyPot) {
+    console.log(`HONEY POT --${email}`);
+    return respond(200, "Saved email");
+  }
+
   if (!mailChimpListID) {
     errorMessage = "No LIST_ID supplied";
     console.log(errorMessage);

@@ -274,15 +274,20 @@
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
           <h2 class="text-navy mb-5">Join the private sale</h2>
-          <form class="form-signup" name="signup" method="POST" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form class="form-signup" name="signup" id="signup-form" method="POST" action="/api/signup">
             <div class="row">
               <div class="col-12 col-md pb-3 pb-md-0">
-                <input class="form-control" type="email" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
+                <input class="form-control" type="text" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
               </div>
               <div class="col-12 col-md-auto">
                 <button class="btn btn-xl btn-primary" type="submit">ADD ME!</button>
               </div>
             </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="confirm" tabindex="-1" value="">
+            </div>
+            <div id="form-error" class="bg-danger text-white mt-2 py-2 px-2 hide"></div>
+            <div id="form-success" class="bg-green mt-2 py-2 px-2 hide"></div>
           </form>
         </div>
       </div>
@@ -616,6 +621,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script type="text/javascript">
+    const validateEmail = (email) => {
+      return String(email)
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+    };
+
     window.addEventListener('DOMContentLoaded', event => {
 
       var navbarCollapsible = document.body.querySelector('#mainNav');
@@ -633,6 +646,56 @@
 
       document.addEventListener('scroll', navbarShrink);
       navbarShrink();
+
+      const form = document.getElementById("signup-form");
+      const formError = document.getElementById("form-error");
+      const formSuccess = document.getElementById("form-success");
+
+      function showFeedback(element, message) {
+        element.innerHTML = message;
+        setTimeout(() => {
+          element.classList.remove("hide");
+          element.classList.add("show");
+        }, 100);
+      }
+
+      function hideFeedback(element) {
+        element.classList.remove("show");
+        element.classList.add("hide");
+        element.innerHTML = "";
+      }
+
+      form.onsubmit = async (event) => {
+        event.preventDefault();
+        hideFeedback(formError);
+        hideFeedback(formSuccess)
+
+        const action = form.getAttribute("action");
+        const data = new FormData(form);
+        const email = data.get("email");
+
+        if (!validateEmail(email)) {
+          showFeedback(formError, "Please enter a valid email.");
+          return false;
+        }
+
+        const searchParams = new URLSearchParams(data);
+
+        fetch(action, {
+            method: 'POST',
+            body: searchParams
+          })
+          .then(response => {
+            return response.json();
+          })
+          .then(response => {
+            console.log(response);
+            showFeedback(formSuccess, "We have recorded your email and will notify you when the private sale is available.");
+          })
+          .catch(error => {
+            showFeedback(formError, "There was an error, please try again later.");
+          });
+      }
     });
   </script>
 </body>
