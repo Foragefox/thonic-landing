@@ -215,7 +215,8 @@ h2, .h2 { margin-bottom: 1rem; }
 
 @media (min-width: 1200px) {
   .masthead { 
-    height: 650px; 
+    height: 650px;
+    height: 100vh;
     padding-top: 8rem; 
     background-position: center bottom -31px;
     background-repeat: repeat-x;
