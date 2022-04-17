@@ -191,7 +191,7 @@ h2, .h2 { margin-bottom: 1rem; }
 @media (min-width: 576px) {
   .masthead { height: 400px; padding-top: 7.5rem;  }
   .masthead .headline { font-size: 2rem; }
-  .masthead .pattern { background-position: center bottom -18px; }
+  .masthead .pattern { background-position: center bottom -28px; }
 }
 
 @media (min-width: 768px) {
@@ -207,13 +207,13 @@ h2, .h2 { margin-bottom: 1rem; }
     flex-direction: column;
     justify-content: center;
   }
-  .masthead .pattern { background-position: center bottom -24px; }
+  .masthead .pattern { background-position: center bottom -30px; }
 }
 
 @media (min-width: 992px) {
   .masthead { height: 600px; height: 100vh; padding-top: 8rem; }
   .masthead .headline { font-size: 3rem; line-height: 4rem; }
-  .masthead .pattern { background-position: center bottom -24px; }
+  .masthead .pattern { background-position: center bottom -30px; }
 }
 
 @media (min-width: 1200px) {
@@ -223,9 +223,10 @@ h2, .h2 { margin-bottom: 1rem; }
     padding-top: 8rem; 
   }
   .masthead .pattern { 
-    background-position: center bottom -31px;
+    background-position: center bottom -30px;
     background-repeat: repeat-x;
-    background-size: 1300px; }
+    background-size: 1300px; 
+  }
 }
 
 .platform-info-icon {
