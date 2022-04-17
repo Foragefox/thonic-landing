@@ -177,18 +177,7 @@ h2, .h2 { margin-bottom: 1rem; }
   right: 0;
   background-image: url(/img/background-1.svg);
   background-repeat: no-repeat;
-  background-position: center bottom -14px;
-}
-
-.masthead .headline-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-position: center bottom -28px;
 }
 
 .masthead .headline {
@@ -207,6 +196,16 @@ h2, .h2 { margin-bottom: 1rem; }
 @media (min-width: 768px) {
   .masthead { height: 500px; height: 100vh; padding-top: 9rem; background-position: center bottom -24px; }
   .masthead .headline { font-size: 2.3rem; line-height: 3rem; }
+  .masthead .headline-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 992px) {
