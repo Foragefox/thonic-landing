@@ -65,16 +65,16 @@
   <!-- Platform -->
   <section class="platform section-band" id="platform">
     <div class="container">
+      <h2>Platform.</h2>
       <div class="row">
         <div class="col-12 col-md-8">
-          <h2>Platform.</h2>
           <p class="subtitle mb-5">
             Thonic's platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. It will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.
           </p>
         </div>
         <div class="d-none d-md-block col-md-4">
           <div class="text-center">
-            <img src="/img/platform-image.png" class="img-fluid mx-auto" alt="" />
+            <img src="/img/platform-image.png" class="img-fluid mx-auto w-90" alt="" />
           </div>
         </div>
       </div>
