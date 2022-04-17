@@ -185,12 +185,12 @@ h2, .h2 { margin-bottom: 1rem; }
 }
 
 @media (min-width: 768px) {
-  .masthead { height: 500px; padding-top: 9rem; background-position: center bottom -24px; }
+  .masthead { height: 500px; height: 100vh; padding-top: 9rem; background-position: center bottom -24px; }
   .masthead .headline { font-size: 2.3rem; line-height: 3rem; }
 }
 
 @media (min-width: 992px) {
-  .masthead { height: 600px; padding-top: 8rem; background-position: center bottom -29px; }
+  .masthead { height: 600px; height: 100vh; padding-top: 8rem; background-position: center bottom -29px; }
   .masthead .headline { font-size: 3rem; line-height: 4rem; }
 }
 
