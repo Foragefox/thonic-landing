@@ -72,15 +72,13 @@
             Thonic's platform is a software as a service (SaaS) that offers financial tools to help people invest in the digital market. It will be released in multiple phases and feature a multi-package pricing model, with each tier offering more personalized financial tools.
           </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-5 col-xl-6 mx-auto">
-          <div class="mb-5 text-center">
+        <div class="d-none d-md-block col-md-4">
+          <div class="text-center">
             <img src="/img/platform-image.png" class="img-fluid mx-auto" alt="" />
           </div>
         </div>
       </div>
-
+     
     
         
         <div class="row">
