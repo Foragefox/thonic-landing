@@ -81,47 +81,46 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-lg-8 mx-auto">
-          <div class="row">
-            <?php
-            $platformFeatures = [
-              [
-                'iconClass' => 'far fa-hourglass',
-                'heading' => 'Report Library',
-                'text' => 'Access standardized financial reporting on select cryptocurrencies. Our expert analysts will research coins and assign investment ratings to help you decide which one to invest in'
-              ],
-              [
-                'iconClass' => 'far fa-file-alt',
-                'heading' => 'Portfolio Management',
-                'text' => 'Access a financial performance dashboard that compares the performance of your holdings over time to that of the crypto industry'
-              ],
-              [
-                'iconClass' => 'far fa-heart',
-                'heading' => 'Brokerage Tools',
-                'text' => 'Make buying and selling alt coins and cryptocurrency easier as they reduce the number of transactional steps'
-              ],
-              [
-                'iconClass' => 'far fa-comment-dots',
-                'heading' => 'Notifications and Alerts',
-                'text' => 'Receive notifications when reporting is updated for cryptos on your watchlist'
-              ]
-            ];
-            foreach ($platformFeatures as $platformFeature) {
-            ?>
-              <div class="col-12 col-sm-6 d-flex mb-3 mb-md-5">
-                <div class="me-3 platform-info-icon text-cyan">
-                  <i class="<?= $platformFeature['iconClass'] ?>"></i>
-                </div>
-                <div class="info">
-                  <h6><?= $platformFeature['heading'] ?></h6>
-                  <p><?= $platformFeature['text'] ?></p>
-                </div>
+    
+        
+        <div class="row">
+          <?php
+          $platformFeatures = [
+            [
+              'iconClass' => 'far fa-hourglass',
+              'heading' => 'Report Library',
+              'text' => 'Access standardized financial reporting on select cryptocurrencies. Our expert analysts will research coins and assign investment ratings to help you decide which one to invest in'
+            ],
+            [
+              'iconClass' => 'far fa-file-alt',
+              'heading' => 'Portfolio Management',
+              'text' => 'Access a financial performance dashboard that compares the performance of your holdings over time to that of the crypto industry'
+            ],
+            [
+              'iconClass' => 'far fa-heart',
+              'heading' => 'Brokerage Tools',
+              'text' => 'Make buying and selling alt coins and cryptocurrency easier as they reduce the number of transactional steps'
+            ],
+            [
+              'iconClass' => 'far fa-comment-dots',
+              'heading' => 'Notifications and Alerts',
+              'text' => 'Receive notifications when reporting is updated for cryptos on your watchlist'
+            ]
+          ];
+          foreach ($platformFeatures as $platformFeature) {
+          ?>
+            <div class="col-12 col-sm-6 mb-3 mb-md-5">
+              <div class="platform-info-icon text-cyan">
+                <i class="<?= $platformFeature['iconClass'] ?>"></i>
               </div>
-            <?php } ?>
-          </div>
+              <div class="info">
+                <h6><?= $platformFeature['heading'] ?></h6>
+                <p><?= $platformFeature['text'] ?></p>
+              </div>
+            </div>
+          <?php } ?>
         </div>
-      </div>
+        
     </div>
   </section>
 
