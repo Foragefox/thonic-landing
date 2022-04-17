@@ -43,6 +43,7 @@
         </div>
       </div>
     </div>
+    <div class="pattern"></div>
   </header>
 
   <!-- About -->

@@ -167,6 +167,14 @@ h2, .h2 { margin-bottom: 1rem; }
   padding-top: 6rem;
   background: #0C2746;
   color: #FFF;
+}
+
+.masthead .pattern {
+  position: absolute;
+  top: 0;
+  bottom : 0;
+  left: 0;
+  right: 0;
   background-image: url(/img/background-1.svg);
   background-repeat: no-repeat;
   background-position: center bottom -14px;
@@ -178,6 +186,9 @@ h2, .h2 { margin-bottom: 1rem; }
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .masthead .headline {
