@@ -171,6 +171,10 @@ h2, .h2 { margin-bottom: 1rem; }
   background-position: center bottom -14px;
 }
 
+.masthead .headline-container {
+
+}
+
 .masthead .headline {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;

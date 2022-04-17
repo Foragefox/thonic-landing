@@ -34,8 +34,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="headline text-white">Invest in alt coins with confidence.</div>
-          <div class="headline text-white">And get paid.</div>
+          <div class="headline-container">
+            <div class="headline text-white">Invest in alt coins with confidence.</div>
+            <div class="headline text-white">And get paid.</div>
+          </div>
         </div>
       </div>
     </div>
