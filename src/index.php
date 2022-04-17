@@ -73,14 +73,12 @@
           </p>
         </div>
         <div class="d-none d-md-block col-md-4">
-          <div class="text-center">
-            <img src="/img/platform-image.png" class="img-fluid mx-auto w-90" alt="" />
+          <div class="text-center mx-5">
+            <img src="/img/platform-image.png" class="img-fluid mx-auto" alt="" />
           </div>
         </div>
       </div>
      
-    
-        
         <div class="row">
           <?php
           $platformFeatures = [
