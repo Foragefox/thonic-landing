@@ -177,7 +177,7 @@ h2, .h2 { margin-bottom: 1rem; }
   right: 0;
   background-image: url(/img/background-1.svg);
   background-repeat: no-repeat;
-  background-position: center bottom -28px;
+  background-position: center bottom -50px;
 }
 
 .masthead .headline {
@@ -191,7 +191,7 @@ h2, .h2 { margin-bottom: 1rem; }
 @media (min-width: 576px) {
   .masthead { height: 400px; padding-top: 7.5rem;  }
   .masthead .headline { font-size: 2rem; }
-  .masthead .pattern { background-position: center bottom -28px; }
+  .masthead .pattern { background-position: center bottom -55px; }
 }
 
 @media (min-width: 768px) {
@@ -207,13 +207,13 @@ h2, .h2 { margin-bottom: 1rem; }
     flex-direction: column;
     justify-content: center;
   }
-  .masthead .pattern { background-position: center bottom -30px; }
+  .masthead .pattern { background-position: center bottom -25px; }
 }
 
 @media (min-width: 992px) {
   .masthead { height: 600px; height: 100vh; padding-top: 8rem; }
   .masthead .headline { font-size: 3rem; line-height: 4rem; }
-  .masthead .pattern { background-position: center bottom -30px; }
+  .masthead .pattern { background-position: center bottom -35px; }
 }
 
 @media (min-width: 1200px) {
@@ -223,7 +223,7 @@ h2, .h2 { margin-bottom: 1rem; }
     padding-top: 8rem; 
   }
   .masthead .pattern { 
-    background-position: center bottom -30px;
+    background-position: center bottom -40px;
     background-repeat: repeat-x;
     background-size: 1300px; 
   }
