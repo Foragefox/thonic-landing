@@ -5,7 +5,32 @@
   <meta name="msapplication-TileColor" content="#0e2845">
   <meta name="theme-color" content="#0e2845">
 
-  <title>Thonic</title>
+  <?php
+  $url = 'https://thonic.finance';
+  $title = 'Thonic - financial tools to help people invest in the digital market';
+  $description = 'Let Thonic do for you what financial analysts do for investment firms: vet alt coins and help you make knowledgeable investment decisions.';
+  $image = 'https://thonic.finance/img/thonic-logo.png';
+  $imageAlt = 'Thonic logo';
+  ?>
+  <title><?= $title ?></title>
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="<?= $description ?>">
+
+  <meta property="og:title" content="<?= $title ?>">
+  <meta property="og:site_name" content="<?= $title ?>">
+  <meta property="og:url" content="<?= $url ?>">
+  <meta property="og:description" content="<?= $description ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="<?= $image ?>">
+  <meta property="og:image:alt" content="<?= $imageAlt ?>">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Thonic_crypto">
+  <meta name="twitter:url" content="<?= $url ?>">
+  <meta name="twitter:title" content="<?= $title ?>">
+  <meta name="twitter:description" content="<?= $description ?>">
+  <meta name="twitter:image" content="<?= $image ?>">
+  <meta name="twitter:image:alt" content="<?= $imageAlt ?>">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
