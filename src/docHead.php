@@ -7,7 +7,7 @@
 
   <?php
   $url = 'https://thonic.finance';
-  $title = 'Thonic - financial tools to help people invest in the digital market';
+  $title = 'Financial tools to help people invest in the digital market';
   $description = 'Let Thonic do for you what financial analysts do for investment firms: vet alt coins and help you make knowledgeable investment decisions.';
   $image = 'https://thonic.finance/img/thonic-logo.png';
   $imageAlt = 'Thonic logo';
