@@ -605,7 +605,7 @@
               ],
               [
                 'question' => 'Where can I buy $THONIC?',
-                'answer' => 'If you are new to cryptocurrency, we recommend you follow the "How to Buy" guides on our site.'
+                'answer' => 'If you are new to cryptocurrency, we recommend you follow the "How to Buy" guides on our site. Please note, this section will be added shortly after the presale is complete.'
               ],
               [
                 'question' => 'Where can I get additional help?',
