@@ -4,9 +4,9 @@
 <?php include "docHead.php" ?>
 
 <body data-bs-spy="scroll" data-bs-offset="82" data-bs-target="#mainNav">
-  <?php if (!empty($_ENV["GOOGLE_TAG_MANAGER"])) { ?>
+  <?php if (!empty($_SERVER["GOOGLE_TAG_MANAGER"])) { ?>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?= $_ENV["GOOGLE_TAG_MANAGER"] ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?= $_SERVER["GOOGLE_TAG_MANAGER"] ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   <?php } ?>
 
