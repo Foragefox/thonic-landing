@@ -163,7 +163,7 @@
             'body' => 'Earn automatic Binance Pegged USD ($BUSD) rewards by simply holding Thonic tokens: 5% of every buy, transfer and sell transaction is redistributed automatically to $THONIC eligible holders'
           ],
           [
-            'img' => '/img/bunny.svg',
+            'img' => '/img/liquidity.svg',
             'imgTitle' => '',
             'title' => 'Liquidity Pool',
             'body' => 'Our Smart contract deposits 2% from every buy, transfer and sell transaction into a locked and certified liquidity pool'
