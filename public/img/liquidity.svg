@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="246px" height="279px" viewBox="0 0 246 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>rain-drops-svgrepo-com</title>
+<svg width="198px" height="263px" viewBox="0 0 198 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="rain-drops-svgrepo-com" transform="translate(123.000000, 139.500000) rotate(-19.000000) translate(-123.000000, -139.500000) translate(34.000000, 23.000000)" fill="#000000" fill-rule="nonzero">
-            <path d="M5.595,111.875 C-11.59,158.388 12.134,209.993 58.643,227.192 C105.117,244.395 156.746,220.615 173.955,174.146 C191.13,127.678 142.476,0.602 142.476,0.602 C142.476,0.602 22.821,65.372 5.595,111.875 Z M35.054,130.141 C40.739,180.694 69.412,198.049 69.412,198.049 C18.311,182.793 35.054,130.141 35.054,130.141 Z" id="Shape"></path>
+        <g id="rain-drops-svgrepo-com" transform="translate(88.602565, 138.552313) rotate(-19.000000) translate(-88.602565, -138.552313) translate(-9.397435, 12.552313)" fill="#000000" fill-rule="nonzero">
+            <path d="M6.56247841,120.70549 C-12.3033351,170.986976 13.7410385,226.773016 64.7989447,245.36548 C115.818428,263.962268 172.497106,238.255611 191.389267,188.02169 C210.244102,137.78885 156.8314,0.41714523 156.8314,0.41714523 C156.8314,0.41714523 25.473302,70.4348143 6.56247841,120.70549 Z M38.9027751,140.451402 C45.143808,195.100209 76.6212284,213.861312 76.6212284,213.861312 C20.5221924,197.36927 38.9027751,140.451402 38.9027751,140.451402 Z" id="Shape"></path>
         </g>
     </g>
 </svg>
