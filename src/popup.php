@@ -31,12 +31,12 @@
               </form>
 
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-evenly">
+            <div class="col-lg-6 d-flex flex-column justify-content-evenly pb-4">
               <div class="text-center pb-3 pt-5">
                 <h5>Download whitepaper</h5>
                 <p class="lead">(No Email required)</p>
               </div>
-              <a class="btn btn-outline-primary mb-4" id="download-white-paper" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf">DOWNLOAD</a>
+              <a class="btn btn-outline-primary" id="download-white-paper" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf">DOWNLOAD</a>
             </div>
 
           </div>
