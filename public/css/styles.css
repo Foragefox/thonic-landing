@@ -62,19 +62,24 @@ label { font-family: 'Inter', sans-serif; font-size: 0.625rem; font-weight: 700;
 .btn.btn-xl { font-size: 1rem; padding: 1.25rem 2rem; }
 
 .btn-primary { background-color: #0C2746; border-color: #0C2746; }
-.btn-primary:hover { background-color: #15447a; border-color: #15447a; }
+.btn-primary:is(:focus,:hover) { background-color: #15447a; border-color: #15447a; }
 .btn-outline-primary {color: #0C2746; border-color: #0C2746; }
-.btn-outline-primary:hover { background-color: #15447a; border-color: #15447a;}
+.btn-outline-primary:is(:focus,:hover) { color: #fff; background-color: #15447a; border-color: #15447a;}
 
 .btn-secondary { color: #2d363f; background-color: #d1d1c7; border-color: #d1d1c7; }
-.btn-secondary:hover { color: #161c23; background-color: #e9e9de; border-color: #e9e9de; }
+.btn-secondary:is(:focus,:hover) { color: #161c23; background-color: #e9e9de; border-color: #e9e9de; }
 .btn-outline-secondary {color: #2d363f; border-color: #d1d1c7; }
-.btn-outline-secondary:hover { color: #2d363f; background-color: #e9e9de; border-color: #e9e9de; }
+.btn-outline-secondary:is(:focus,:hover) { color: #2d363f; background-color: #e9e9de; border-color: #e9e9de; }
 
 .btn-info { color: #0C2746; background-color: #D7FF45; border-color: #D7FF45; }
-.btn-info:hover { background-color: #b2e200; border-color: #b2e200; }
+.btn-info:is(:focus,:hover) { background-color: #b2e200; border-color: #b2e200; }
 .btn-outline-info {color: #2d363f; border-color: #D7FF45; }
-.btn-outline-info:hover { color: #2d363f; background-color: #D7FF45; border-color: #d7ff45; }
+.btn-outline-info:is(:focus,:hover) { color: #2d363f; background-color: #D7FF45; border-color: #d7ff45; }
+
+.modal-header {border-bottom: none; }
+.modal-content { border: none; border-radius: 0; }
+
+.form-control { border-radius: 0; }
 
 /* UI KIT OVERRIDES END */
 
@@ -292,11 +297,10 @@ h2, .h2 { margin-bottom: 1rem; }
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
-  border-radius: 0;
 }
 
-#form-error.hide, 
-#form-success.hide {
+.form-error.hide, 
+.form-success.hide {
   opacity: 0;
   -webkit-transition: opacity 0s;
      -moz-transition: opacity 0s;
@@ -304,13 +308,23 @@ h2, .h2 { margin-bottom: 1rem; }
           transition: opacity 0s;
 }
 
-#form-error.show, 
-#form-success.show {
+.form-error.show, 
+.form-success.show {
   opacity: 1;
   -webkit-transition: opacity 1s;
      -moz-transition: opacity 1s;
        -o-transition: opacity 1s;
           transition: opacity 1s;
+}
+
+.col-lg-6.rule-end {
+  border-bottom: 1px solid #d1d1c7;
+}
+@media (min-width: 992px) {
+  .col-lg-6.rule-end {
+    border-right: 1px solid #d1d1c7;
+    border-bottom: none;
+  }
 }
 
 /** Roadmap **/
