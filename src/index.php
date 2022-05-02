@@ -286,7 +286,7 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h2 class="text-navy mb-5">Join the private sale</h2>
+          <h2 class="text-navy mb-5">Join the presale</h2>
           <form class="form-signup" name="signup" id="signup-form" method="POST" action="/api/signup">
             <div class="row">
               <div class="col-12 col-md pb-3 pb-md-0">
@@ -685,7 +685,7 @@
         })
         .then(response => {
           console.log(response);
-          showFeedback(formSuccess, "We have recorded your email and will notify you when the private sale is available.");
+          showFeedback(formSuccess, "We have recorded your email and will notify you when the presale is available.");
         })
         .catch(error => {
           showFeedback(formError, "There was an error, please try again later.");
