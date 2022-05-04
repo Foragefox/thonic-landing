@@ -27,7 +27,7 @@
           <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
           <li class="nav-item"><a class="nav-link" href="#token">Token</a></li>
           <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="#presale">Presale</a></li>
           <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
           <li class="nav-item d-lg-none"><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
@@ -281,13 +281,13 @@
     </div>
   </section>
 
-  <!-- Signup-->
-  <section class="signup-section bg-gray" id="signup">
+  <!-- Presale-->
+  <section class="presale-section bg-gray" id="presale">
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
           <h2 class="text-navy mb-5">Join the presale</h2>
-          <form class="form-signup" name="signup" id="signup-form" method="POST" action="/api/signup">
+          <form class="form-presale" name="presale" id="presale-form" method="POST" action="/api/presale">
             <div class="row">
               <div class="col-12 col-md pb-3 pb-md-0">
                 <input class="form-control" type="text" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
@@ -575,7 +575,7 @@
             $faqs = [
               [
                 'question' => 'Where can I register for the presale?',
-                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#signup">here</a>.'
+                'answer' => 'You can find the whitelist registration form <a class="text-white" href="#presale">here</a>.'
               ],
               [
                 'question' => 'What is slippage for?',
@@ -710,9 +710,9 @@
       document.addEventListener('scroll', navbarShrink);
       navbarShrink();
 
-      const signupForm = document.getElementById("signup-form");
-      signupForm.onsubmit = async (event) => {
-        submitEmailFormAjax(event, signupForm)
+      const presaleForm = document.getElementById("presale-form");
+      presaleForm.onsubmit = async (event) => {
+        submitEmailFormAjax(event, presaleForm)
       }
 
       const downloadForm = document.getElementById("download-form");

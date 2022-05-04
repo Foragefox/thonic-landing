@@ -14,7 +14,7 @@
                 Let me know when the presale launches
               </h5>
 
-              <form class="form-download" name="download" id="download-form" method="POST" action="/api/signup">
+              <form class="form-download" name="download" id="download-form" method="POST" action="/api/presale">
                 <div class="row">
                   <div class="col-12 pb-3">
                     <input class="form-control text-center" type="text" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
