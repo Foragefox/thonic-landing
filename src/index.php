@@ -635,81 +635,9 @@
   <?php include "popup.php" ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="/js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
-    function validateEmail(email) {
-      return String(email)
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
-    }
-
-    function showFeedback(element, message) {
-      element.innerHTML = message;
-      setTimeout(() => {
-        element.classList.remove("hide");
-        element.classList.add("show");
-      }, 100);
-    }
-
-    function hideFeedback(element) {
-      element.classList.remove("show");
-      element.classList.add("hide");
-      element.innerHTML = "";
-    }
-
-    function submitEmailFormAjax(event, form) {
-      event.preventDefault();
-      const formError = form.getElementsByClassName("form-error")[0];
-      const formSuccess = form.getElementsByClassName("form-success")[0];
-      hideFeedback(formError);
-      hideFeedback(formSuccess)
-
-      const action = form.getAttribute("action");
-      const data = new FormData(form);
-      const email = data.get("email");
-
-      if (!validateEmail(email)) {
-        showFeedback(formError, "Please enter a valid email.");
-        return false;
-      }
-
-      const searchParams = new URLSearchParams(data);
-
-      return fetch(action, {
-          method: 'POST',
-          body: searchParams
-        })
-        .then(response => {
-          return response.json();
-        })
-        .then(response => {
-          console.log(response);
-          showFeedback(formSuccess, "We have recorded your email and will notify you when the presale is available.");
-        })
-        .catch(error => {
-          showFeedback(formError, "There was an error, please try again later.");
-        });
-    }
-
     window.addEventListener('DOMContentLoaded', event => {
-
-      var navbarCollapsible = document.body.querySelector('#mainNav');
-
-      var navbarShrink = function() {
-        if (!navbarCollapsible) {
-          return;
-        }
-        if (window.scrollY === 0) {
-          navbarCollapsible.classList.remove('navbar-white')
-        } else {
-          navbarCollapsible.classList.add('navbar-white')
-        }
-      };
-
-      document.addEventListener('scroll', navbarShrink);
-      navbarShrink();
-
       const presaleForm = document.getElementById("presale-form");
       presaleForm.onsubmit = async (event) => {
         submitEmailFormAjax(event, presaleForm)
