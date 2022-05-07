@@ -50,7 +50,7 @@ function submitEmailFormAjax(event, form) {
 
   if (!validateEmail(email)) {
     showFeedback(formError, "Please enter a valid email.");
-    return false;
+    return Promise.resolve(false);
   }
 
   return fetch(action, {
@@ -81,7 +81,7 @@ function submitWhitelistFormAjax(event, form) {
 
   if (!wallet) {
     showFeedback(formError, "Please enter a valid wallet address.");
-    return false;
+    return Promise.resolve(false);
   }
 
   return fetch(action, {
