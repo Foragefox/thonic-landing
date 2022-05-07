@@ -11,7 +11,7 @@
   <?php } ?>
 
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="/img/logo-green.svg" alt="Thonic Logo" class="logo fixed" />
@@ -36,7 +36,7 @@
   </nav>
 
   <!-- Whitelist-->
-  <section class="whitelist-section section-band bg-gray" id="whitelist">
+  <section class="whitelist-section section-band bg-gray mt-5" id="whitelist">
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
@@ -46,7 +46,7 @@
                 <div class="col-12 col-md pb-3 pb-md-0">
                   <input class="form-control" type="text" name="wallet-address" placeholder="Enter wallet address..." aria-label="Enter wallet address..." />
                 </div>
-                <div class="col-12 col-md-auto">
+                <div class="col-12 col-md-auto d-grid gap-2">
                   <button class="btn btn-primary" type="submit" id="submit-whitelist-form">ADD</button>
                 </div>
               </div>
