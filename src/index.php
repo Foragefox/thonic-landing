@@ -268,7 +268,7 @@
                     <div class="h5 card-title"><?= $member['name'] ?></div>
                     <p class="small"><?= $member['title'] ?></p>
                     <div class="nav justify-content-center">
-                      <a href="<?= $member['linkedin'] ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="<?= $member['linkedin'] ?>" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                   </div>
                 </div>
@@ -345,13 +345,13 @@
                 ],
                 [
                   'icon' => 'fa fa-briefcase',
-                  'title' => 'KYC, dox &amp; audit',
-                  'complete' => false
+                  'title' => '<a href="https://spywolf.network/#/token/0x0b91177B96bee81aa276bDbE68f4Dbdc7ee57D8f" target="_blank" rel="noopener">KYC, dox &amp; audit</a>',
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-university',
                   'title' => 'Raising capital',
-                  'complete' => false
+                  'complete' => true
                 ]
               ]
             ],
@@ -609,7 +609,7 @@
               ],
               [
                 'question' => 'Where can I get additional help?',
-                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/+ojQiMqZaO_s5ZTM5" target="_blank">https://t.me/+ojQiMqZaO_s5ZTM5</a>'
+                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/+ojQiMqZaO_s5ZTM5" target="_blank" rel="noopener">https://t.me/+ojQiMqZaO_s5ZTM5</a>'
               ]
             ];
 
