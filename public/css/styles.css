@@ -14,13 +14,14 @@ h6, .h6 { font-family: 'Montserrat', sans-serif; }
 h1, .h1 { font-weight: 500; font-size: 6.0625rem; letter-spacing: -1.5px; }
 h2, .h2 { font-weight: 500; font-size: 2.8125rem; letter-spacing: -0.5px; }
 h3, .h3 { font-weight: 400; font-size: 2rem; }
-h4, .h4 { font-weight: 400; font-size: 2.125rem; letter-spacing: 0.25px; }
+h4, .h4 { font-weight: 400; font-size: 1.5rem; letter-spacing: 0.25px; }
 h5, .h5 { font-weight: 400; font-size: 1.5rem; }
 h6, .h6 { font-weight: 500; font-size: 1.25rem; letter-spacing: 0.15px; }
 
 @media (min-width: 768px) {
   h2, .h2 { font-size: 3.8125rem; }
   h3, .h3 { font-size: 3rem; }
+  h4, .h4 { font-size: 2.125rem; }
 }
 
 .subtitle { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: 0.15px;}
@@ -195,13 +196,13 @@ h2, .h2 { margin-bottom: 1rem; }
 }
 
 @media (min-width: 576px) {
-  .masthead { height: 400px; padding-top: 7.5rem;  }
+  .masthead { height: 400px; }
   .masthead .headline { font-size: 2rem; }
   .masthead .pattern { background-position: center bottom -55px; }
 }
 
 @media (min-width: 768px) {
-  .masthead { height: 500px; height: 100vh; padding-top: 9rem;  }
+  .masthead { height: 500px; height: 100vh; }
   .masthead .headline { font-size: 2.3rem; line-height: 3rem; }
   .masthead .headline-container {
     position: fixed;
@@ -217,21 +218,40 @@ h2, .h2 { margin-bottom: 1rem; }
 }
 
 @media (min-width: 992px) {
-  .masthead { height: 600px; height: 100vh; padding-top: 8rem; }
+  .masthead { height: 600px; height: 100vh; }
   .masthead .headline { font-size: 3rem; line-height: 4rem; }
   .masthead .pattern { background-position: center bottom -35px; }
 }
 
 @media (min-width: 1200px) {
-  .masthead { 
-    height: 650px;
-    height: 100vh;
-    padding-top: 8rem; 
-  }
+  .masthead { height: 650px; height: 100vh; }
   .masthead .pattern { 
     background-position: center bottom -40px;
     background-repeat: repeat-x;
     background-size: 1300px; 
+  }
+}
+
+.callout-banner .h4 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .callout-banner {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .callout-banner .h4 {
+    margin-bottom: 0;
+  }
+
+  .callout-banner .btn.btn-primary {
+    font-size: 1rem; 
+    padding: 1.25rem 2rem;
   }
 }
 

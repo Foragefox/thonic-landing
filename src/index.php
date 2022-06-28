@@ -52,6 +52,17 @@
     <div class="pattern"></div>
   </header>
 
+  <section class="callout-banner bg-green p-3 text-center">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
+        <div class="h4">WHITELIST REGISTRATION FOR OUR PRESALE IS NOW OPEN</div>
+      </div>
+      <div class="col-12 col-md-4 col-xl-3 d-flex justify-content-center align-items-center">
+        <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#read-white-paper">JOIN WHITELIST</button>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
   <section class="about bg-cyan text-navy section-band" id="about">
     <div class="container">
