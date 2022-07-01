@@ -52,13 +52,14 @@
     <div class="pattern"></div>
   </header>
 
+  <!-- Presale CTA -->
   <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
         <div class="h4">WHITELIST REGISTRATION FOR OUR PRESALE IS NOW OPEN</div>
       </div>
       <div class="col-12 col-md-4 col-xl-3 d-flex justify-content-center align-items-center">
-        <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#read-white-paper">JOIN WHITELIST</button>
+        <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#presale-popup">JOIN WHITELIST</button>
       </div>
     </div>
   </section>
@@ -645,6 +646,8 @@
 
   <?php include "popup.php" ?>
 
+  <?php include "presale-popup.php" ?>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="/js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -660,6 +663,19 @@
         promise.finally(() => {
           document.getElementById("download-white-paper").click();
         });
+      }
+
+      const notifyForm = document.getElementById("notify-presale-form");
+      notifyForm.onsubmit = async (event) => {
+        submitEmailFormAjax(event, notifyForm)
+      }
+
+      const whitelistForm = document.getElementById("whitelist-form");
+      whitelistForm.onsubmit = async (event) => {
+        const submitButton = document.getElementById("submit-whitelist-form");
+        submitButton.disabled = true;
+        const promise = submitWhitelistFormAjax(event, whitelistForm);
+        promise.finally(() => submitButton.disabled = false);
       }
     });
   </script>

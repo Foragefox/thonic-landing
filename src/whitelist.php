@@ -67,11 +67,11 @@
   <script src="/js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', event => {
-      const presaleForm = document.getElementById("whitelist-form");
-      presaleForm.onsubmit = async (event) => {
+      const whitelistForm = document.getElementById("whitelist-form");
+      whitelistForm.onsubmit = async (event) => {
         const submitButton = document.getElementById("submit-whitelist-form");
         submitButton.disabled = true;
-        const promise = submitWhitelistFormAjax(event, presaleForm);
+        const promise = submitWhitelistFormAjax(event, whitelistForm);
         promise.finally(() => submitButton.disabled = false);
       }
     });
