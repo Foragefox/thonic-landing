@@ -309,7 +309,7 @@
               </div>
             </div>
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input type="text" name="source" tabindex="-1" value="">
+              <input type="hidden" name="source" tabindex="-1" value="">
               <input type="text" name="confirm" tabindex="-1" value="">
             </div>
             <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
@@ -677,6 +677,13 @@
         submitButton.disabled = true;
         const promise = submitWhitelistFormAjax(event, whitelistForm);
         promise.finally(() => submitButton.disabled = false);
+      }
+
+      var inputs = document.querySelectorAll("form input[name=source]");
+      var params = (new URL(document.location)).searchParams;
+      var source = params.get('utm_source');
+      if (inputs.length && source) {
+        inputs.forEach(element => element.value = source);
       }
     });
   </script>
