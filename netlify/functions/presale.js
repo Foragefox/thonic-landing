@@ -49,7 +49,9 @@ module.exports.handler = async function (event, context) {
   const subscriber = {
     email_address: email,
     status: "subscribed",
-    merge_fields: {}
+    merge_fields: {
+      "SOURCE": body.get("source")
+    }
   };
 
   console.log("Sending data to mailchimp", JSON.stringify(subscriber));
