@@ -46,6 +46,7 @@ module.exports.handler = async function (event, context) {
 
   const data = new URLSearchParams();
   data.set("wallet-address", walletAddress);
+  data.set("source", body.get("source"));
   console.log("Sending data to webapp", data.toString());
 
   try {

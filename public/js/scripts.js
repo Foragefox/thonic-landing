@@ -98,3 +98,10 @@ function submitWhitelistFormAjax(event, form) {
       showFeedback(formError, "There was an error, please try again later.");
     });
 }
+
+var inputs = document.querySelectorAll("form input[name=source]");
+var params = (new URL(document.location)).searchParams;
+var source = params.get('utm_source');
+if (inputs.length && source) {
+  inputs.forEach(element => element.value = source);
+}
