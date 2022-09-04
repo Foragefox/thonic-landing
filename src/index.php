@@ -375,32 +375,27 @@
                 [
                   'icon' => 'fa fa-university',
                   'title' => 'Private Sale',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-bullhorn',
                   'title' => 'Social Development',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-bullhorn',
                   'title' => 'Marketing Development',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-chart-line',
                   'title' => '1000 telegram followers',
-                  'complete' => false
-                ],
-                [
-                  'icon' => 'fa fa-chart-line',
-                  'title' => '250 holders',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-chart-line',
                   'title' => 'Accepting requests for the whitelist presale',
-                  'complete' => false
+                  'complete' => true
                 ],
               ]
             ],
