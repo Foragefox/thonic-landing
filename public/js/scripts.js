@@ -107,7 +107,7 @@ if (inputs.length && source) {
 }
 
 function updateTimer(set) {
-  future = Date.parse("2022-09-16 09:00:00");
+  future = new Date("2022/09/16 09:00:00-0000");
   now = new Date();
   diff = future - now;
 
