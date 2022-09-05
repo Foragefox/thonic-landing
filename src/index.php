@@ -29,6 +29,7 @@
           <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="#presale">Presale</a></li>
           <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#partners">Partners</a></li>
           <li class="nav-item d-lg-none"><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
       </div>
@@ -573,7 +574,7 @@
   </section>
 
   <!-- Partners -->
-  <section class="section-band bg-gray">
+  <section class="section-band bg-gray" id="partners">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-8 text-center">
