@@ -572,6 +572,33 @@
     </div>
   </section>
 
+  <!-- Partners -->
+  <section class="section-band bg-gray">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <h2>Partners.</h2>
+        </div>
+      </div>
+      <div class="row gy-3 justify-content-center">
+        <div class="col-md-6 col-lg-4 d-flex">
+          <a class="d-flex" href="https://www.pinksale.finance" target="_blank">
+            <div class="card text-bg-dark justify-content-center">
+              <img src="/img/pinksale-2000x1000.png" class="card-img" alt="Pink Sale">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <a class="d-flex" href="https://spywolf.network" target="_blank">
+            <div class="card text-bg-dark justify-content-center p-5 w-100">
+              <img src="/img/SpyWolf.png" class="card-img" alt="Spy Wolf">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="bg-navy section-band" id="faq">
     <div class="container">
