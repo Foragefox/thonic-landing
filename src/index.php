@@ -41,10 +41,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-
             <div class="headline text-white">Invest in alt coins with confidence.</div>
             <div class="headline text-white">And get paid.</div>
-
           </div>
         </div>
       </div>
@@ -56,10 +54,16 @@
   <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
-        <div class="h4">WHITELIST REGISTRATION FOR OUR PRESALE IS NOW OPEN</div>
+        <div class="h4 mb-3">PRESALE LAUNCHES IN</div>
+        <div class="timer h5 font-monospace">
+          <span id="timer-days" class="badge bg-gray text-black">00</span>
+          <span id="timer-hours" class="badge bg-gray text-black">00</span>
+          <span id="timer-minutes" class="badge bg-gray text-black">00</span>
+          <span id="timer-seconds" class="badge bg-gray text-black">00</span>
+        </div>
       </div>
       <div class="col-12 col-md-4 col-xl-3 d-flex justify-content-center align-items-center">
-        <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#presale-popup">JOIN WHITELIST</button>
+        <a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a>
       </div>
     </div>
   </section>

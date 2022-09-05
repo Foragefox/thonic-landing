@@ -105,3 +105,35 @@ var source = params.get('utm_source');
 if (inputs.length && source) {
   inputs.forEach(element => element.value = source);
 }
+
+function updateTimer(set) {
+  future = Date.parse("2022-09-16 09:00:00");
+  now = new Date();
+  diff = future - now;
+
+  days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  hours = Math.floor(diff / (1000 * 60 * 60));
+  mins = Math.floor(diff / (1000 * 60));
+  secs = Math.floor(diff / 1000);
+
+  d = days;
+  h = hours - days * 24;
+  m = mins - hours * 60;
+  s = secs - mins * 60;
+
+  if (set || (h == 23 && m == 59 && s == 59)) {
+    document.getElementById("timer-days").innerHTML = String(d).padStart(2, '0');
+  }
+
+  if (set || (m == 59 && s == 59)) {
+    document.getElementById("timer-hours").innerHTML = String(h).padStart(2, '0');
+  }
+
+  if (set || s == 59) {
+    document.getElementById("timer-minutes").innerHTML = String(m).padStart(2, '0');
+  }
+
+  document.getElementById("timer-seconds").innerHTML = String(s).padStart(2, '0');
+}
+updateTimer(true);
+setInterval('updateTimer(false)', 1000);
