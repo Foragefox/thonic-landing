@@ -41,8 +41,8 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
-          <h1 class="text-navy h3 text-center">BNB Purchase</h1>
-          <div class="lead mb-5 text-center">(In Canadian Currency)</div>
+          <h1 class="text-navy h3 text-center">BNB Exchange</h1>
+          <div class="lead mb-5 text-center">(From Canadian Currency)</div>
 
           <form class="form-exchange" name="exchange" id="exchange-form" method="POST" action="/api/exchange">
             <div class="row">
