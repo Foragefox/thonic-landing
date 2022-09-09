@@ -1,6 +1,6 @@
 const axios = require('axios').default
 
-const sheetsWebAppUrl = process.env.SHEETS_WEBAPP_URL;
+const sheetsWebAppUrl = process.env.EXCHANGE_WEBAPP_URL;
 
 function respond(code, body) {
   return {
