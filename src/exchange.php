@@ -37,27 +37,38 @@
   </nav>
 
   <!-- Whitelist-->
-  <section class="whitelist-section section-band bg-gray mt-5" id="whitelist">
+  <section class="whitelist-section section-band bg-gray mt-5">
     <div class="container px-4 px-lg-5">
       <div class="row">
-        <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h1 class="text-navy h3 mb-5">Get added to the whitelist for our presale.</h2>
-            <form class="form-whitelist" name="whitelist" id="whitelist-form" method="POST" action="/api/whitelist">
-              <div class="row">
-                <div class="col-12 col-md pb-3 pb-md-0">
-                  <input class="form-control" type="text" name="wallet-address" placeholder="Enter wallet address..." aria-label="Enter wallet address..." />
-                </div>
-                <div class="col-12 col-md-auto d-grid gap-2">
-                  <button class="btn btn-primary" type="submit" id="submit-whitelist-form">ADD</button>
-                </div>
+        <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
+          <h1 class="text-navy h3 text-center">BNB Purchase</h1>
+          <div class="lead mb-5 text-center">(In Canadian Currency)</div>
+
+          <form class="form-exchange" name="exchange" id="exchange-form" method="POST" action="/api/exchange">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <label class="form-label" for="email-address">Your email address</label>
+                <input id="email-address" class="form-control" type="email" name="email" placeholder="jane@gmail.com" />
               </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="hidden" name="source" tabindex="-1" value="">
-                <input type="text" name="confirm" tabindex="-1" value="">
+              <div class="col-12 mb-3">
+                <label class="form-label" for="wallet-address">Your wallet address</label>
+                <input id="wallet-address" class="form-control" type="text" name="wallet-address" placeholder="0x123456789..." />
               </div>
-              <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
-              <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
-            </form>
+              <div class="col-12 mb-3">
+                <label class="form-label" for="amount">Amount (in CAD) you'd like to exchange to BNB</label>
+                <input id="amount" class="form-control" type="number" min="0" name="amount" placeholder="1000" />
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit" id="submit-exchange-form">START</button>
+              </div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="hidden" name="source" tabindex="-1" value="">
+              <input type="text" name="confirm" tabindex="-1" value="">
+            </div>
+            <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
+            <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
+          </form>
         </div>
       </div>
     </div>
@@ -69,11 +80,12 @@
   <script src="/js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', event => {
-      const whitelistForm = document.getElementById("whitelist-form");
-      whitelistForm.onsubmit = async (event) => {
-        const submitButton = document.getElementById("submit-whitelist-form");
+      const exchangeForm = document.getElementById("exchange-form");
+      exchangeForm.onsubmit = async (event) => {
+        const submitButton = document.getElementById("submit-exchange-form");
         submitButton.disabled = true;
-        const promise = submitWhitelistFormAjax(event, whitelistForm);
+
+        const promise = submitExchangeFormAjax(event, exchangeForm);
         promise.finally(() => submitButton.disabled = false);
       }
     });

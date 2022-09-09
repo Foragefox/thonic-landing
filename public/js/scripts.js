@@ -99,12 +99,62 @@ function submitWhitelistFormAjax(event, form) {
     });
 }
 
+function submitExchangeFormAjax(event, form) {
+  event.preventDefault();
+  const formError = form.getElementsByClassName("form-error")[0];
+  const formSuccess = form.getElementsByClassName("form-success")[0];
+  hideFeedback(formError);
+  hideFeedback(formSuccess)
+
+  const action = form.getAttribute("action");
+  const data = new FormData(form);
+
+  const email = data.get("email");
+  if (!validateEmail(email)) {
+    showFeedback(formError, "Please enter a valid email address.");
+    return Promise.resolve(false);
+  }
+
+  const wallet = data.get("wallet-address");
+  if (!wallet) {
+    showFeedback(formError, "Please enter a valid wallet address.");
+    return Promise.resolve(false);
+  }
+
+  const amount = data.get("amount");
+  if (amount == 0) {
+    showFeedback(formError, "Please enter an amount greater than 0.");
+    return Promise.resolve(false);
+  }
+
+  return fetch(action, {
+    method: 'POST',
+    body: new URLSearchParams(data)
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      showFeedback(formSuccess, "Your request has been accepted, please await further instructions.");
+    })
+    .catch(error => {
+      showFeedback(formError, "There was an error, please try again later.");
+    });
+}
+
+// Add campaign code to forms
 var inputs = document.querySelectorAll("form input[name=source]");
 var params = (new URL(document.location)).searchParams;
 var source = params.get('utm_source');
 if (inputs.length && source) {
   inputs.forEach(element => element.value = source);
 }
+
+// Countdown timer
+const timerDays = document.getElementById("timer-days");
+const timerHours = document.getElementById("timer-hours");
+const timerMinutes = document.getElementById("timer-minutes");
+const timerSeconds = document.getElementById("timer-seconds");
 
 function updateTimer(set) {
   future = new Date("2022/09/16 09:00:00-0000");
@@ -122,18 +172,21 @@ function updateTimer(set) {
   s = secs - mins * 60;
 
   if (set || (h == 23 && m == 59 && s == 59)) {
-    document.getElementById("timer-days").innerHTML = String(d).padStart(2, '0');
+    timerDays.innerHTML = String(d).padStart(2, '0');
   }
 
   if (set || (m == 59 && s == 59)) {
-    document.getElementById("timer-hours").innerHTML = String(h).padStart(2, '0');
+    timerHours.innerHTML = String(h).padStart(2, '0');
   }
 
   if (set || s == 59) {
-    document.getElementById("timer-minutes").innerHTML = String(m).padStart(2, '0');
+    timerMinutes.innerHTML = String(m).padStart(2, '0');
   }
 
-  document.getElementById("timer-seconds").innerHTML = String(s).padStart(2, '0');
+  timerSeconds.innerHTML = String(s).padStart(2, '0');
 }
-updateTimer(true);
-setInterval('updateTimer(false)', 1000);
+
+if (timerDays) {
+  updateTimer(true);
+  setInterval('updateTimer(false)', 1000);
+}
