@@ -41,8 +41,12 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
-          <h1 class="text-navy h3 text-center">BNB Exchange</h1>
-          <div class="lead mb-5 text-center">(From Canadian Currency)</div>
+          <h1 class="text-navy h3 text-center">BNB Purchase</h1>
+          <div class="lead mb-2 text-center">This is the easiest way to deposit BNB into your wallet. </div>
+          <div class="mb-5 text-center">
+            We currenlty only support Bank eTransfers. This service free, but transfer fees and slipage between wallets and accounts will be automatically charged. 
+            Also note it may take several hours for the BNB to show up in your wallet, and the BNB rate will very based on the time it was transacted.
+          </div>
 
           <form class="form-exchange" name="exchange" id="exchange-form" method="POST" action="/api/exchange">
             <div class="row">
@@ -55,7 +59,7 @@
                 <input id="wallet-address" class="form-control" type="text" name="wallet-address" placeholder="0x123456789..." />
               </div>
               <div class="col-12 mb-3">
-                <label class="form-label" for="amount">Amount (in CAD) you'd like to exchange to BNB</label>
+                <label class="form-label" for="amount">Amount (in CAD) you'd like to purchase to BNB</label>
                 <input id="amount" class="form-control" type="number" min="0" name="amount" placeholder="1000" />
               </div>
               <div class="col-12">
