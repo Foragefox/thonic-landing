@@ -44,8 +44,8 @@
           <h1 class="text-navy h3 text-center">BNB Purchase</h1>
           <div class="lead mb-2 text-center">This is the easiest way to deposit BNB into your wallet. </div>
           <div class="mb-5 text-center">
-            <p>We currenlty only support INTERAC e-Transfer (Canadian banks only). This service is free, but transfer fees and slipage between wallets/accounts will be automatically charged. </p>
-            <p>Also note it may take several hours for the BNB to show up in your wallet, and the BNB rate will very based on the time it was transacted.</p>
+            <p>We currently only support INTERAC e-Transfer (Canadian banks only). This service is free, but transfer fees and slipage between wallets/accounts will be automatically charged. </p>
+            <p>Also note, it may take several hours for the BNB to show up in your wallet, and the BNB rate will very based on the time it was transacted.</p>
           </div>
 
           <form class="form-exchange" name="exchange" id="exchange-form" method="POST" action="/api/exchange">
