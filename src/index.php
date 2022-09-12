@@ -63,8 +63,9 @@
           <span id="timer-seconds" class="badge bg-gray text-black">00</span>
         </div>
       </div>
-      <div class="col-12 col-md-4 col-xl-3 d-flex justify-content-center align-items-center">
-        <a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a>
+      <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="mb-2"><a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a></div>
+        <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
       </div>
     </div>
   </section>
