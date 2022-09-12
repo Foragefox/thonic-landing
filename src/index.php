@@ -244,12 +244,6 @@
       <?php
       $team = [
         [
-          'photo' => '/img/antonella.jpeg',
-          'name' => 'Antonella B',
-          'title' => 'Content',
-          'linkedin' => 'https://www.linkedin.com/in/antonella-b-0892318a/',
-        ],
-        [
           'photo' => '/img/david.jpeg',
           'name' => 'David J',
           'title' => 'Marketing',
