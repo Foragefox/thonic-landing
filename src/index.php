@@ -640,11 +640,11 @@
               ],
               [
                 'question' => 'Where can I buy $THONIC?',
-                'answer' => 'If you are new to cryptocurrency, we recommend you follow the "How to Buy" guides on our site. Please note, this section will be added shortly after the presale is complete.'
+                'answer' => 'If you are new to cryptocurrency, we recommend you follow the <a class="text-white" href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">"How to Buy"</a> guide on our site.'
               ],
               [
                 'question' => 'Where can I get additional help?',
-                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/+ojQiMqZaO_s5ZTM5" target="_blank" rel="noopener">https://t.me/+ojQiMqZaO_s5ZTM5</a>'
+                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/thonicf" target="_blank" rel="noopener">https://t.me/thonicf</a>'
               ]
             ];
 
