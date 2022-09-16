@@ -41,43 +41,15 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h1 class="text-navy h3 mb-5">Get added to the whitelist for our presale.</h2>
-            <form class="form-whitelist" name="whitelist" id="whitelist-form" method="POST" action="/api/whitelist">
-              <div class="row">
-                <div class="col-12 col-md pb-3 pb-md-0">
-                  <input class="form-control" type="text" name="wallet-address" placeholder="Enter wallet address..." aria-label="Enter wallet address..." />
-                </div>
-                <div class="col-12 col-md-auto d-grid gap-2">
-                  <button class="btn btn-primary" type="submit" id="submit-whitelist-form">ADD</button>
-                </div>
-              </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="hidden" name="source" tabindex="-1" value="">
-                <input type="text" name="confirm" tabindex="-1" value="">
-              </div>
-              <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
-              <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
-            </form>
+          <h1 class="text-navy h3 mb-5">Presale is now live!</h1>
+          <div class="mb-3"><a class="btn btn-xl btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a></div>
+          <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
         </div>
       </div>
     </div>
   </section>
 
   <?php include "footer.php" ?>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script src="/js/scripts.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', event => {
-      const whitelistForm = document.getElementById("whitelist-form");
-      whitelistForm.onsubmit = async (event) => {
-        const submitButton = document.getElementById("submit-whitelist-form");
-        submitButton.disabled = true;
-        const promise = submitWhitelistFormAjax(event, whitelistForm);
-        promise.finally(() => submitButton.disabled = false);
-      }
-    });
-  </script>
 </body>
 
 </html>

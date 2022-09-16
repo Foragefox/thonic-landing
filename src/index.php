@@ -85,7 +85,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-10 col-sm-8 col-lg-6 col-xl-4 d-grid">
-          <button class="btn btn-xl btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#read-white-paper">READ THE WHITEPAPER</button>
+          <a class="btn btn-xl btn-primary" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf" rel="noopener">READ THE WHITEPAPER</a>
         </div>
       </div>
     </div>
@@ -163,7 +163,7 @@
           </p>
         </div>
         <div class="col-12 col-md-4 text-center">
-          <button class="btn btn-xl btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#read-white-paper">GET THE WHITEPAPER</button>
+          <a class="btn btn-xl btn-primary" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf" rel="noopener">GET THE WHITEPAPER</a>
         </div>
       </div>
       <div class="row">
@@ -298,23 +298,9 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h2 class="text-navy mb-5">Join the presale</h2>
-          <form class="form-presale" name="presale" id="presale-form" method="POST" action="/api/presale">
-            <div class="row">
-              <div class="col-12 col-md pb-3 pb-md-0">
-                <input class="form-control" type="text" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
-              </div>
-              <div class="col-12 col-md-auto">
-                <button class="btn btn-xl btn-primary" type="submit">ADD ME!</button>
-              </div>
-            </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input type="hidden" name="source" tabindex="-1" value="">
-              <input type="text" name="confirm" tabindex="-1" value="">
-            </div>
-            <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
-            <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
-          </form>
+          <h2 class="text-navy mb-5">Presale is live!</h2>
+          <div class="mb-3"><a class="btn btn-xl btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a></div>
+          <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
         </div>
       </div>
     </div>
@@ -666,42 +652,6 @@
   </section>
 
   <?php include "footer.php" ?>
-
-  <?php include "popup.php" ?>
-
-  <?php include "presale-popup.php" ?>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script src="/js/scripts.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', event => {
-      const presaleForm = document.getElementById("presale-form");
-      presaleForm.onsubmit = async (event) => {
-        submitEmailFormAjax(event, presaleForm)
-      }
-
-      const downloadForm = document.getElementById("download-form");
-      downloadForm.onsubmit = async (event) => {
-        const promise = submitEmailFormAjax(event, downloadForm);
-        promise.finally(() => {
-          document.getElementById("download-white-paper").click();
-        });
-      }
-
-      const notifyForm = document.getElementById("notify-presale-form");
-      notifyForm.onsubmit = async (event) => {
-        submitEmailFormAjax(event, notifyForm)
-      }
-
-      const whitelistForm = document.getElementById("whitelist-form");
-      whitelistForm.onsubmit = async (event) => {
-        const submitButton = document.getElementById("submit-whitelist-form");
-        submitButton.disabled = true;
-        const promise = submitWhitelistFormAjax(event, whitelistForm);
-        promise.finally(() => submitButton.disabled = false);
-      }
-    });
-  </script>
 </body>
 
 </html>
