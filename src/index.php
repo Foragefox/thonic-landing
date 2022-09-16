@@ -55,7 +55,7 @@
   <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
-        <div class="h4 mb-3">PRESALE LAUNCHES IN</div>
+        <div class="h4 mb-3">HURRY, PRESALE ENDS IN</div>
         <div class="timer h5 font-monospace">
           <span id="timer-days" class="badge bg-gray text-black">00</span>
           <span id="timer-hours" class="badge bg-gray text-black">00</span>
