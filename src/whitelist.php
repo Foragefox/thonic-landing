@@ -41,9 +41,7 @@
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h1 class="text-navy h3 mb-5">Presale is now live!</h1>
-          <div class="mb-3"><a class="btn btn-xl btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a></div>
-          <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
+          <h1 class="text-navy h3 mb-5">We are no longer collecting wallet addresses. Stay tuned for the presale launch notification.</h1>
         </div>
       </div>
     </div>
