@@ -37,6 +37,37 @@ function hideFeedback(element) {
   element.innerHTML = "";
 }
 
+function submitEmailFormAjax(event, form) {
+  event.preventDefault();
+  const formError = form.getElementsByClassName("form-error")[0];
+  const formSuccess = form.getElementsByClassName("form-success")[0];
+  hideFeedback(formError);
+  hideFeedback(formSuccess)
+
+  const action = form.getAttribute("action");
+  const data = new FormData(form);
+  const email = data.get("email");
+
+  if (!validateEmail(email)) {
+    showFeedback(formError, "Please enter a valid email.");
+    return Promise.resolve(false);
+  }
+
+  return fetch(action, {
+    method: 'POST',
+    body: new URLSearchParams(data)
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      showFeedback(formSuccess, "We have recorded your email and will notify you when the presale is available.");
+    })
+    .catch(error => {
+      showFeedback(formError, "There was an error, please try again later.");
+    });
+}
+
 function submitExchangeFormAjax(event, form) {
   event.preventDefault();
   const formError = form.getElementsByClassName("form-error")[0];
