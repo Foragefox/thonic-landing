@@ -269,6 +269,7 @@ h2, .h2 { margin-bottom: 1rem; }
   border-radius: 50%;
   position: relative;
   top: 4px;
+  border: 1px solid #FFF;
 }
 
 .profile-photo {
