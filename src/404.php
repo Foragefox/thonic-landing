@@ -2,8 +2,14 @@
 <html lang="en">
 
 <?php include "docHead.php" ?>
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+</style>
 
-<body>
+<body class="d-flex flex-column">
   <?php if (!empty($_SERVER["GOOGLE_TAG_MANAGER"])) { ?>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?= $_SERVER["GOOGLE_TAG_MANAGER"] ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -36,17 +42,15 @@
     </div>
   </nav>
 
-  <!-- Whitelist-->
-  <section class="whitelist-section section-band bg-gray mt-5" id="whitelist">
-    <div class="container px-4 px-lg-5">
+  <section class="section-band bg-gray mt-5 flex-grow-1">
+    <div class="container px-4">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h1 class="text-navy h3 mb-5">We are no longer collecting wallet addresses. Stay tuned for the presale launch notification.</h1>
+          <h1 class="text-navy h3 mb-5">404 Not Found</h1>
         </div>
       </div>
     </div>
   </section>
-
   <?php include "footer.php" ?>
 </body>
 

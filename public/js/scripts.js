@@ -68,37 +68,6 @@ function submitEmailFormAjax(event, form) {
     });
 }
 
-function submitWhitelistFormAjax(event, form) {
-  event.preventDefault();
-  const formError = form.getElementsByClassName("form-error")[0];
-  const formSuccess = form.getElementsByClassName("form-success")[0];
-  hideFeedback(formError);
-  hideFeedback(formSuccess)
-
-  const action = form.getAttribute("action");
-  const data = new FormData(form);
-  const wallet = data.get("wallet-address");
-
-  if (!wallet) {
-    showFeedback(formError, "Please enter a valid wallet address.");
-    return Promise.resolve(false);
-  }
-
-  return fetch(action, {
-    method: 'POST',
-    body: new URLSearchParams(data)
-  })
-    .then(response => {
-      return response.json();
-    })
-    .then(response => {
-      showFeedback(formSuccess, "Your wallet has been added to the presale whitelist.");
-    })
-    .catch(error => {
-      showFeedback(formError, "There was an error, please try again later.");
-    });
-}
-
 function submitExchangeFormAjax(event, form) {
   event.preventDefault();
   const formError = form.getElementsByClassName("form-error")[0];
@@ -157,7 +126,7 @@ const timerMinutes = document.getElementById("timer-minutes");
 const timerSeconds = document.getElementById("timer-seconds");
 
 function updateTimer(set) {
-  future = new Date("2022/09/16 09:00:00-0000");
+  future = new Date("2022/09/23 09:00:00-0000");
   now = new Date();
   diff = future - now;
 

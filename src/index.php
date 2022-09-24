@@ -52,10 +52,10 @@
   </header>
 
   <!-- Presale CTA -->
-  <section class="callout-banner bg-green p-3 text-center">
+  <!-- <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
-        <div class="h4 mb-3">PRESALE LAUNCHES IN</div>
+        <div class="h4 mb-3">HURRY, PRESALE ENDS IN</div>
         <div class="timer h5 font-monospace">
           <span id="timer-days" class="badge bg-gray text-black">00</span>
           <span id="timer-hours" class="badge bg-gray text-black">00</span>
@@ -68,7 +68,7 @@
         <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- About -->
   <section class="about bg-cyan text-navy section-band" id="about">
@@ -648,7 +648,7 @@
               ],
               [
                 'question' => 'Where can I get additional help?',
-                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/+ojQiMqZaO_s5ZTM5" target="_blank" rel="noopener">https://t.me/+ojQiMqZaO_s5ZTM5</a>'
+                'answer' => 'Our Telegram community is also full of supportive and helpful members who can assist with any questions you may have. Join our Telegram chat here: <a class="text-white" href="https://t.me/thonicf" target="_blank" rel="noopener">https://t.me/thonicf</a>'
               ]
             ];
 
@@ -673,10 +673,6 @@
 
   <?php include "popup.php" ?>
 
-  <?php include "presale-popup.php" ?>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script src="/js/scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', event => {
       const presaleForm = document.getElementById("presale-form");
@@ -690,19 +686,6 @@
         promise.finally(() => {
           document.getElementById("download-white-paper").click();
         });
-      }
-
-      const notifyForm = document.getElementById("notify-presale-form");
-      notifyForm.onsubmit = async (event) => {
-        submitEmailFormAjax(event, notifyForm)
-      }
-
-      const whitelistForm = document.getElementById("whitelist-form");
-      whitelistForm.onsubmit = async (event) => {
-        const submitButton = document.getElementById("submit-whitelist-form");
-        submitButton.disabled = true;
-        const promise = submitWhitelistFormAjax(event, whitelistForm);
-        promise.finally(() => submitButton.disabled = false);
       }
     });
   </script>
