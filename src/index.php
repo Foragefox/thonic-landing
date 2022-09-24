@@ -196,7 +196,7 @@
             'img' => '/img/whale.svg',
             'imgTitle' => '',
             'title' => 'Anti-Whale',
-            'body' => 'Our Anti-Whale Mechanism is a series of policies that prevent holders from purchasing large amounts of tokens at low prices during our launch phase'
+            'body' => 'Our Anti-Whale Mechanism is a series of policies that prevents holders from purchasing large amounts of tokens at low prices during our launch phase'
           ]
         ];
         foreach ($features as $feature) {
@@ -629,12 +629,12 @@
                 'answer' => 'On BSC Scan, the first address is the BURN ADDRESS.'
               ],
               [
-                'question' => 'Why 10% tax and when is it applied?',
+                'question' => 'Why 8% tax and when is it applied?',
                 'answer' => 'It is applied to EVERY TRANSACTION, this includes: Buys, Sells and Transfers.
                 <ul>
                 <li>5% of every buy/transfer/sell is redistributed to all holders in $BUSD</li>
-                <li>2% of every transaction is transferred into the Liquidity Pool on Pancakeswap to create a stable price floor</li>
-                <li>3% of every transaction is sent to the marketing wallet to fund marketing, utility development and community management</li>
+                <li>1% of every transaction is transferred into the Liquidity Pool on Pancakeswap to create a stable price floor</li>
+                <li>2% of every transaction is sent to the company wallet to fund marketing, utility development and community management</li>
                 </ul>
                 '
               ],
