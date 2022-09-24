@@ -37,7 +37,7 @@
                 <h5>Download whitepaper</h5>
                 <p class="lead">(No Email required)</p>
               </div>
-              <a class="btn btn-outline-primary" id="download-white-paper" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v1.pdf" rel="noopener">DOWNLOAD</a>
+              <a class="btn btn-outline-primary" id="download-white-paper" target="_blank" href="https://github.com/thonic-finance/whitepaper/raw/master/whitepaper_v2.pdf" rel="noopener">DOWNLOAD</a>
             </div>
 
           </div>
