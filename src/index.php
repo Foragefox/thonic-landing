@@ -156,7 +156,7 @@
       <div class="row mb-4">
         <div class="col-12 col-md-8 mb-4">
           <p>
-            Thonic is a utility token that employs two key strategies to ensure holding the token is profitable. The first strategy is BuyBack & Burn, which encourages price stability and increases the value of the token by reducing supply. The initial token supply of 200,000,000,000 coins will be reduced to a circulating supply of 100,000,000,000 after the initial burn. Following this, all profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned.
+            Thonic is a utility token that employs two key strategies to ensure holding the token is profitable. The first strategy is BuyBack & Burn, which encourages price stability and increases the value of the token by reducing supply. Thonic has a total initial supply of 100,000,000,000 tokens. Following this, all profits generated from the platform and sale of the token will go directly to BB&B until a threshold of 95% of the token supply is burned.
           </p>
           <p>
             The second strategy is earning passive income as 5% of each transaction is redistributed to token holders in $BUSD. Built on the Binance Smart Chain for its faster block speeds and lower transaction costs, Thonic is designed to be held longer term to benefit from both passive income and capital appreciation.
