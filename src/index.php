@@ -424,7 +424,7 @@
                 [
                   'icon' => 'fa fa-bullhorn',
                   'title' => '2000 telegram followers',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-chart-line',
