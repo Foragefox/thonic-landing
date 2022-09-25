@@ -277,7 +277,7 @@
         <div class="col-12 col-md-8">
           <div class="row justify-content-center">
             <?php foreach ($team as $member) { ?>
-              <div class="col-sm-6 col-lg-4 my-2">
+              <div class="col-sm-6 col-md-4 col-lg-3 my-2">
                 <div class="card card-borderless text-center">
                   <img src="<?= $member['photo'] ?>" title="" alt="" loading="lazy" class="mx-auto profile-photo">
                   <div class="card-body">
