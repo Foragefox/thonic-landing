@@ -220,14 +220,14 @@
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
         <img class="img-fluid" src="/img/distribution.svg" alt="Token distribution pie chart">
         <div>
-          <div><span class="legend-bullet" style="background-color: #1B345B;"></span> Team</div>
-          <div><span class="legend-bullet" style="background-color: #224376;"></span> Operational</div>
-          <div><span class="legend-bullet" style="background-color: #142644;"></span> Marketing</div>
-          <div><span class="legend-bullet" style="background-color: #262E3A;"></span> Development</div>
-          <div><span class="legend-bullet" style="background-color: #262E3A;"></span> Partnerships</div>
-          <div><span class="legend-bullet" style="background-color: #5E9ED6;"></span> Exchanges</div>
-          <div><span class="legend-bullet" style="background-color: #8AC2DC;"></span> Presale</div>
-          <div><span class="legend-bullet" style="background-color: #9FDDFC;"></span> Liquidity pool</div>
+          <div><span class="legend-bullet" style="background-color: #E9E9E9;"></span> Team</div>
+          <div><span class="legend-bullet" style="background-color: #D7FF45;"></span> Operational</div>
+          <div><span class="legend-bullet" style="background-color: #5EEA3D;"></span> Marketing</div>
+          <div><span class="legend-bullet" style="background-color: #79C3DF;"></span> Development</div>
+          <div><span class="legend-bullet" style="background-color: #12A0F2;"></span> Partnerships</div>
+          <div><span class="legend-bullet" style="background-color: #088A89;"></span> Exchanges</div>
+          <div><span class="legend-bullet" style="background-color: #105CC1;"></span> Presale</div>
+          <div><span class="legend-bullet" style="background-color: #2D363F;"></span> Liquidity pool</div>
         </div>
       </div>
     </div>
