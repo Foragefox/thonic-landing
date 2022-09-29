@@ -52,10 +52,10 @@
   </header>
 
   <!-- Presale CTA -->
-  <!-- <section class="callout-banner bg-green p-3 text-center">
+  <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
-        <div class="h4 mb-3">HURRY, PRESALE ENDS IN</div>
+        <div class="h4 mb-3">PRESALE LAUNCHES IN</div>
         <div class="timer h5 font-monospace">
           <span id="timer-days" class="badge bg-gray text-black">00</span>
           <span id="timer-hours" class="badge bg-gray text-black">00</span>
@@ -64,11 +64,10 @@
         </div>
       </div>
       <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
-        <div class="mb-2"><a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0xF033CbBB77A76fAF7f2a4B560e21854256b2bF91?chain=BSC" target="_blank">VIEW PRESALE</a></div>
-        <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
+        <div class="mb-2"><a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0x49c788095B461AE56b3c4C8673a4edED92ad90da?chain=BSC" target="_blank">VIEW PRESALE</a></div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- About -->
   <section class="about bg-cyan text-navy section-band" id="about">
