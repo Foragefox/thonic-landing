@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
-        <div class="mb-2"><a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0x49c788095B461AE56b3c4C8673a4edED92ad90da?chain=BSC" target="_blank">VIEW PRESALE</a></div>
+        <div class="mb-2"><a class="btn btn-lg btn-primary" href="https://www.pinksale.finance/launchpad/0x9C9BDC82384C382669a415B03B8b75a437149fC8?chain=BSC" target="_blank">VIEW PRESALE</a></div>
         <div><a href="https://thonic.finance/how-to-buy-our-presale.pdf" target="_blank">How to Buy Guide!</a></div>
       </div>
     </div>
