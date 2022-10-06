@@ -126,7 +126,7 @@ const timerMinutes = document.getElementById("timer-minutes");
 const timerSeconds = document.getElementById("timer-seconds");
 
 function updateTimer(set) {
-  future = new Date("2022/10/06 19:00:00-0000");
+  future = new Date("2022/10/11 23:00:00-0000");
   now = new Date();
   diff = future - now;
 
