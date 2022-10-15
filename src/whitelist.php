@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "docHead.php" ?>
+<?php include "parts/docHead.php" ?>
 
 <body>
   <?php if (!empty($_SERVER["GOOGLE_TAG_MANAGER"])) { ?>
@@ -23,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <?php include "navigation.php" ?>
+          <?php include "parts/navigation.php" ?>
         </ul>
       </div>
     </div>
@@ -40,7 +40,7 @@
     </div>
   </section>
 
-  <?php include "footer.php" ?>
+  <?php include "parts/footer.php" ?>
 </body>
 
 </html>

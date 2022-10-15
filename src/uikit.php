@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "docHead.php" ?>
+<?php include "parts/docHead.php" ?>
 
 <body>
   <!-- Navigation-->
@@ -131,7 +131,7 @@
     </div>
   </section>
 
-  <?php include "footer.php" ?>
+  <?php include "parts/footer.php" ?>
 </body>
 
 </html>

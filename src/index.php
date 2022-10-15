@@ -11,7 +11,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "docHead.php" ?>
+<?php include "parts/docHead.php" ?>
 
 <body data-bs-spy="scroll" data-bs-offset="82" data-bs-target="#mainNav">
   <?php if (!empty($_SERVER["GOOGLE_TAG_MANAGER"])) { ?>
@@ -33,7 +33,14 @@ $reddit = "https://www.reddit.com/r/thonic/";
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <?php include "navigation.php" ?>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
+          <li class="nav-item"><a class="nav-link" href="#token">Token</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#list">List</a></li>
+          <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#partners">Partners</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
       </div>
     </div>
@@ -292,8 +299,8 @@ $reddit = "https://www.reddit.com/r/thonic/";
     </div>
   </section>
 
-  <!-- Presale-->
-  <section class="presale-section bg-gray" id="presale">
+  <!-- Mailing list -->
+  <section class="presale-section bg-gray" id="list">
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
@@ -650,7 +657,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
     </div>
   </section>
 
-  <?php include "footer.php" ?>
+  <?php include "parts/footer.php" ?>
 
 </body>
 
