@@ -159,7 +159,8 @@ $reddit = "https://www.reddit.com/r/thonic/";
           </p>
         </div>
         <div class="col-12 col-md-4 text-center">
-          <a href="<?= $whitepaper ?>" target="_blank" class="btn btn-xl btn-primary">GET THE WHITEPAPER</a>
+          <a href="<?= $whitepaper ?>" target="_blank" class="btn btn-xl btn-primary mb-3">GET THE WHITEPAPER</a>
+          <a href="<?= $pancakeSwap ?>" target="_blank" class="btn btn-xl btn-primary">BUY THONIC TOKENS</a>
         </div>
       </div>
       <div class="row">
