@@ -2,6 +2,7 @@
 
 $whitepaper = "https://github.com/thonic-finance/whitepaper/raw/master/thonic_whitepaper_v2.pdf";
 $pinksalePresale = "https://www.pinksale.finance/launchpad/0x9C9BDC82384C382669a415B03B8b75a437149fC8?chain=BSC";
+$pancakeSwap = "https://pancakeswap.finance/swap?outputCurrency=0x41DE98caD918Ad2BF2D9c1e61B53537dbbdB29d8";
 $howToBuy = "https://thonic.finance/how-to-buy-our-presale.pdf";
 $telegramChat = "https://t.me/thonicf";
 $twitter = "https://twitter.com/thonicf";
@@ -60,25 +61,17 @@ $reddit = "https://www.reddit.com/r/thonic/";
     <div class="pattern"></div>
   </header>
 
-  <!-- Presale CTA -->
-  <!--<section class="callout-banner bg-green p-3 text-center">
+  <!-- Callout Banner -->
+  <section class="callout-banner bg-green p-3 text-center">
     <div class="row justify-content-md-center">
-      <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1">
-        <div class="h4 mb-3">HURRY, PRESALE ENDS IN</div>
-        <div class="timer h5 font-monospace">
-          <span id="timer-days" class="badge bg-gray text-black">00</span>
-          <span id="timer-hours" class="badge bg-gray text-black">00</span>
-          <span id="timer-minutes" class="badge bg-gray text-black">00</span>
-          <span id="timer-seconds" class="badge bg-gray text-black">00</span>
-        </div>
+      <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1 d-flex align-items-center">
+        <div class="h4">TOKEN IS LIVE, BUY NOW ON PANCAKESWAP</div>
       </div>
-      <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
-        <div class="mb-2"><a class="btn btn-lg btn-primary" href="<?= $pinksalePresale ?>" target="_blank">VIEW PRESALE</a></div>
-        <div><a href="<?= $howToBuy ?>" target="_blank">How to Buy Guide!</a></div>
+      <div class="col-12 col-md-4 col-xl-3 py-3 d-flex flex-column justify-content-center align-items-center">
+        <a class="btn btn-lg btn-primary" href="<?= $pancakeSwap ?>" target="_blank">BUY NOW</a>
       </div>
     </div>
   </section>
-    -->
 
   <!-- About -->
   <section class="about bg-cyan text-navy section-band" id="about">
