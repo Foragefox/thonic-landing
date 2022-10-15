@@ -405,7 +405,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
                 [
                   'icon' => 'fa fa-university',
                   'title' => 'Presale',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-briefcase',
@@ -525,6 +525,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
               ]
             ]
           ];
+          $completeUpTo = 2;
           ?>
           <div class="accordion accordion-flush" id="accordionFlush">
 
@@ -532,12 +533,15 @@ $reddit = "https://www.reddit.com/r/thonic/";
               <div class="accordion-item">
 
                 <h2 class="accordion-header" id="phase-heading-<?= $index ?>">
-                  <button class="accordion-button <?= $index == $index ? '' : 'collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#phase-collapse-<?= $index ?>" aria-expanded="<?= $index == $index ? 'true' : 'false' ?>" aria-controls="phase-collapse-<?= $index ?>">
+                  <button class="accordion-button d-flex justify-content-between <?= $index >= $completeUpTo ? '' : 'collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#phase-collapse-<?= $index ?>" aria-expanded="<?= $index >= $completeUpTo ? 'true' : 'false' ?>" aria-controls="phase-collapse-<?= $index ?>">
                     <?= $phase['name'] ?>
+                    <?php if ($index < $completeUpTo) { ?>
+                      <i class="text-success fas fa-check"></i>
+                    <?php } ?>
                   </button>
                 </h2>
 
-                <div id="phase-collapse-<?= $index ?>" class="accordion-collapse collapse <?= $index == $index ? 'show' : '' ?>" aria-labelledby="phase-heading-<?= $index ?>">
+                <div id="phase-collapse-<?= $index ?>" class="accordion-collapse collapse <?= $index >= $completeUpTo ? 'show' : '' ?>" aria-labelledby="phase-heading-<?= $index ?>">
                   <div class="accordion-body">
                     <?php foreach ($phase['milestones'] as $milestone) { ?>
                       <div class="row">

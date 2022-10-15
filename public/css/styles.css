@@ -371,6 +371,8 @@ h2, .h2 { margin-bottom: 1rem; }
 }
 .accordion-button:not(.collapsed)::after { background-image: none; transform: rotate(90deg); }
 .accordion-button:not(.collapsed) { color: #0C2746; background-color: transparent; box-shadow: none; }
+.accordion-button > .fa-check { display: none; }
+.accordion-button.collapsed > .fa-check { display: inline-block; }
 
 .milestone-icon { display: inline-block; margin-right: 1rem; font-size: 18px; line-height: 44px; }
 .milestone-title { padding: 10px 0; }
