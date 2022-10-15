@@ -61,7 +61,7 @@ function submitEmailFormAjax(event, form) {
       return response.json();
     })
     .then(response => {
-      showFeedback(formSuccess, "We have recorded your email and will notify you when the presale is available.");
+      showFeedback(formSuccess, "We have recorded your email.");
     })
     .catch(error => {
       showFeedback(formError, "There was an error, please try again later.");

@@ -300,13 +300,27 @@ $reddit = "https://www.reddit.com/r/thonic/";
   </section>
 
   <!-- Mailing list -->
-  <section class="presale-section bg-gray" id="list">
+  <section class="list-section bg-gray" id="list">
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h2 class="text-navy mb-5">Presale is live!</h2>
-          <div class="mb-3"><a class="btn btn-xl btn-primary" href="<?= $pinksalePresale ?>" target="_blank">VIEW PRESALE</a></div>
-          <div><a href="<?= $howToBuy ?>" target="_blank">How to Buy Guide!</a></div>
+          <h2 class="text-navy mb-5">Join the mailing list</h2>
+          <form class="form-list" name="list" id="list-form" method="POST" action="/api/list">
+            <div class="row">
+              <div class="col-12 col-md pb-3 pb-md-0">
+                <input class="form-control" type="text" name="email" placeholder="Enter email address..." aria-label="Enter email address..." />
+              </div>
+              <div class="col-12 col-md-auto">
+                <button class="btn btn-xl btn-primary" type="submit">ADD ME!</button>
+              </div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="hidden" name="source" tabindex="-1" value="">
+              <input type="text" name="confirm" tabindex="-1" value="">
+            </div>
+            <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
+            <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
+          </form>
         </div>
       </div>
     </div>
@@ -658,6 +672,13 @@ $reddit = "https://www.reddit.com/r/thonic/";
   </section>
 
   <?php include "parts/footer.php" ?>
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', event => {
+      const listForm = document.getElementById("list-form");
+      listForm.onsubmit = async (event) => submitEmailFormAjax(event, listForm);
+    });
+  </script>
 
 </body>
 
