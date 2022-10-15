@@ -56,12 +56,10 @@ $reddit = "https://www.reddit.com/r/thonic/";
 
   <!-- Callout Banner -->
   <section class="callout-banner bg-green p-3 text-center">
-    <div class="row justify-content-md-center">
-      <div class="col-12 col-md-8 col-xl-6 col-xl-offset-1 d-flex align-items-center">
-        <div class="h4">TOKEN IS LIVE, BUY NOW ON PANCAKESWAP</div>
-      </div>
-      <div class="col-12 col-md-4 col-xl-3 py-3 d-flex flex-column justify-content-center align-items-center">
-        <a class="btn btn-lg btn-primary" href="<?= $pancakeSwap ?>" target="_blank">BUY NOW</a>
+    <div class="container d-lg-flex align-items-center justify-content-between">
+      <div class="h4">TOKEN IS LIVE, BUY NOW ON PANCAKESWAP</div>
+      <div class="py-3">
+        <a class="btn btn-lg btn-primary text-nowrap" href="<?= $pancakeSwap ?>" target="_blank">BUY NOW</a>
       </div>
     </div>
   </section>
