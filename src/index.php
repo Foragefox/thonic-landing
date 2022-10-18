@@ -216,7 +216,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
       </div>
       <div class="row">
         <div class="col-lg-8">
-          <h3>Token Distribution</h3>
+          <h3 id="token-distribution">Token Distribution</h3>
         </div>
       </div>
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
