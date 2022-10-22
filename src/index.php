@@ -446,7 +446,7 @@ $reddit = "https://www.reddit.com/r/thonic/";
                 [
                   'icon' => 'fa fa-bullhorn',
                   'title' => 'Poocoin ads',
-                  'complete' => false
+                  'complete' => true
                 ],
                 [
                   'icon' => 'fa fa-bullhorn',
