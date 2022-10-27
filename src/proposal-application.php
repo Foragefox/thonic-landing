@@ -29,13 +29,42 @@
     </div>
   </nav>
 
-  <!-- Whitelist-->
-  <section class="whitelist-section section-band mt-5">
+  <section class="section-band mt-5">
     <div class="container px-4 px-lg-5">
       <div class="row">
-        <div class="col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
-          <h1 class="text-navy h3">Proposal Application</h1>
-          <h5>If you would like to work with the Thonic team, please submit your propsal here.</h5>
+        <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
+          <h1 class="text-navy h3 text-center mb-3">Proposal Application</h1>
+          <h5 class="text-center mb-5">If you would like to work with the Thonic team, please submit your propsal here. <strong>All fields are required.</strong></h5>
+
+          <form>
+            <div class="mb-4">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" name="firstName" id="firstName" class="form-control">
+            </div>
+            <div class="mb-4">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" name="lastName" id="lastName" class="form-control">
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" name="email" id="email" class="form-control">
+            </div>
+
+            <div class="mb-4">
+              <label for="walletAddress" class="form-label">Wallet address (you need to own THONIC tokens to submit a proposal)</label>
+              <input type="text" name="walletAddress" id="walletAddress" class="form-control">
+            </div>
+
+            <div class="mb-4">
+              <label for="proposalPDF" class="form-label">PDF of your proposal.</label>
+              <input type="file" accept=".pdf" name="proposalPDF" id="proposalPDF" class="form-control">
+            </div>
+
+            <div class="mb-4 text-center">
+              <input type="submit" class="btn btn-lg btn-primary" value="Submit" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
