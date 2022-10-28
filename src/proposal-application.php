@@ -36,7 +36,7 @@
           <h1 class="text-navy h3 text-center mb-3">Proposal Application</h1>
           <h5 class="text-center mb-5">If you would like to work with the Thonic team, please submit your propsal here. <strong>All fields are required.</strong></h5>
 
-          <form>
+          <form id="proposal-form" method="POST" action="/api/proposal">
             <div class="mb-4">
               <label for="firstName" class="form-label">First name</label>
               <input type="text" name="firstName" id="firstName" class="form-control">
@@ -62,8 +62,15 @@
             </div>
 
             <div class="mb-4 text-center">
-              <input type="submit" class="btn btn-lg btn-primary" value="Submit" />
+              <input type="submit" class="btn btn-lg btn-primary" id="submit-proposal-form" value="Submit" />
             </div>
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="hidden" name="source" tabindex="-1" value="">
+              <input type="text" name="confirm" tabindex="-1" value="">
+            </div>
+            <div class="form-error bg-danger text-white mt-2 py-2 px-2 hide"></div>
+            <div class="form-success bg-green mt-2 py-2 px-2 hide"></div>
           </form>
         </div>
       </div>
@@ -71,6 +78,19 @@
   </section>
 
   <?php include "parts/footer.php" ?>
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', event => {
+      const proposalForm = document.getElementById("proposal-form");
+      proposalForm.onsubmit = async (event) => {
+        const submitButton = document.getElementById("submit-proposal-form");
+        submitButton.disabled = true;
+
+        const promise = submitProposalFormAjax(event, proposalForm);
+        promise.finally(() => submitButton.disabled = false);
+      }
+    });
+  </script>
 </body>
 
 </html>
