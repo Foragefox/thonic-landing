@@ -42,7 +42,7 @@ function submitEmailFormAjax(event, form) {
   const formError = form.getElementsByClassName("form-error")[0];
   const formSuccess = form.getElementsByClassName("form-success")[0];
   hideFeedback(formError);
-  hideFeedback(formSuccess)
+  hideFeedback(formSuccess);
 
   const action = form.getAttribute("action");
   const data = new FormData(form);
@@ -73,7 +73,7 @@ function submitExchangeFormAjax(event, form) {
   const formError = form.getElementsByClassName("form-error")[0];
   const formSuccess = form.getElementsByClassName("form-success")[0];
   hideFeedback(formError);
-  hideFeedback(formSuccess)
+  hideFeedback(formSuccess);
 
   const action = form.getAttribute("action");
   const data = new FormData(form);
@@ -99,6 +99,61 @@ function submitExchangeFormAjax(event, form) {
   return fetch(action, {
     method: 'POST',
     body: new URLSearchParams(data)
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      showFeedback(formSuccess, "Your request has been accepted, please await further instructions.");
+    })
+    .catch(error => {
+      showFeedback(formError, "There was an error, please try again later.");
+    });
+}
+
+function submitProposalFormAjax(event, form) {
+  event.preventDefault();
+  const formError = form.getElementsByClassName("form-error")[0];
+  const formSuccess = form.getElementsByClassName("form-success")[0];
+  hideFeedback(formError);
+  hideFeedback(formSuccess);
+
+  const action = form.getAttribute("action");
+  const data = new FormData(form);
+
+  const first = data.get("firstName");
+  if (!first) {
+    showFeedback(formError, "Please enter a first name.");
+    return Promise.resolve(false);
+  }
+
+  const last = data.get("lastName");
+  if (!last) {
+    showFeedback(formError, "Please enter a last name.");
+    return Promise.resolve(false);
+  }
+
+  const email = data.get("email");
+  if (!validateEmail(email)) {
+    showFeedback(formError, "Please enter a valid email address.");
+    return Promise.resolve(false);
+  }
+
+  const wallet = data.get("walletAddress");
+  if (!wallet) {
+    showFeedback(formError, "Please enter a wallet address.");
+    return Promise.resolve(false);
+  }
+
+  const file = data.get("proposalPDF");
+  if (!file.name) {
+    showFeedback(formError, "Please select a file for upload.");
+    return Promise.resolve(false);
+  }
+
+  return fetch(action, {
+    method: 'POST',
+    body: data
   })
     .then(response => {
       return response.json();
