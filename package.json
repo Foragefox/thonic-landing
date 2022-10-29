@@ -14,6 +14,8 @@
   },
   "homepage": "https://github.com/Foragefox/thonic-landing#readme",
   "dependencies": {
-    "axios": "^0.26.1"
+    "@googleapis/drive": "^3.0.1",
+    "axios": "^0.26.1",
+    "busboy": "^1.6.0"
   }
 }
