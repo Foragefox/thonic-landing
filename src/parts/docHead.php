@@ -1,3 +1,13 @@
+<?php
+$whitepaper = "https://github.com/thonic-finance/whitepaper/raw/master/thonic_whitepaper_v2.pdf";
+$pinksalePresale = "https://www.pinksale.finance/launchpad/0x9C9BDC82384C382669a415B03B8b75a437149fC8?chain=BSC";
+$pancakeSwap = "https://pancakeswap.finance/swap?outputCurrency=0x41DE98caD918Ad2BF2D9c1e61B53537dbbdB29d8";
+$howToBuy = "https://thonic.finance/how-to-buy-our-presale.pdf";
+$telegramChat = "https://t.me/thonicf";
+$twitter = "https://twitter.com/thonicf";
+$reddit = "https://www.reddit.com/r/thonic/";
+?>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,11 +58,22 @@
 
   <?php if (!empty($_SERVER["GOOGLE_TAG_MANAGER"])) { ?>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','<?= $_SERVER["GOOGLE_TAG_MANAGER"] ?>');</script>
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', '<?= $_SERVER["GOOGLE_TAG_MANAGER"] ?>');
+    </script>
     <!-- End Google Tag Manager -->
   <?php } ?>
 
