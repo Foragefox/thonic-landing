@@ -32,16 +32,14 @@ module.exports.handler = async (event) => {
     }
 
     const file = files[0];
-    if (!file || file.contentType != "application/pdf") {
+    if (!file || file.mimeType != "application/pdf") {
       return respond(HttpStatus.BAD_REQUEST, { message: "No file or invalid file uploaded" });
     }
-
-    console.log(file);
 
     // Upload to Google Drive
     const uploadedFile = await uploadFile(file.filename, {
       fileContent: file.file,
-      mimeType: file.contentType,
+      mimeType: file.mimeType,
       originalFilename: file.filename,
       parents: [process.env.GOOGLE_DRIVE_PROPOSALS_FOLDER_ID],
     });
@@ -59,7 +57,14 @@ module.exports.handler = async (event) => {
       process.env.GOOGLE_DRIVE_PROPOSALS_SHEETS_ID,
       "Sheet1",
       [
-        [firstName, lastName, email, walletAddress, source, fileUrl]
+        [
+          firstName,
+          lastName,
+          email,
+          walletAddress,
+          source,
+          `=HYPERLINK("${fileUrl}", "${file.filename}")`
+        ]
       ]
     );
 

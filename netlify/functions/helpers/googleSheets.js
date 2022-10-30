@@ -22,13 +22,15 @@ module.exports.appendToSpreadsheet = async (spreadsheetId, range, values) => {
   const sheets = await getSheets();
 
   const resource = {
+    range,
+    majorDimension: "ROWS",
     values,
   };
 
   const res = await sheets.spreadsheets.values.append({
     spreadsheetId,
     range,
-    valueInputOption: "RAW",
+    valueInputOption: "USER_ENTERED",
     resource
   });
 
