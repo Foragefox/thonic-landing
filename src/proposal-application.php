@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-  <section class="section-band mt-5">
+  <section class="section-band bg-gray mt-5">
     <div class="container px-4 px-lg-5">
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
@@ -57,7 +57,7 @@
             </div>
 
             <div class="mb-4">
-              <label for="proposalPDF" class="form-label">PDF of your proposal.</label>
+              <label for="proposalPDF" class="form-label">PDF of your proposal</label>
               <input type="file" accept=".pdf" name="proposalPDF" id="proposalPDF" class="form-control">
             </div>
 
