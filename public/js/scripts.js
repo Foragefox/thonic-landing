@@ -156,13 +156,23 @@ function submitProposalFormAjax(event, form) {
     body: data
   })
     .then(response => {
+      if (!response.ok) {
+        throw response;
+      }
       return response.json();
     })
-    .then(response => {
-      showFeedback(formSuccess, "Your request has been accepted, please await further instructions.");
+    .then(body => {
+      showFeedback(formSuccess, body.message ?? "Your proposal has been accepted");
+      form.reset();
     })
     .catch(error => {
-      showFeedback(formError, "There was an error, please try again later.");
+      try {
+        error.json().then(body => {
+          showFeedback(formError, body.message ?? "There was an error, please try again later.");
+        });
+      } catch (e) {
+        console.log("Error parsing promise");
+      }
     });
 }
 

@@ -13,7 +13,7 @@ function respond(code, body) {
 module.exports.handler = async (event) => {
   try {
     if (!event.body || !event.isBase64Encoded) {
-      return respond(HttpStatus.BAD_REQUEST, { message: "no data" });
+      return respond(HttpStatus.BAD_REQUEST, { message: "No data" });
     }
 
     // Attempt to process file and fields sent up in the request using busboy
@@ -46,7 +46,7 @@ module.exports.handler = async (event) => {
 
     if (uploadedFile.status !== HttpStatus.OK) {
       return respond(uploadedFile.status, {
-        statusText: uploadedFile.statusText,
+        message: uploadedFile.statusText,
       });
     }
 
@@ -69,9 +69,9 @@ module.exports.handler = async (event) => {
       ]
     );
 
-    return respond(HttpStatus.OK, { message: "Proposal saved" });
+    return respond(HttpStatus.OK, { message: "Your proposal has been accepted, please await further instructions." });
   } catch (error) {
-    console.log({ error });
-    return respond(HttpStatus.INTERNAL_SERVER_ERROR, { error });
+    console.log(error);
+    return respond(HttpStatus.INTERNAL_SERVER_ERROR, { message: "Server error" });
   }
 }
