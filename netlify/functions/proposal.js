@@ -1,5 +1,6 @@
 const { parseMultipartForm } = require('./helpers/parseMultipartForm');
 const { uploadFile, getPublicUrl } = require('./helpers/googleDrive');
+const { appendToSpreadsheet } = require('./helpers/googleSheets');
 const { HttpStatus } = require('./helpers/HttpStatus');
 
 function respond(code, body) {
@@ -51,6 +52,14 @@ module.exports.handler = async (event) => {
 
     // return the file ID and URL for viewing on the client
     const fileUrl = await getPublicUrl(uploadedFile.data.id);
+
+    const result = await appendToSpreadsheet(
+      process.env.GOOGLE_DRIVE_PROPOSALS_SHEETS_ID,
+      "Sheet1",
+      [
+        [firstName, lastName, email, walletAddress, source, fileUrl]
+      ]
+    );
 
     return respond(HttpStatus.OK, { message: "Proposal saved" });
   } catch (error) {
