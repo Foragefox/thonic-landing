@@ -30,7 +30,7 @@ module.exports.appendToSpreadsheet = async (spreadsheetId, range, values) => {
   const res = await sheets.spreadsheets.values.append({
     spreadsheetId,
     range,
-    valueInputOption: "USER_ENTERED",
+    valueInputOption: "RAW",
     resource
   });
 

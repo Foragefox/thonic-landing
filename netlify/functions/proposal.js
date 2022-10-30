@@ -63,7 +63,8 @@ module.exports.handler = async (event) => {
           email,
           walletAddress,
           source,
-          `=HYPERLINK("${fileUrl}", "${file.filename}")`
+          file.filename,
+          fileUrl,
         ]
       ]
     );
