@@ -1,6 +1,6 @@
-const drive = require('@googleapis/drive');
-const stream = require('stream');
-const { getCredentials } = require('./googleCredentials');
+const drive = require("@googleapis/drive");
+const stream = require("stream");
+const { getCredentials } = require("./googleCredentials");
 
 
 const getDrive = async () => {
@@ -69,8 +69,8 @@ module.exports.getPublicUrl = async (fileId) => {
 
 module.exports.listDriveContents = async () => {
   response = await drive.files.list({
-    'pageSize': 10,
-    'fields': 'files(id, name)',
+    pageSize: 10,
+    fields: "files(id, name)",
   });
 
   console.log(response.data.files);

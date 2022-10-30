@@ -1,13 +1,13 @@
-const gsheets = require('@googleapis/sheets');
-const { getCredentials } = require('./googleCredentials');
+const gsheets = require("@googleapis/sheets");
+const { getCredentials } = require("./googleCredentials");
 
 const getSheets = async () => {
   const auth = new gsheets.auth.GoogleAuth({
     credentials: getCredentials(),
     scopes: [
-      'https://www.googleapis.com/auth/drive',
-      'https://www.googleapis.com/auth/drive.file',
-      'https://www.googleapis.com/auth/spreadsheets',
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/spreadsheets",
     ],
   });
   const authClient = await auth.getClient();
@@ -28,7 +28,7 @@ module.exports.appendToSpreadsheet = async (spreadsheetId, range, values) => {
   const res = await sheets.spreadsheets.values.append({
     spreadsheetId,
     range,
-    valueInputOption: 'RAW',
+    valueInputOption: "RAW",
     resource
   });
 

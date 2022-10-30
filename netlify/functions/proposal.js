@@ -1,7 +1,7 @@
-const { parseMultipartForm } = require('./helpers/parseMultipartForm');
-const { uploadFile, getPublicUrl } = require('./helpers/googleDrive');
-const { appendToSpreadsheet } = require('./helpers/googleSheets');
-const { HttpStatus } = require('./helpers/HttpStatus');
+const { parseMultipartForm } = require("./helpers/parseMultipartForm");
+const { uploadFile, getPublicUrl } = require("./helpers/googleDrive");
+const { appendToSpreadsheet } = require("./helpers/googleSheets");
+const { HttpStatus } = require("./helpers/HttpStatus");
 
 function respond(code, body) {
   return {
@@ -32,9 +32,11 @@ module.exports.handler = async (event) => {
     }
 
     const file = files[0];
-    if (!file) {
-      return respond(HttpStatus.BAD_REQUEST, { message: "No file uploaded" });
+    if (!file || file.contentType != "application/pdf") {
+      return respond(HttpStatus.BAD_REQUEST, { message: "No file or invalid file uploaded" });
     }
+
+    console.log(file);
 
     // Upload to Google Drive
     const uploadedFile = await uploadFile(file.filename, {
