@@ -617,10 +617,6 @@
                 'answer' => 'Rewards are directly related to Trading Volume and your bag size. Higher trading volume and bigger bags get higher and quicker rewards.'
               ],
               [
-                'question' => 'How can I check the amount of coins burned?',
-                'answer' => 'On BSC Scan, the first address is the BURN ADDRESS.'
-              ],
-              [
                 'question' => 'Why 8% tax and when is it applied?',
                 'answer' => 'It is applied to EVERY TRANSACTION, this includes: Buys, Sells and Transfers.
                 <ul>
