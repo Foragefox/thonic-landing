@@ -324,7 +324,7 @@
           <div class="sticky">
             <h2>Roadmap.</h2>
             <p>
-              Now that we have introduced the concept and team behind Thonic, let's talk timelines! Thonic's token and platform will be launched over six phases, with one phase being completed each Fiscal Quarter. If all the milestones in a phase are met before the end of the Quarter, however, we will immediately move on to the next phase so the platform can be beta launched by the end of 2022.
+              Now that we have introduced the concept and team behind Thonic, let's talk timelines! Thonic's token and platform will be launched over six phases, with one phase being completed each Fiscal Quarter. If all the milestones in a phase are met before the end of the Quarter, however, we will immediately move on to the next phase.
             </p>
             <p>
               Scroll through the Roadmap to see the task breakdowns by phase and our progress to date.
