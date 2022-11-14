@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
           <h1 class="text-navy h3 text-center mb-3">Proposal Application</h1>
-          <h5 class="text-center mb-5">If you would like to work with the Thonic team, please submit your propsal here. <strong>All fields are required.</strong></h5>
+          <h5 class="text-center mb-5">If you would like to work with the Thonic team, please submit your proposal here. <strong>All fields are required.</strong></h5>
 
           <form id="proposal-form" method="POST" action="/api/proposal">
             <div class="mb-4">
