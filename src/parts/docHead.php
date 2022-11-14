@@ -6,6 +6,7 @@ $howToBuy = "https://thonic.finance/how-to-buy-our-presale.pdf";
 $telegramChat = "https://t.me/thonicf";
 $twitter = "https://twitter.com/thonicf";
 $reddit = "https://www.reddit.com/r/thonic/";
+$medium = "https://medium.com/@Thonicfinance";
 ?>
 
 <head>

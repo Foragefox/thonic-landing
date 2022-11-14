@@ -8,6 +8,7 @@
           <a href="<?= $twitter ?>" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           <a href="<?= $reddit ?>" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
           <a href="<?= $telegramChat ?>" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+          <a href="<?= $medium ?>" target="_blank" rel="noopener"><i class="fab fa-medium"></i></a>
         </div>
       </div>
       <div class="col-12 col-md-6 text-center text-md-end pt-3">
