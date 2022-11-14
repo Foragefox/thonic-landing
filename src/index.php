@@ -152,12 +152,21 @@
           <p>
             The second strategy is earning passive income as 5% of each transaction is redistributed to token holders in $BUSD. Built on the Binance Smart Chain for its faster block speeds and lower transaction costs, Thonic is designed to be held longer term to benefit from both passive income and capital appreciation.
           </p>
+          
         </div>
         <div class="col-12 col-md-4 text-center">
           <a href="<?= $whitepaper ?>" target="_blank" class="btn btn-xl btn-primary mb-3">GET THE WHITEPAPER</a>
           <a href="<?= $pancakeSwap ?>" target="_blank" class="btn btn-xl btn-primary">BUY THONIC TOKENS</a>
         </div>
       </div>
+
+      <div class="row pb-5">
+        <div class="col-12">
+          <h3>Contract Address</h3>
+          <p>0x41DE98caD918Ad2BF2D9c1e61B53537dbbdB29d8</p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12">
           <h3>Features</h3>
