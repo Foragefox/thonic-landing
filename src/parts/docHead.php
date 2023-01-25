@@ -7,6 +7,7 @@ $telegramChat = "https://t.me/thonicf";
 $twitter = "https://twitter.com/thonicf";
 $reddit = "https://www.reddit.com/r/thonic/";
 $medium = "https://medium.com/@Thonicfinance";
+$youtube = "https://www.youtube.com/@thonicfinance";
 ?>
 
 <head>
