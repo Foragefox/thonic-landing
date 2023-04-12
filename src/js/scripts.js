@@ -94,7 +94,7 @@
 
     return fetch(action, {
       method: 'POST',
-      body: data
+      body: new URLSearchParams(data)
     })
       .then(response => {
         if (!response.ok) {
