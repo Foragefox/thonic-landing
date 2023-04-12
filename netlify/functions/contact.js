@@ -41,9 +41,9 @@ module.exports.handler = async (event) => {
     errorMessage = "Missing required field";
     console.log(errorMessage);
 
-    errorMessage = 'subject: '+subject+', firstName: '+firstName+', lastName: '+lastName+', email: '+email+', message: '+message;
+    //errorMessage = 'subject: '+subject+', firstName: '+firstName+', lastName: '+lastName+', email: '+email+', message: '+message;
 
-    return respond(HttpStatus.BAD_REQUEST, { message: body });
+    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
   }
 
   try {  
