@@ -30,12 +30,18 @@ module.exports.handler = async (event) => {
     return respond(200, "Success");
   }
 
-    const { subject, firstName, lastName, email, message, source } = body.values();
-    if (![subject, firstName, lastName, email, message].every(e => !!e)) {
-      errorMessage = "Missing required field";
-      console.log(errorMessage);
-      return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
-    }
+  const subject = body.get('subject');
+  const firstName = body.get('firstName');
+  const lastName = body.get('lastName');
+  const email = body.get('email');
+  const message = body.get('message');
+  const source = body.get('source');
+
+  if (![subject, firstName, lastName, email, message].every(e => !!e)) {
+    errorMessage = "Missing required field";
+    console.log(errorMessage);
+    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
+  }
 
   try {  
     const result = await appendToSpreadsheet(
