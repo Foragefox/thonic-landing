@@ -43,7 +43,7 @@ module.exports.handler = async (event) => {
 
     errorMessage = 'subject: '+subject+', firstName: '+firstName+', lastName: '+lastName+', email: '+email+', message: '+message;
 
-    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
+    return respond(HttpStatus.BAD_REQUEST, { message: body });
   }
 
   try {  
