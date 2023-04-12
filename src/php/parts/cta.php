@@ -20,8 +20,8 @@
                         <input type="hidden" name="source" tabindex="-1" value="">
                         <input type="text" name="confirm" tabindex="-1" value="">
                     </div>
-                    <div class="form-error bg-danger text-white py-2 px-2 hide"></div>
-                    <div class="form-success bg-green py-2 px-2 hide"></div>
+                    <div class="form-error text-bg-danger text-white py-2 px-2 hide"></div>
+                    <div class="form-success text-bg-green py-2 px-2 hide"></div>
                 </form>
             </div>
         </div>

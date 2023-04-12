@@ -58,8 +58,8 @@
                                     </div>
                                     <button type="submit" class="btn btn-green" id="submit-form">Submit</button>
                                 </div>
-                                <div class="form-error bg-danger text-white py-2 px-2 hide"></div>
-                                <div class="form-success bg-green py-2 px-2 hide"></div>
+                                <div class="form-error text-bg-danger text-white py-2 px-2 hide"></div>
+                                <div class="form-success text-bg-green py-2 px-2 hide"></div>
                             </form>
                             <script type="text/javascript">
                                 window.addEventListener('DOMContentLoaded', event => {
