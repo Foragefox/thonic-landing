@@ -30,7 +30,7 @@ module.exports.handler = async (event) => {
     return respond(200, "Success");
   }
 
-    const { subject, firstName, lastName, email, message, source } = body.values());
+    const { subject, firstName, lastName, email, message, source } = body.values();
     if (![subject, firstName, lastName, email, message].every(e => !!e)) {
       errorMessage = "Missing required field";
       console.log(errorMessage);
