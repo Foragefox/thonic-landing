@@ -1,5 +1,6 @@
 cp -r public/ dist/ \
-  && php src/index.php > dist/index.html \
-  && php src/404.php > dist/404.html \
-  && php src/proposal-application.php > dist/proposal-application.html \
-  && php src/exchange.php > dist/exchange.html
+  && php src/php/index.php > dist/index.html \
+  && php src/php/404.php > dist/404.html \
+  && php src/php/token.php > dist/token.html \
+  && php src/php/about.php > dist/about.html \
+  && php src/php/contact.php > dist/contact.html

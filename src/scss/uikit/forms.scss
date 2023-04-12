@@ -1,0 +1,19 @@
+
+.form-error.hide, 
+.form-success.hide {
+  padding: 0 !important;
+  opacity: 0;
+  -webkit-transition: opacity 0s;
+     -moz-transition: opacity 0s;
+       -o-transition: opacity 0s;
+          transition: opacity 0s;
+}
+
+.form-error.show, 
+.form-success.show {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+       -o-transition: opacity 1s;
+          transition: opacity 1s;
+}

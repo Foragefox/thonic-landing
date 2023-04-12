@@ -1,0 +1,17 @@
+/* cta */
+.cta { 
+    position: relative; 
+    background-color: $navy;
+    color: $white;
+
+    .form-control {
+        background-color: transparent;
+        color: $white;
+    }
+
+    .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 0.6; /* Firefox */
+      }
+
+}

@@ -1,0 +1,1 @@
+<script defer src="/js/scripts.min.js" type="text/javascript"></script>

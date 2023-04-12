@@ -1,0 +1,45 @@
+
+/* footer */
+footer {
+    background-color: $navy;
+    background-image: url('/img/pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 30%;
+
+    color: #FFF;
+
+    .footer-body {
+        padding: 50px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        a {
+            display: block;
+            margin: 10px 0;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .social {
+        a {
+            color: $white;
+            font-size: 30px;
+            color: $white;
+        }
+    }
+
+    .copyright {
+        color: $gray-400;
+        text-align: center;
+        background: rgba(9, 27, 46, 0.6);
+        backdrop-filter: blur(15px);
+        padding: 22px 0;
+    }
+}
+

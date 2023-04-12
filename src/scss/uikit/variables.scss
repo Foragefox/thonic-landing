@@ -1,0 +1,144 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+
+$white:    #fff !default;
+$gray-100: #F9FAFB !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ced4da !default;
+$gray-400: #D0D5DD !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #161c23 !default;
+
+// scss-docs-start theme-color-variables
+// colors
+$blue:    #ECF2FA;
+$indigo:  #8C01D7;
+$purple:  #60009A;
+$pink:    #FF008E;
+$red:     #C1004B;
+$orange:  #FFBA00;
+$yellow:  #ffc107;
+$green:   #D7FF45;
+$teal:    #00D200;
+$cyan:    #79C3DF;
+$navy:    #0C2746;
+$black:   $black;
+$white:   $white;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "navy":       $navy,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-900;
+
+$custom-theme-colors:(
+    "primary":      $navy,
+    "secondary":    $gray-600,
+    "cyan":         $cyan,
+    "green":        $green,
+    "blue":         $blue,
+    "light":        $light,
+    "dark":         $dark
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-family-sans-serif:      'Inter', sans-serif;
+
+// headings
+$h1-font-size:                2.938rem;
+$h2-font-size:                2.438rem;
+$h3-font-size:                2.063rem;
+$h4-font-size:                1.688rem;
+$h5-font-size:                1.375rem;
+$h6-font-size:                1.188rem;
+
+
+// scss-docs-start headings-variables
+$headings-font-family:        'Montserrat', sans-serif;
+$headings-font-weight:        500;
+$headings-margin-bottom:      1rem;
+// scss-docs-end headings-variables
+
+
+// scss-docs-start display-headings
+$display-font-weight: 700;
+// scss-docs-end display-headings
+
+// scss-docs-start type-variables
+$lead-font-size:              1.188rem;
+// scss-docs-end type-variables
+
+
+$border-color:                #C7C9CB;
+$border-radius:               0 !default;
+$border-radius-sm:            0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-pill:          0 !default;
+
+// buttons
+$btn-padding-y:               10px !default;
+$btn-padding-x:               30px !default;
+$btn-padding-x-sm:            1.25rem !default;
+$btn-font-size:               18px !default;
+$btn-font-weight:             400;
+$btn-border-radius:           3px !default;
+$btn-border-radius-sm:        2px !default;
+$btn-border-radius-lg:        8px !default;
+
+// forms
+$input-padding-y:             .75rem !default;
+$input-padding-x:             .75rem !default;
+$input-bg:                    $white !default;
+$input-border-color:          #B2B2B2 !default;
+$input-border-width:          1px !default;
+$input-border-radius:         4px !default;
+$input-group-addon-bg:        $white !default;
+
+$form-check-margin-bottom:          20px !default;
+$form-check-input-bg:               transparent !default;
+$form-check-input-border:           1px solid $primary !default;
+$form-check-input-border-radius:    0 !default;
+
+//cards
+$card-border-radius:                20px;
+$card-spacer-y:                     24px;
+$card-spacer-x:                     24px;
+
+// navbar
+$navbar-light-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color:  rgba($white, .1);

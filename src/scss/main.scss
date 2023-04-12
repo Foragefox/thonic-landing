@@ -1,0 +1,20 @@
+@import "uikit/variables.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "uikit/structure.scss";
+@import "uikit/buttons.scss";
+@import "uikit/cards.scss";
+@import "uikit/type.scss";
+@import "uikit/forms.scss";
+
+@import "libs/doubledash-animate.min";
+@import "libs/aos";
+
+@import "components/header";
+@import "components/footer";
+@import "components/hero";
+@import "components/team";
+@import "components/cta";
+@import "components/page-header";
+@import "components/blocks";

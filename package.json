@@ -1,9 +1,17 @@
 {
-  "name": "thonic-landing",
+  "name": "thonic-web",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "npm-run-all css-compile css-prefix css-compress",
+    "css-compile": "sass src/scss/main.scss public/css/styles.css",
+    "css-prefix": "postcss public/css/styles.css --use=autoprefixer --map=false  --output=public/css/styles.css",
+    "css-compress": "sass public/css/styles.css public/css/styles.min.css --style compressed",
+    "css-watch": "watch 'npm run css' src/scss",
+    "js": "concat -o  public/js/scripts.min.js src/js/bootstrap.bundle.min.js src/js/scripts.js",
+    "js-watch": "watch 'npm run js' src/js",
+    "watch": "npm-run-all --parallel js-watch css-watch"
   },
   "repository": {
     "type": "git",
@@ -13,10 +21,22 @@
     "url": "https://github.com/Foragefox/thonic-landing/issues"
   },
   "homepage": "https://github.com/Foragefox/thonic-landing#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@googleapis/drive": "^3.0.1",
     "@googleapis/sheets": "^4.0.0",
     "axios": "^0.26.1",
-    "busboy": "^1.6.0"
+    "busboy": "^1.6.0",
+    "bootstrap": "5.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.53.0",
+    "watch": "^0.13.0"
   }
 }
