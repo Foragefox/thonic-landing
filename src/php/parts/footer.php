@@ -7,7 +7,7 @@
                         <img src="/img/logo-footer.svg" />
                     </div>
                     <p>
-                    Thonic is a platform that offers financial tools to help everyone safely invest in cryptocurrency
+                    Thonic is a platform that offers financial tools to help everyone safely invest in cryptocurrency.
                     </p>
                    
                     <div class="social">
