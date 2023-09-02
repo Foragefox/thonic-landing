@@ -54,6 +54,11 @@ module.exports.handler = async function (event, context) {
     }
   };
 
+  const listTag = body.get("tag");
+  if (listTag) {
+    subscriber.tags = [listTag];
+  }
+
   console.log("Sending data to mailchimp", JSON.stringify(subscriber));
 
   try {

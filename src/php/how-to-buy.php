@@ -28,7 +28,7 @@
                         <div class="card bg-cyan text-white mx-auto" style="max-width: 450px;">
                             <div class="card-body">
 
-                                <form method="POST" action="/api/contact">
+                                <form method="POST" action="/api/list" id="cta-how-to-buy">
                                     <h4 class="text-center">Kick-start your crypto journey today</h4>
 
                                     <p class="text-center">Discover how to safely purchase altcoins like Thonic with our step-by-step guide:</p>
@@ -40,9 +40,13 @@
 
                                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                         <input type="hidden" name="source" tabindex="-1" value="">
+                                        <input type="hidden" name="tag" tabindex="-1" value="How to buy">
                                         <input type="text" name="confirm" tabindex="-1" value="">
                                     </div>
                                     <button type="submit" class="btn btn-lg w-100 btn-green" id="submit-form">Get instructions</button>
+
+                                    <div class="form-error text-bg-danger text-white py-2 px-2 hide"></div>
+                                    <div class="form-success text-bg-green py-2 px-2 hide"></div>
                                 </form>
                             </div>
                         </div>
@@ -68,6 +72,13 @@
     <?php include 'parts/footer.php' ?>
 
     <?php include 'parts/doc-footer.php' ?>
+
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', event => {
+            const howToBuyForm = document.getElementById('cta-how-to-buy');
+            howToBuyForm.onsubmit = async (event) => submitEmailFormAjax(event, howToBuyForm);
+        });
+    </script>
 </body>
 
 </html>
