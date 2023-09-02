@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    padding: 130px 0 50px; 
+    padding: 130px 0 50px;
     color: $white;
     background-color: $navy;
 
@@ -12,7 +12,50 @@
     h1 {
         margin-bottom: 0;
     }
-    
+}
+
+.hero-how-to-buy {
+    position: relative;
+    padding: 80px 0 20px;
+    color: $white;
+    background-color: $navy;
+
+    @media (min-width: 992px) {
+        padding: 130px 0 50px;
+    }
+
+    h1 {
+        margin-bottom: 0;
+
+        @media (min-width: 992px) {
+            &::after {
+                content: " ";
+                position: absolute;
+                background-image: url(/img/twisty-arrow.png);
+                width: 155px;
+                height: 85px;
+                background-repeat: no-repeat;
+                bottom: 0px;
+                transform: translate(300px, 0px) rotate(40deg);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            &::after {
+                transform: translate(0px, 20px) rotate(30deg);
+            }
+        }
+
+        @media (min-width: 1400px) {
+            &::after {
+                transform: translate(35px) rotate(12deg);
+            }
+        }
+    }
+
+    .twisty-arrow {
+        transform: scale(70%) translate(0, 30px) rotate(45deg);
+    }
 }
 
 .hero-home {
@@ -22,19 +65,29 @@
     position: relative;
     padding: 0;
 
-    @media (min-width: 576px) { height: 740px; }
+    @media (min-width: 576px) {
+        height: 740px;
+    }
 
     // Medium devices (tablets, 768px and up)
-    @media (min-width: 768px) {  height: 760px; }
+    @media (min-width: 768px) {
+        height: 760px;
+    }
 
     // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) { height: 830px; }
+    @media (min-width: 992px) {
+        height: 830px;
+    }
 
     // X-Large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) { height: 900px; }
+    @media (min-width: 1200px) {
+        height: 900px;
+    }
 
     // XX-Large devices (larger desktops, 1400px and up)
-    @media (min-width: 1400px) { height: 980px;}
+    @media (min-width: 1400px) {
+        height: 980px;
+    }
 
     .hero-body {
         padding: 150px 0 80px 0;
@@ -49,24 +102,40 @@
         max-width: 100%;
         display: none;
 
-        @media (min-width: 576px) { display: block; bottom: -57px; width: 576px; }
+        @media (min-width: 576px) {
+            display: block;
+            bottom: -57px;
+            width: 576px;
+        }
 
         // Medium devices (tablets, 768px and up)
-        @media (min-width: 768px) { bottom: -76px;  width: 768px; }
+        @media (min-width: 768px) {
+            bottom: -76px;
+            width: 768px;
+        }
 
         // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) { bottom: -98px; width: 992px; }
+        @media (min-width: 992px) {
+            bottom: -98px;
+            width: 992px;
+        }
 
         // X-Large devices (large desktops, 1200px and up)
-        @media (min-width: 1200px) { bottom: -119px; width: 1200px; }
+        @media (min-width: 1200px) {
+            bottom: -119px;
+            width: 1200px;
+        }
 
         // XX-Large devices (larger desktops, 1400px and up)
-        @media (min-width: 1400px) { bottom: -119px; width: 1200px; }
+        @media (min-width: 1400px) {
+            bottom: -119px;
+            width: 1200px;
+        }
     }
 
 
 
-/*
+    /*
     @supports (mix-blend-mode: multiply) {
         &::before {    
             content: "";
