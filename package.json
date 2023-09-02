@@ -11,7 +11,8 @@
     "css-watch": "watch 'npm run css' src/scss",
     "js": "concat -o  public/js/scripts.min.js src/js/bootstrap.bundle.min.js src/js/scripts.js",
     "js-watch": "watch 'npm run js' src/js",
-    "watch": "npm-run-all --parallel js-watch css-watch"
+    "watch": "npm-run-all --parallel js-watch css-watch",
+    "build": "npm-run-all --parallel css js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
-cp -r public/ dist/ \
+npm run build \
+  && cp -r public/ dist/ \
   && php src/php/index.php > dist/index.html \
   && php src/php/404.php > dist/404.html \
   && php src/php/token.php > dist/token.html \
