@@ -82,7 +82,7 @@
                         return response.json();
                     })
                     .then(response => {
-                        window.location.assign("/success.html");
+                        window.location.assign("/success");
                     });
             }
         });
