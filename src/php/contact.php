@@ -61,19 +61,6 @@
                                 <div class="form-error text-bg-danger text-white py-2 px-2 hide"></div>
                                 <div class="form-success text-bg-green py-2 px-2 hide"></div>
                             </form>
-                            <script type="text/javascript">
-                                window.addEventListener('DOMContentLoaded', event => {
-
-                                    const proposalForm = document.getElementById('contact-form');
-                                    proposalForm.onsubmit = async (event) => {
-                                        const submitButton = document.getElementById('submit-form');
-                                        submitButton.disabled = true;
-
-                                        const promise = submitContactFormAjax(event, proposalForm);
-                                        promise.finally(() => submitButton.disabled = false);
-                                    }
-                                });
-                            </script>
                         </div>
                         <div class="col-lg-2">
                             
@@ -89,5 +76,19 @@
         <?php include 'parts/footer.php' ?>
 
         <?php include 'parts/doc-footer.php' ?>
+
+        <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', event => {
+                const proposalForm = document.getElementById('contact-form');
+                proposalForm.onsubmit = async (event) => {
+                    const submitButton = document.getElementById('submit-form');
+                    submitButton.disabled = true;
+
+                    submitContactFormAjax(event, proposalForm)
+                        .catch(error => console.log(error))
+                        .finally(() => submitButton.disabled = false);
+                }
+            });
+        </script>
     </body>
 </html>

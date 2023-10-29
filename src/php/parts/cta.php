@@ -30,6 +30,9 @@
 <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', event => {
         const listForm = document.getElementById('cta-form');
-        listForm.onsubmit = async (event) => submitEmailFormAjax(event, listForm);
+        listForm.onsubmit = async (event) => {
+            submitEmailFormAjax(event, listForm)
+                .catch(error => console.log(error));
+        }
     });
 </script>

@@ -45,8 +45,8 @@
                                     </div>
                                     <button type="submit" class="btn btn-lg w-100 btn-green" id="submit-form">Get instructions</button>
 
-                                    <div class="form-error text-bg-danger text-white py-2 px-2 hide"></div>
-                                    <div class="form-success text-bg-green py-2 px-2 hide"></div>
+                                    <div class="form-error text-bg-danger text-white py-2 px-2 mt-2 hide"></div>
+                                    <div class="form-success text-bg-green py-2 px-2 mt-2 hide"></div>
                                 </form>
                             </div>
                         </div>
@@ -77,11 +77,9 @@
         window.addEventListener('DOMContentLoaded', event => {
             const howToBuyForm = document.getElementById('cta-how-to-buy');
             howToBuyForm.onsubmit = async (event) => {
-                const promise = submitEmailFormAjax(event, howToBuyForm);
-                promise.then(result => {
-                    if (result) window.location.assign("/success")
-                });
-                return promise;
+                submitEmailFormAjax(event, howToBuyForm)
+                    .then(() => window.location.assign("/success"))
+                    .catch(error => console.log(error));
             }
         });
     </script>
