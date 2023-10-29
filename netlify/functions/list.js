@@ -1,4 +1,5 @@
 const axios = require('axios').default
+const { HttpStatus } = require("./helpers/HttpStatus");
 
 const mailChimpAPI = process.env.MAILCHIMP_API_KEY;
 const mailChimpListID = process.env.MAILCHIMP_LIST_ID;
@@ -17,33 +18,33 @@ module.exports.handler = async function (event, context) {
   if (event.httpMethod != 'POST') {
     errorMessage = "Invalid Http method";
     console.log(errorMessage);
-    return respond(400, { message: errorMessage });
+    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
   }
 
   const body = new URLSearchParams(event.body);
   if (!body) {
     errorMessage = "No form data supplied";
     console.log(errorMessage);
-    return respond(400, errorMessage);
+    return respond(HttpStatus.BAD_REQUEST, errorMessage);
   }
 
   const email = body.get("email");
   if (!email) {
     errorMessage = "No EMAIL supplied";
     console.log(errorMessage);
-    return respond(400, errorMessage);
+    return respond(HttpStatus.BAD_REQUEST, errorMessage);
   }
 
   const honeyPot = body.get("confirm");
   if (honeyPot) {
     console.log(`HONEY POT --${email}`);
-    return respond(200, "Saved email");
+    return respond(HttpStatus.OK, "Saved email");
   }
 
   if (!mailChimpListID) {
     errorMessage = "No LIST_ID supplied";
     console.log(errorMessage);
-    return respond(500, errorMessage);
+    return respond(HttpStatus.INTERNAL_SERVER_ERROR, errorMessage);
   }
 
   const subscriber = {
@@ -85,8 +86,8 @@ module.exports.handler = async function (event, context) {
       console.log(error.response.status);
       console.log(error.response.headers);
       const { status, title } = error.response.data;
-      if (status === 400 && title === "Member Exists") {
-        return respond(200, "Saved email");
+      if (status === HttpStatus.BAD_REQUEST && title === "Member Exists") {
+        return respond(HttpStatus.OK, "Saved email");
       }
     } else if (error.request) {
       // The request was made but no response was received
@@ -97,6 +98,6 @@ module.exports.handler = async function (event, context) {
       console.log('Error', error.message);
     }
     console.log(error.config);
-    return respond(500, "Sorry, there was an error");
+    return respond(HttpStatus.INTERNAL_SERVER_ERROR, "Sorry, there was an error");
   }
 };

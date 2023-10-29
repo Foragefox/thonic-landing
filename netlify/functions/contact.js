@@ -14,20 +14,20 @@ module.exports.handler = async (event) => {
   if (event.httpMethod != 'POST') {
     errorMessage = "Invalid Http method";
     console.log(errorMessage);
-    return respond(400, { message: errorMessage });
+    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
   }
 
   const body = new URLSearchParams(event.body);
   if (!body) {
     errorMessage = "No form data supplied";
     console.log(errorMessage);
-    return respond(400, errorMessage);
+    return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
   }
 
   const honeyPot = body.get("confirm");
   if (honeyPot) {
     console.log(`HONEY POT --${body.get("subject")}`);
-    return respond(200, "Success");
+    return respond(HttpStatus.OK, "Success");
   }
 
   const subject = body.get('subject');
@@ -46,7 +46,7 @@ module.exports.handler = async (event) => {
     return respond(HttpStatus.BAD_REQUEST, { message: errorMessage });
   }
 
-  try {  
+  try {
     const result = await appendToSpreadsheet(
       process.env.GOOGLE_DRIVE_PROPOSALS_SHEETS_ID,
       "Sheet1",
