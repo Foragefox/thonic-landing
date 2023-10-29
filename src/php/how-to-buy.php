@@ -78,12 +78,7 @@
             const howToBuyForm = document.getElementById('cta-how-to-buy');
             howToBuyForm.onsubmit = async (event) => {
                 submitEmailFormAjax(event, howToBuyForm)
-                    .then(response => {
-                        return response.json();
-                    })
-                    .then(response => {
-                        window.location.assign("/success");
-                    });
+                    .then(() => window.location.assign("/success"));
             }
         });
     </script>
