@@ -60,7 +60,7 @@
                                     <p>
                                         <a href="#">Crypto.com instructions</a>
                                     </p>
-                                    <p>This option is easy to use and is availabe in most regions.</p>
+                                    <p>This option is easy to use and is available in most regions.</p>
                                 </div>
                                 <div class="col-6 text-center pb-4">
                                     <img src="/img/coinbase.svg" class="img-fluid mb-3 bg-white py-2 px-3" style="max-width: 80%;">
@@ -74,7 +74,7 @@
                                     <p>
                                         <a>Binance instructions</a>
                                     </p>
-                                    <p>Has more advanced options, but isn't availabe in parts of Canada.</p>
+                                    <p>Has more advanced options, but isn't available in parts of Canada.</p>
                                 </div>
                                 <div class="col-6 text-center pb-4">
                                     <img src="/img/moonpay.svg" class="img-fluid mb-3 bg-white py-2 px-3" style="max-width: 80%;">
@@ -94,7 +94,7 @@
                         <ul>
                             <li>Exchanges are easy to setup and use, but have the risk of collapsing, and losing your crypto.</li>
                             <li>Sending your tokens to an external wallet protects you from this.</li>
-                            <li>Therea are various wallet options, but we recomment Metamask.</li>
+                            <li>There are various wallet options, but we recommend Metamask.</li>
                         </ul>
                     </div>
                     <div class="col-lg-8 d-flex justify-content-center mb-5">
