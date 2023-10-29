@@ -77,8 +77,11 @@
         window.addEventListener('DOMContentLoaded', event => {
             const howToBuyForm = document.getElementById('cta-how-to-buy');
             howToBuyForm.onsubmit = async (event) => {
-                submitEmailFormAjax(event, howToBuyForm)
-                    .then(() => window.location.assign("/success"));
+                const promise = submitEmailFormAjax(event, howToBuyForm);
+                promise.then(result => {
+                    if (result) window.location.assign("/success")
+                });
+                return promise;
             }
         });
     </script>
