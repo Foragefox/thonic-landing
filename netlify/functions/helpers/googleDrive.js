@@ -6,7 +6,10 @@ const { getCredentials } = require("./googleCredentials");
 const getDrive = async () => {
   const auth = new drive.auth.GoogleAuth({
     credentials: getCredentials(),
-    scopes: ["https://www.googleapis.com/auth/drive.file"],
+    scopes: [
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/drive.readonly"
+    ],
   });
   const authClient = await auth.getClient();
 
@@ -68,6 +71,8 @@ module.exports.getPublicUrl = async (fileId) => {
 };
 
 module.exports.listDriveContents = async () => {
+  const drive = await getDrive();
+
   response = await drive.files.list({
     pageSize: 10,
     fields: "files(id, name)",

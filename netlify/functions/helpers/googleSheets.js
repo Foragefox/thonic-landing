@@ -18,6 +18,18 @@ const getSheets = async () => {
   });
 };
 
+module.exports.readSpreadsheet = async (spreadsheetId, tabName) => {
+  const sheets = await getSheets();
+
+  const res = await sheets.spreadsheets.values.get({
+    majorDimension: 'ROWS',
+    range: tabName,
+    spreadsheetId: spreadsheetId,
+    valueRenderOption: 'FORMATTED_VALUE',
+  });
+  return res.data;
+}
+
 module.exports.appendToSpreadsheet = async (spreadsheetId, range, values) => {
   const sheets = await getSheets();
 
