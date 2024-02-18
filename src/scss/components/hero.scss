@@ -14,6 +14,20 @@
     }
 }
 
+.hero-blog {
+    background-image: url(/img/background-1.svg);
+
+    @media (min-width: 992px) {
+        padding: 150px 0 150px;
+        background-size: 700px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 170px 0 230px;
+        background-size: 1000px;
+    }
+}
+
 .hero-how-to-buy {
     position: relative;
     padding: 80px 0 20px;

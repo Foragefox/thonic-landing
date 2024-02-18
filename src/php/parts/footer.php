@@ -7,9 +7,9 @@
                         <img src="/img/logo-footer.svg" />
                     </div>
                     <p>
-                    Thonic is a platform that offers financial tools to help everyone safely invest in cryptocurrency.
+                        Thonic is a platform that offers financial tools to help everyone safely invest in cryptocurrency.
                     </p>
-                   
+
                     <div class="social">
                         <div class="row row-cols-auto gx-3">
                             <div class="col">
@@ -39,16 +39,15 @@
                         <a href="/contact.html">Contact</a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
-    
+
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    © 2023 Thonic Finance. All rights reserved.
+                    © <?= date('Y') ?> Thonic Finance. All rights reserved.
                 </div>
             </div>
         </div>
