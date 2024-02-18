@@ -11190,6 +11190,82 @@ a.card {
   transition: opacity 1s;
 }
 
+.loader-triangle-9 {
+  display: block;
+  margin: 0 auto;
+}
+
+.loader-triangle-9 > div {
+  position: relative;
+  text-align: left;
+  transform-origin: 33.33% 66.66%;
+}
+
+.loader-triangle-9 > div:before,
+.loader-triangle-9 > div:after {
+  content: "";
+  position: absolute;
+  background: inherit;
+}
+
+.loader-triangle-9 > div,
+.loader-triangle-9 > div:before,
+.loader-triangle-9 > div:after {
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 10%;
+}
+
+.loader-triangle-9 > div:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+}
+
+.loader-triangle-9 > div:after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.loader-triangle-9 > div:first-child {
+  background: #D7FF45;
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866) translate(143.33%, 110%);
+  animation: anm-TL-9-first 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+.loader-triangle-9 > div:last-child {
+  background: #79C3DF;
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(-100%, -4%);
+  animation: anm-TL-9-last 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+@keyframes anm-TL-9-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes anm-TL-9-first {
+  0% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866) translate(143.33%, 110%);
+  }
+  33% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866) translate(-76.67%, -120%);
+  }
+  66% {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866) translate(-76.67%, 112%);
+  }
+}
+@keyframes anm-TL-9-last {
+  0% {
+    transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(-100%, -4%);
+  }
+  33% {
+    transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(134%, -4%);
+  }
+  66% {
+    transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(-89%, -214%);
+  }
+}
 :root {
   --animate-duration: 1s;
   --animate-delay: 0s;
@@ -13343,6 +13419,22 @@ footer .copyright {
 }
 .hero h1, .hero .h1 {
   margin-bottom: 0;
+}
+
+.hero-blog {
+  background-image: url(/img/background-1.svg);
+}
+@media (min-width: 992px) {
+  .hero-blog {
+    padding: 150px 0 150px;
+    background-size: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-blog {
+    padding: 170px 0 230px;
+    background-size: 1000px;
+  }
 }
 
 .hero-how-to-buy {
