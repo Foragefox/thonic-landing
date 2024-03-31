@@ -23,6 +23,5 @@
                 <a href="<?= $pancakeSwap ?>" target="_blank" class="btn btn-sm btn-outline-light">BUY THONIC</a>
             </div>
         </div>
-
     </div>
 </header>
