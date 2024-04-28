@@ -13502,27 +13502,22 @@ footer .copyright {
 }
 @media (min-width: 576px) {
   .hero-home {
-    height: 740px;
+    height: 750px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 896px) {
   .hero-home {
-    height: 760px;
+    height: 820px;
   }
 }
 @media (min-width: 992px) {
   .hero-home {
-    height: 830px;
+    height: 870px;
   }
 }
 @media (min-width: 1200px) {
   .hero-home {
-    height: 900px;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-home {
-    height: 980px;
+    height: 950px;
   }
 }
 .hero-home .hero-body {
