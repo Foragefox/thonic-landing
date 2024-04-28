@@ -19,8 +19,8 @@
             </div>
 
             <div class="col-auto text-lg-end">
-                <a href="/how-to-buy" target="_blank" class="btn btn-sm btn-outline-light me-2">HOW TO BUY</a>
-                <a href="<?= $pancakeSwap ?>" target="_blank" class="btn btn-sm btn-outline-light">BUY THONIC</a>
+                <a href="<?= $pancakeSwap ?>" target="_blank" class="btn btn-sm btn-outline-light me-2">BUY THONIC</a>
+                <a href="https://app.thonic.finance/login" class="btn btn-sm btn-outline-light">LOG IN</a>
             </div>
         </div>
     </div>

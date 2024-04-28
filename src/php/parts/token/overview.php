@@ -11,6 +11,7 @@
             </div>
             <div class="col-sm-4 col-lg-2 ">
                 <a href="https://pancakeswap.finance/swap?outputCurrency=0x41DE98caD918Ad2BF2D9c1e61B53537dbbdB29d8" target="_blank" class="btn btn-primary mb-3 d-block">BUY THONIC TOKENS</a>
+                <a href="/how-to-buy.html" class="btn btn-outline-dark mb-3 d-block">HOW TO BUY</a>
                 <a href="https://github.com/thonic-finance/whitepaper/raw/master/thonic_whitepaper_v2.pdf" target="_blank" class="btn btn-outline-dark mb-3 d-block">GET THE WHITEPAPER</a>
             </div>
         </div>
