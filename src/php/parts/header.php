@@ -14,6 +14,7 @@
                     <a class="menu-link" href="/">Platform</a>
                     <a class="menu-link" href="/token.html">Token</a>
                     <a class="menu-link" href="/about.html">About</a>
+                    <a class="menu-link" href="/blog.html">Blog</a>
                     <a class="menu-link" href="/contact.html">Contact</a>
                 </div>
             </div>
