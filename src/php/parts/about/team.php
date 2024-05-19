@@ -23,7 +23,7 @@
                         <img class="profile-img" src="/img/profile-david.png" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h3>Dave Jenkins</h3>
+                        <h3>Dave J.</h3>
                         <p>Dave is a self-driven and highly motivated marketing expert with over 10 years experience in business development, digital marketing, and email marketing campaigns. Dave has made a career of building companies. From concept to profit, building a company from the ground up has become a speciality of his.</p>
                         <p>One of Dave's most important skills is his ability to act as a bridge bringing different departments together, which he has leveraged to generate over 8 figures in profit. Having an idea is easy, but having the commitment and dedication to lay out goals and motivate team members to do their best are the qualities of a true leader. At Thonic, Dave not only heads up the marketing team, but acts as COO, to ensure the project stays on track.</p>
                     </div>
@@ -51,8 +51,8 @@
                         <img class="profile-img" src="/img/profile-olaf.png" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                        <h3>Olaf Kreitz</h3>
-                        <p>Olaf Kreitz is a seasoned entrepreneur and technology strategist with a proven track record of launching and scaling innovative digital ventures across Germany and the United States. With 25 years of experience in product ownership, digital strategy, and executive leadership roles, Olaf brings a wealth of knowledge to the fast-evolving cryptocurrency sector.</p>
+                        <h3>Olaf K.</h3>
+                        <p>Olaf is a seasoned entrepreneur and technology strategist with a proven track record of launching and scaling innovative digital ventures across Germany and the United States. With 25 years of experience in product ownership, digital strategy, and executive leadership roles, Olaf brings a wealth of knowledge to the fast-evolving cryptocurrency sector.</p>
                         <p>As a strategic advisor for a leading cryptocurrency startup, Olaf leverages his deep expertise in digital transformation, marketing, and branding to guide the company through the complexities of the blockchain ecosystem. His entrepreneurial journey includes founding and co-founding multiple technology and marketing companies, successfully navigating venture capital negotiations, and leading digital product development with a focus on creating impactful user experiences.</p>
                         <p>Olaf's tenure as CTO at various digital marketing and branding agencies showcases his ability to build and lead multidisciplinary teams, delivering projects that exceed $18 million in value and drive significant growth in saturated markets.</p>
                         <p>With an MBA specializing in Marketing & International Management and fluent in multiple languages, Olaf's global perspective and commitment to excellence are instrumental in advising startups on achieving their strategic objectives in the dynamic and competitive world of cryptocurrency.</p>
